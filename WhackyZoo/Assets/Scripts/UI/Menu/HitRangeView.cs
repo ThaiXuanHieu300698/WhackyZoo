@@ -6,7 +6,7 @@ namespace WhackyZoo
 {
     /// <summary>
     /// Lưới 3×3 mô phỏng tầm đập của dụng cụ ở khung chi tiết Cửa hàng: ô bị đập tô đậm, ô được chạm có icon dụng cụ.
-    /// Tầm tam giác (Búa Thor) đổi qua lại giữa nửa trên và nửa dưới. Chạy theo thời gian thật.
+    /// Tầm cột dọc (Gậy Như Ý) minh hoạ ở cột giữa. Tầm tam giác (Búa Thor) đổi qua lại giữa nửa trên và nửa dưới. Chạy theo thời gian thật.
     /// </summary>
     public class HitRangeView : MonoBehaviour
     {
@@ -22,7 +22,7 @@ namespace WhackyZoo
         [SerializeField] Image legendSwatch;
         [Tooltip("Icon dụng cụ ở chú thích \"Ô bạn chạm\".")]
         [SerializeField] Image legendIcon;
-        [Tooltip("Ô chạm minh hoạ: tầm 1 ô, tam giác trên, tam giác dưới.")]
+        [Tooltip("Ô chạm minh hoạ: tầm 1 ô và cột dọc, tam giác trên, tam giác dưới.")]
         [SerializeField] int singleTap = 4, upperTap = 1, lowerTap = 7;
         [SerializeField] float swapSeconds = 1.4f;
         [Tooltip("Ô vừa tô nảy nhẹ: scale 0,8 → 1 trong thời gian này (ease-out).")]
@@ -50,7 +50,7 @@ namespace WhackyZoo
         void Paint(bool pop)
         {
             if (tool == null) return;
-            int tapped = tool.hitArea == HitArea.Single ? singleTap : upper ? upperTap : lowerTap;
+            int tapped = tool.hitArea != HitArea.Triangle ? singleTap : upper ? upperTap : lowerTap;
             ToolData.AreaCells(tool.hitArea, tapped, upper, area);
             var hit = tool.lightning && cellLightning != null ? cellLightning : cellHit;
             if (legendSwatch != null) legendSwatch.sprite = hit;

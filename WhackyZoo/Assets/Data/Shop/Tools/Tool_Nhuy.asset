@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 909d7d9eac8371041ab28c6f1efa5e94, type: 3}
+  m_Name: Tool_Nhuy
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.ToolData
+  id: nhuy
+  displayName: "G\u1EADy Nh\u01B0 \xDD"
+  cardName: 
+  description: "T\u1EA7m \u0111\u1EADp 3 \xF4 c\u1ED9t d\u1ECDc: \xF4 ch\u1EA1m, \xF4 tr\xEAn v\xE0 \xF4 d\u01B0\u1EDBi."
+  icon: {fileID: 21300000, guid: 381a760ece9a3d949ae54766d8e6c491, type: 3}
+  price: 7500
+  cashPrice: 
+  premium: 1
+  freeHint: 
+  isDefault: 0
+  hitArea: 2
+  lightning: 0
+  coinBonusPercent: 0

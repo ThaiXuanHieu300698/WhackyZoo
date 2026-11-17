@@ -235,7 +235,7 @@ namespace WhackyZoo
         /// <summary>
         /// Chạm trúng thú ở <paramref name="tapped"/>: hố đó vung dụng cụ như thường. Dụng cụ tầm tam giác (Búa Thor) đập luôn
         /// thú đang ló ở 5 ô còn lại của nửa tam giác chứa ô chạm (ô trên đường chéo thì chọn ngẫu nhiên nửa trên/dưới);
-        /// vật cản ở các ô lan không bị đập. Sấm sét bắt đầu cùng lúc búa chạm.
+        /// dụng cụ tầm cột dọc (Gậy Như Ý) đập luôn ô trên và ô dưới ô chạm; vật cản ở các ô lan không bị đập. Sấm sét bắt đầu cùng lúc búa chạm.
         /// </summary>
         public void Whack(Hole tapped)
         {
