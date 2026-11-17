@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed0ca992231c8304bbbffe3fc5361872, type: 3}
+  m_Name: Booster_Shield
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.BoosterData
+  id: shield
+  effect: 2
+  amount: 0
+  duration: 0
+  displayName: "Khi\xEAn Bom"
+  barLabel: "Khi\xEAn"
+  guideName: "Khi\xEAn"
+  guideHint: "\u0110\u1EE1 1 l\u1EA7n \u0111\u1EADp nh\u1EA7m"
+  shopCardName: "Khi\xEAn Bom"
+  shopDescription: "\u0110\u1EE1 m\u1ED9t l\u1EA7n \u0111\u1EADp nh\u1EA7m v\u1EADt c\u1EA3n: kh\xF4ng b\u1ECB tr\u1EEB \u0111i\u1EC3m, gi\u1EEF combo."
+  icon: {fileID: 21300000, guid: f868bd706359a2945b5ffcacd7975923, type: 3}
+  buttonSprite: {fileID: 21300000, guid: b3e7fe1dc60e6924c82794cefd84df84, type: 3}
+  price: 250
+  packPrice: 1000
+  packSize: 5
+  starterCount: 1

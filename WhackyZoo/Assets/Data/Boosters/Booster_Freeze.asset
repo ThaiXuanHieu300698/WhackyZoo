@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed0ca992231c8304bbbffe3fc5361872, type: 3}
+  m_Name: Booster_Freeze
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.BoosterData
+  id: freeze
+  effect: 3
+  amount: 0
+  duration: 5
+  displayName: "\u0110\xF3ng B\u0103ng Gi\u1EDD"
+  barLabel: "B\u0103ng"
+  guideName: "\u0110\xF3ng b\u0103ng"
+  guideHint: "D\u1EEBng gi\u1EDD 5 gi\xE2y"
+  shopCardName: "\u0110\xF3ng B\u0103ng"
+  shopDescription: "D\u1EEBng \u0111\u1ED3ng h\u1ED3 5 gi\xE2y, th\xFA v\u1EABn l\xF3 l\xEAn b\xECnh th\u01B0\u1EDDng."
+  icon: {fileID: 21300000, guid: bbc9f808fccf4ae45929119879fe20ea, type: 3}
+  buttonSprite: {fileID: 21300000, guid: 3a201e164e98d114eb8bd43b041db993, type: 3}
+  price: 350
+  packPrice: 1400
+  packSize: 5
+  starterCount: 1

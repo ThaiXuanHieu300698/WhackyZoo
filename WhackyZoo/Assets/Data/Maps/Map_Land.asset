@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47fa2e001e8bd4e40963abc498e043b6, type: 3}
+  m_Name: Map_Land
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.MapData
+  id: land
+  displayName: "Tr\xEAn C\u1EA1n"
+  background: {fileID: 21300000, guid: 14ab190824cc0d141af0ec8ce4f2e922, type: 3}
+  music: {fileID: 8300000, guid: c0e14863e178b5e4d84645015180916b, type: 3}
+  holeBack: {fileID: 21300000, guid: 983f14300de801242a51911be4f4da4b, type: 3}
+  holeFront: {fileID: 21300000, guid: 7b116adf35bafed40ba91b77a9cd9fe2, type: 3}
+  holeMask: {fileID: 21300000, guid: 9b6ca05f9b7fefa4892bd1a3ffe46eb3, type: 3}
+  normalCritters:
+  - {fileID: 11400000, guid: 062fb3affd755524b924a3c5dface815, type: 2}
+  - {fileID: 11400000, guid: dd98eff6a0068eb47bb73fa44f465198, type: 2}
+  - {fileID: 11400000, guid: c1f719b2460b675458729a92bceb0bed, type: 2}
+  - {fileID: 11400000, guid: 8847c72d8494c984d98cd12c94533fa3, type: 2}
+  bonus: {fileID: 11400000, guid: 9f88cae748822e241b1d10456c3420df, type: 2}
+  obstacle: {fileID: 11400000, guid: 27863799e3f37794bb19c546a4c65bbd, type: 2}
+  ambient:
+  - name: Cloud
+    sprite: {fileID: 21300000, guid: 9c4043d6e73ad434cb3ab8bebe6deca8, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    position: {x: 72, y: 207}
+    size: {x: 132, y: 62}
+    pivot: {x: 0.5, y: 0.5}
+    clipBelowY: 0
+    motion: 4
+    period: 5
+    delay: 0
+    angleFrom: -12
+    angleTo: 16
+    midOffset: {x: 0, y: 0}
+    endOffset: {x: 0, y: 0}
+    fadeInAt: 0.1
+    linear: 0
+    alphaKeys: {x: 1, y: 1, z: 1}
+  - name: Cloud
+    sprite: {fileID: 21300000, guid: 9de88bf42745bcd4db213daab4dc86ec, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    position: {x: 185, y: 234}
+    size: {x: 98, y: 52}
+    pivot: {x: 0.5, y: 0.5}
+    clipBelowY: 0
+    motion: 4
+    period: 6.5
+    delay: -2
+    angleFrom: -12
+    angleTo: 16
+    midOffset: {x: 0, y: 0}
+    endOffset: {x: 0, y: 0}
+    fadeInAt: 0.1
+    linear: 0
+    alphaKeys: {x: 1, y: 1, z: 1}
+  ambientFx: []
+  ambientFxMask: {fileID: 0}
+  banner: {fileID: 21300000, guid: 87281ba91027d80479a6c604867b65b0, type: 3}
+  cardEffects:
+  - name: cloud_big
+    sprite: {fileID: 21300000, guid: 54b90b49ce89b3c48bff9e83731ccf5c, type: 3}
+    frames: []
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: -1
+    left: 18
+    top: 22
+    width: 92
+    height: 30
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 5
+    delay: 0
+    ease: 4
+    alternate: 1
+    moveKeys:
+    - {x: 0, y: -8, z: 0}
+    - {x: 1, y: 12, z: 0}
+    alphaKeys: []
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 1
+    restRotation: 0
+  - name: cloud_small
+    sprite: {fileID: 21300000, guid: 374a3c61efba4b749979134ace775c1e, type: 3}
+    frames: []
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 0.9}
+    parent: -1
+    left: 140
+    top: 12
+    width: 58
+    height: 20
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 6.5
+    delay: -2
+    ease: 4
+    alternate: 1
+    moveKeys:
+    - {x: 0, y: -8, z: 0}
+    - {x: 1, y: 12, z: 0}
+    alphaKeys: []
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 1
+    restRotation: 0
+  cardSkyMask: {fileID: 0}
+  cardSkyBottom: 60
+  isNew: 0
+  normalLabel: "Th\xFA th\u01B0\u1EDDng"
+  mapChip:
+    sprite: {fileID: 21300000, guid: 42286d974adb5d440bde159f905d63f9, type: 3}
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    textColor: {r: 1, g: 1, b: 1, a: 1}
+  normalChip:
+    sprite: {fileID: 21300000, guid: 8b44c33270459824fbf29f36de25afd5, type: 3}
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    textColor: {r: 0.22745098, g: 0.14117648, b: 0.07058824, a: 1}
+  bonusChip:
+    sprite: {fileID: 21300000, guid: 2ab94122b1bf1e540bec1df937ac61d4, type: 3}
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    textColor: {r: 0.22745098, g: 0.14117648, b: 0.07058824, a: 1}
+  obstacleChip:
+    sprite: {fileID: 21300000, guid: bed23e930331cc840b176490baa2f17f, type: 3}
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    textColor: {r: 1, g: 1, b: 1, a: 1}
+  howToTop: {r: 0.18431373, g: 0.5411765, b: 0.22745098, a: 1}
+  howToBottom: {r: 0.42352942, g: 0.7607843, b: 0.2901961, a: 1}

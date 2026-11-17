@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eab683c0afda75b4e852716babc2d3b5, type: 3}
+  m_Name: BoosterCatalog
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.BoosterCatalog
+  boosters:
+  - {fileID: 11400000, guid: acd55c09c26725a4cb57cc186973c76d, type: 2}
+  - {fileID: 11400000, guid: 24e8c791c26d54e418b5f42cdf2093a1, type: 2}
+  - {fileID: 11400000, guid: 0bad990bb0f26d64eba444031821027a, type: 2}
+  - {fileID: 11400000, guid: 5f998feadbd10b04b823a896e867c699, type: 2}
+  - {fileID: 11400000, guid: cefc16f0a6fc89e47a6afd653ee01ac9, type: 2}

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 349a60e1af6230741b45d2e0da236df4, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.GameConfig
+  roundSeconds: 60
+  warningSeconds: 10
+  spawnInterval: 1.15
+  retreatChance: 0.6
+  spawnPerTickMin: 1
+  spawnPerTickMax: 2
+  maxActiveCritters: 4
+  bonusChance: 0.1
+  obstacleChance: 0.1
+  stunDuration: 0.43
+  riseDuration: 0.42
+  retreatDuration: 0.24
+  comboStart: 1
+  comboFloor: 1
+  minScore: 0
+  coinDivisor: 10

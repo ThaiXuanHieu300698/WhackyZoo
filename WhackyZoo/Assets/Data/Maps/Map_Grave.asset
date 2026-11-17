@@ -1,0 +1,469 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47fa2e001e8bd4e40963abc498e043b6, type: 3}
+  m_Name: Map_Grave
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.MapData
+  id: grave
+  displayName: "Ngh\u0129a Trang"
+  background: {fileID: 21300000, guid: c565d72fb6d0beb4a9681b16ea2e3160, type: 3}
+  music: {fileID: 8300000, guid: 2d41820e6b7aeb44fb793060ccfe36d9, type: 3}
+  holeBack: {fileID: 21300000, guid: 3ed0cc1c765f1054b8bf2e4a1c6ae99c, type: 3}
+  holeFront: {fileID: 21300000, guid: 8b8cb896debb8074db126a7de87ef3c3, type: 3}
+  holeMask: {fileID: 21300000, guid: 8112c02efb6a6cf459e29521974b2ffc, type: 3}
+  normalCritters:
+  - {fileID: 11400000, guid: 218883485f3f2e84c9f3807f38f4dbf7, type: 2}
+  - {fileID: 11400000, guid: 0e3ac5bbbd86879419bfc03d2ba9d3a7, type: 2}
+  - {fileID: 11400000, guid: 3874ac9958805bd4fbaa07d875f896ee, type: 2}
+  - {fileID: 11400000, guid: c7a0861b4845e75468a8813ce26f8112, type: 2}
+  bonus: {fileID: 11400000, guid: b47cfc28a1f1c8f49bdac27ffea8cebe, type: 2}
+  obstacle: {fileID: 11400000, guid: 57fd26e81702c0747b20db30fead9a60, type: 2}
+  ambient:
+  - name: Firefly
+    sprite: {fileID: 21300000, guid: 16d33056d23e34246a00bfd6e6df9902, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    position: {x: 43, y: 253}
+    size: {x: 36, y: 36}
+    pivot: {x: 0.5, y: 0.5}
+    clipBelowY: 0
+    motion: 5
+    period: 5
+    delay: 0
+    angleFrom: 0
+    angleTo: 0
+    midOffset: {x: 0, y: 0}
+    endOffset: {x: 18, y: -26}
+    fadeInAt: 0.1
+    linear: 0
+    alphaKeys: {x: 0.2, y: 1, z: 0.3}
+  - name: Firefly
+    sprite: {fileID: 21300000, guid: 16d33056d23e34246a00bfd6e6df9902, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    position: {x: 113, y: 203}
+    size: {x: 36, y: 36}
+    pivot: {x: 0.5, y: 0.5}
+    clipBelowY: 0
+    motion: 5
+    period: 6
+    delay: 1.6
+    angleFrom: 0
+    angleTo: 0
+    midOffset: {x: 0, y: 0}
+    endOffset: {x: 18, y: -26}
+    fadeInAt: 0.1
+    linear: 0
+    alphaKeys: {x: 0.2, y: 1, z: 0.3}
+  - name: Firefly
+    sprite: {fileID: 21300000, guid: 16d33056d23e34246a00bfd6e6df9902, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    position: {x: 193, y: 265}
+    size: {x: 36, y: 36}
+    pivot: {x: 0.5, y: 0.5}
+    clipBelowY: 0
+    motion: 5
+    period: 5
+    delay: 0.8
+    angleFrom: 0
+    angleTo: 0
+    midOffset: {x: 0, y: 0}
+    endOffset: {x: 18, y: -26}
+    fadeInAt: 0.1
+    linear: 0
+    alphaKeys: {x: 0.2, y: 1, z: 0.3}
+  - name: Firefly
+    sprite: {fileID: 21300000, guid: 16d33056d23e34246a00bfd6e6df9902, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    position: {x: 253, y: 223}
+    size: {x: 36, y: 36}
+    pivot: {x: 0.5, y: 0.5}
+    clipBelowY: 0
+    motion: 5
+    period: 7
+    delay: 2.4
+    angleFrom: 0
+    angleTo: 0
+    midOffset: {x: 0, y: 0}
+    endOffset: {x: 18, y: -26}
+    fadeInAt: 0.1
+    linear: 0
+    alphaKeys: {x: 0.2, y: 1, z: 0.3}
+  - name: Firefly
+    sprite: {fileID: 21300000, guid: 16d33056d23e34246a00bfd6e6df9902, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    position: {x: 333, y: 273}
+    size: {x: 36, y: 36}
+    pivot: {x: 0.5, y: 0.5}
+    clipBelowY: 0
+    motion: 5
+    period: 6
+    delay: 1.2
+    angleFrom: 0
+    angleTo: 0
+    midOffset: {x: 0, y: 0}
+    endOffset: {x: 18, y: -26}
+    fadeInAt: 0.1
+    linear: 0
+    alphaKeys: {x: 0.2, y: 1, z: 0.3}
+  - name: Firefly
+    sprite: {fileID: 21300000, guid: 16d33056d23e34246a00bfd6e6df9902, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    position: {x: 303, y: 183}
+    size: {x: 36, y: 36}
+    pivot: {x: 0.5, y: 0.5}
+    clipBelowY: 0
+    motion: 5
+    period: 5
+    delay: 3.1
+    angleFrom: 0
+    angleTo: 0
+    midOffset: {x: 0, y: 0}
+    endOffset: {x: 18, y: -26}
+    fadeInAt: 0.1
+    linear: 0
+    alphaKeys: {x: 0.2, y: 1, z: 0.3}
+  ambientFx:
+  - name: Flock
+    sprite: {fileID: 0}
+    frames: []
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: -1
+    left: 0
+    top: 0
+    width: 0
+    height: 0
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 11
+    delay: 0
+    ease: 0
+    alternate: 0
+    moveKeys:
+    - {x: 0, y: -140, z: 232}
+    - {x: 0.66, y: 530, z: 153}
+    - {x: 1, y: 530, z: 153}
+    alphaKeys: []
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 1
+    restRotation: 0
+  - name: Bat
+    sprite: {fileID: 21300000, guid: 22784e0b60a12ff4383499409ca5f025, type: 3}
+    frames:
+    - {fileID: 21300000, guid: ff6c903ecae9259479c798167af6e1cd, type: 3}
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: 0
+    left: 0
+    top: 18
+    width: 56
+    height: 34
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 0.9
+    delay: 0
+    ease: 4
+    alternate: 1
+    moveKeys:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: -6}
+    alphaKeys: []
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 1
+    restRotation: 0
+  - name: Bat
+    sprite: {fileID: 21300000, guid: 22784e0b60a12ff4383499409ca5f025, type: 3}
+    frames:
+    - {fileID: 21300000, guid: ff6c903ecae9259479c798167af6e1cd, type: 3}
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: 0
+    left: -60
+    top: 0
+    width: 44
+    height: 26
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 0.9
+    delay: 0.3
+    ease: 4
+    alternate: 1
+    moveKeys:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: -6}
+    alphaKeys: []
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 1
+    restRotation: 0
+  - name: Bat
+    sprite: {fileID: 21300000, guid: 22784e0b60a12ff4383499409ca5f025, type: 3}
+    frames:
+    - {fileID: 21300000, guid: ff6c903ecae9259479c798167af6e1cd, type: 3}
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: 0
+    left: -54
+    top: 42
+    width: 40
+    height: 24
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 0.9
+    delay: 0.55
+    ease: 4
+    alternate: 1
+    moveKeys:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: -6}
+    alphaKeys: []
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 1
+    restRotation: 0
+  - name: Bat
+    sprite: {fileID: 21300000, guid: 22784e0b60a12ff4383499409ca5f025, type: 3}
+    frames:
+    - {fileID: 21300000, guid: ff6c903ecae9259479c798167af6e1cd, type: 3}
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: 0
+    left: -112
+    top: 22
+    width: 36
+    height: 22
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 0.9
+    delay: 0.15
+    ease: 4
+    alternate: 1
+    moveKeys:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: -6}
+    alphaKeys: []
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 1
+    restRotation: 0
+  - name: Bat
+    sprite: {fileID: 21300000, guid: 22784e0b60a12ff4383499409ca5f025, type: 3}
+    frames:
+    - {fileID: 21300000, guid: ff6c903ecae9259479c798167af6e1cd, type: 3}
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: 0
+    left: -126
+    top: 52
+    width: 30
+    height: 18
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 0.9
+    delay: 0.4
+    ease: 4
+    alternate: 1
+    moveKeys:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: -6}
+    alphaKeys: []
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 1
+    restRotation: 0
+  ambientFxMask: {fileID: 0}
+  banner: {fileID: 21300000, guid: 65fc97603d42e45428941c12c3d08ff8, type: 3}
+  cardEffects:
+  - name: Flock
+    sprite: {fileID: 0}
+    frames: []
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: -1
+    left: 0
+    top: 0
+    width: 0
+    height: 0
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 9
+    delay: 0
+    ease: 0
+    alternate: 0
+    moveKeys:
+    - {x: 0, y: -110, z: 34}
+    - {x: 0.65, y: 440, z: 4}
+    - {x: 1, y: 440, z: 4}
+    alphaKeys: []
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 1
+    restRotation: 0
+  - name: Bat0
+    sprite: {fileID: 21300000, guid: 22784e0b60a12ff4383499409ca5f025, type: 3}
+    frames:
+    - {fileID: 21300000, guid: ff6c903ecae9259479c798167af6e1cd, type: 3}
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: 0
+    left: 0
+    top: 14
+    width: 44
+    height: 26
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 0.9
+    delay: 0
+    ease: 4
+    alternate: 1
+    moveKeys:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: -4}
+    alphaKeys: []
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 1
+    restRotation: 0
+  - name: Bat1
+    sprite: {fileID: 21300000, guid: 22784e0b60a12ff4383499409ca5f025, type: 3}
+    frames:
+    - {fileID: 21300000, guid: ff6c903ecae9259479c798167af6e1cd, type: 3}
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: 0
+    left: -46
+    top: 0
+    width: 34
+    height: 20
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 0.9
+    delay: 0.3
+    ease: 4
+    alternate: 1
+    moveKeys:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: -4}
+    alphaKeys: []
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 1
+    restRotation: 0
+  - name: Bat2
+    sprite: {fileID: 21300000, guid: 22784e0b60a12ff4383499409ca5f025, type: 3}
+    frames:
+    - {fileID: 21300000, guid: ff6c903ecae9259479c798167af6e1cd, type: 3}
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: 0
+    left: -42
+    top: 34
+    width: 30
+    height: 18
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 0.9
+    delay: 0.55
+    ease: 4
+    alternate: 1
+    moveKeys:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: -4}
+    alphaKeys: []
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 1
+    restRotation: 0
+  - name: Bat3
+    sprite: {fileID: 21300000, guid: 22784e0b60a12ff4383499409ca5f025, type: 3}
+    frames:
+    - {fileID: 21300000, guid: ff6c903ecae9259479c798167af6e1cd, type: 3}
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: 0
+    left: -84
+    top: 18
+    width: 28
+    height: 17
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 0.9
+    delay: 0.15
+    ease: 4
+    alternate: 1
+    moveKeys:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: -4}
+    alphaKeys: []
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 1
+    restRotation: 0
+  - name: Bat4
+    sprite: {fileID: 21300000, guid: 22784e0b60a12ff4383499409ca5f025, type: 3}
+    frames:
+    - {fileID: 21300000, guid: ff6c903ecae9259479c798167af6e1cd, type: 3}
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: 0
+    left: -96
+    top: 42
+    width: 24
+    height: 14
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 0.9
+    delay: 0.4
+    ease: 4
+    alternate: 1
+    moveKeys:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: -4}
+    alphaKeys: []
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 1
+    restRotation: 0
+  cardSkyMask: {fileID: 0}
+  cardSkyBottom: 60
+  isNew: 1
+  normalLabel: "Th\xFA"
+  mapChip:
+    sprite: {fileID: 21300000, guid: 1f82d2a31940a284da63d1360b46ced6, type: 3}
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    textColor: {r: 1, g: 1, b: 1, a: 1}
+  normalChip:
+    sprite: {fileID: 21300000, guid: 8b44c33270459824fbf29f36de25afd5, type: 3}
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    textColor: {r: 0.22745098, g: 0.14117648, b: 0.07058824, a: 1}
+  bonusChip:
+    sprite: {fileID: 21300000, guid: 2ab94122b1bf1e540bec1df937ac61d4, type: 3}
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    textColor: {r: 0.22745098, g: 0.14117648, b: 0.07058824, a: 1}
+  obstacleChip:
+    sprite: {fileID: 21300000, guid: bed23e930331cc840b176490baa2f17f, type: 3}
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    textColor: {r: 1, g: 1, b: 1, a: 1}
+  howToTop: {r: 0.16470589, g: 0.12156863, b: 0.2901961, a: 1}
+  howToBottom: {r: 0.35686275, g: 0.2901961, b: 0.5411765, a: 1}

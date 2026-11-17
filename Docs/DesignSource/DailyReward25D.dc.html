@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Điểm danh tháng 2.5D – Đập Thú</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#3A2412;text-decoration:none}a:hover{color:#000}
+.txt3d{-webkit-text-stroke:5px #3A2412;paint-order:stroke fill;text-shadow:0 4px 0 #3A2412,0 8px 12px rgba(0,0,0,.25)}
+.gbtn{display:flex;align-items:center;justify-content:center;gap:8px;border:3px solid #3A2412;border-radius:18px;background:linear-gradient(180deg,var(--hi) 0%,var(--base) 55%,var(--lo) 100%);box-shadow:0 5px 0 var(--edge),0 10px 14px rgba(0,0,0,.22),inset 0 -3px 0 rgba(0,0,0,.08);position:relative;font-family:inherit;font-weight:800;color:#3A2412;cursor:pointer;transition:transform .08s,box-shadow .08s}
+.gbtn::after{content:"";position:absolute;left:8%;right:8%;top:3px;height:40%;border-radius:12px;background:linear-gradient(rgba(255,255,255,.75),rgba(255,255,255,0));pointer-events:none}
+.gbtn:active{transform:translateY(4px);box-shadow:0 1px 0 var(--edge),0 4px 6px rgba(0,0,0,.25)}
+.cell{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:space-between;height:62px;box-sizing:border-box;padding:4px 2px 4px;border:2.5px solid #3A2412;border-radius:14px;font-family:inherit;color:#3A2412;cursor:default;animation:pop .4s cubic-bezier(.2,.9,.3,1.3) both}
+.cell .dn{font-size:11px;font-weight:800;line-height:1}
+.cell .lb{font-size:10.5px;font-weight:800;line-height:1;white-space:nowrap;letter-spacing:-.1px}
+.cell svg.ic{width:28px;height:28px;display:block}
+.cell.big svg.ic{width:32px;height:32px}
+.cell.big .lb{font-size:9.5px}
+.tick{position:absolute;top:-7px;right:-7px;width:20px;height:20px;border-radius:50%;background:#2E9E44;border:2px solid #3A2412;box-sizing:border-box;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 0 #1F6B2E}
+.tick svg{width:12px;height:12px;display:block}
+.miss{position:absolute;inset:0;border-radius:11px;background:rgba(80,70,60,.45);display:flex;align-items:flex-end;justify-content:center;padding-bottom:3px}
+.bu{border:2px solid #3A2412;border-radius:999px;padding:0 6px;font-family:inherit;font-size:10px;font-weight:800;line-height:15px;color:#FFFFFF;background:linear-gradient(180deg,#8FD3FF,#3FA9F5);cursor:pointer;display:flex;align-items:center;gap:2px}
+.todayTag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);white-space:nowrap;border:2px solid #3A2412;border-radius:999px;padding:0 5px;font-size:9px;font-weight:800;line-height:13px;color:#FFFFFF;background:linear-gradient(180deg,#FF8A80,#E53935)}
+.glow{animation:glow 1.1s ease-in-out infinite alternate}
+.bounce{animation:bounce 1.6s ease-in-out infinite}
+.rays{animation:spin 30s linear infinite}
+.breathe{animation:breathe 1.4s ease-in-out infinite}
+.shine{position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none}
+.shine::before{content:"";position:absolute;top:-20%;bottom:-20%;width:40px;left:-60px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.75),transparent);transform:skewX(-20deg);animation:sweep 2.8s ease-in-out infinite}
+.fill{height:100%;border-radius:5px;background:linear-gradient(180deg,#FFE68A,#FFC93C 55%,#F0A400);box-shadow:inset 0 2px 0 rgba(255,255,255,.55);transition:width .4s cubic-bezier(.2,.9,.3,1.2)}
+@keyframes pop{from{transform:scale(.6);opacity:0}to{transform:none;opacity:1}}
+@keyframes glow{from{box-shadow:0 3px 0 #B87800,0 0 0 0 rgba(255,225,74,0)}to{box-shadow:0 3px 0 #B87800,0 0 14px 4px rgba(255,225,74,.95)}}
+@keyframes bounce{0%,100%{transform:translateY(0) rotate(0)}30%{transform:translateY(-5px) rotate(-6deg)}60%{transform:translateY(0) rotate(5deg)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.035)}}
+@keyframes sweep{0%,55%{left:-60px}85%,100%{left:110%}}
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;animation-iteration-count:1 !important}}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: radial-gradient(ellipse at 50% 25%, #FFD7A8 0%, #FF9E7A 50%, #E0605A 100%); font-family: 'Baloo 2', system-ui, sans-serif; color: #3A2412">
+  <svg width="0" height="0" style="position: absolute" aria-hidden="true"><defs><symbol id="icCoin" viewBox="0 0 24 24"><defs><symbol id="icCoin_N_iCoin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="url(#icCoin_N_nCoin)" stroke="#3A2412" stroke-width="2"/><circle cx="12" cy="12" r="5.5" fill="none" stroke="#C07A00" stroke-width="2"/><ellipse cx="9" cy="8" rx="3" ry="1.6" fill="#FFFFFF" opacity=".6"/></symbol><radialGradient id="icCoin_N_nCoin" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFF3A0"/><stop offset=".55" stop-color="#FFC93C"/><stop offset="1" stop-color="#D08A00"/></radialGradient></defs><use href="#icCoin_N_iCoin"/></symbol><symbol id="icTime" viewBox="0 0 100 100"><defs><radialGradient id="icTime_H_hClock" cx=".38" cy=".3" r=".8"><stop offset="0" stop-color="#D8F1FF"/><stop offset=".55" stop-color="#4FB0EE"/><stop offset="1" stop-color="#1F7FC4"/></radialGradient></defs><rect x="42" y="8" width="16" height="10" rx="3" fill="url(#icTime_H_hClock)" stroke="#3A2412" stroke-width="2.5"/><circle cx="48" cy="56" r="34" fill="url(#icTime_H_hClock)" stroke="#3A2412" stroke-width="2.5"/><circle cx="48" cy="56" r="25" fill="#FFFFFF" stroke="#3A2412" stroke-width="2"/><path d="M48 40 V56 L60 62" stroke="#3A2412" stroke-width="4" fill="none" stroke-linecap="round"/><circle cx="76" cy="26" r="17" fill="#5BD06A" stroke="#3A2412" stroke-width="2.5"/><text x="76" y="33" text-anchor="middle" font-family="'Baloo 2', sans-serif" font-weight="800" font-size="19" fill="#FFFFFF" stroke="#3A2412" stroke-width="3" paint-order="stroke">+5</text></symbol><symbol id="icX2" viewBox="0 0 100 100"><defs><radialGradient id="icX2_H_hStar" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#FFE0EA"/><stop offset=".55" stop-color="#FF7FA8"/><stop offset="1" stop-color="#C93A6E"/></radialGradient></defs><path d="M50 6 L62 36 L94 38 L69 58 L78 90 L50 72 L22 90 L31 58 L6 38 L38 36 Z" fill="url(#icX2_H_hStar)" stroke="#3A2412" stroke-width="3" stroke-linejoin="round"/><text x="50" y="64" text-anchor="middle" font-family="'Baloo 2', sans-serif" font-weight="800" font-size="28" fill="#FFFFFF" stroke="#3A2412" stroke-width="4" paint-order="stroke">x2</text></symbol><symbol id="icShield" viewBox="0 0 100 100"><defs><linearGradient id="icShield_H_hShield" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D8F1FF"/><stop offset=".55" stop-color="#7CC8FF"/><stop offset="1" stop-color="#2A7FBF"/></linearGradient></defs><path d="M50 6 L86 18 V46 Q86 76 50 94 Q14 76 14 46 V18 Z" fill="url(#icShield_H_hShield)" stroke="#3A2412" stroke-width="3" stroke-linejoin="round"/><path d="M50 16 L76 25 V46 Q76 68 50 82" fill="none" stroke="#FFFFFF" stroke-width="3" opacity=".55"/><circle cx="48" cy="56" r="15" fill="#3A3A46" stroke="#3A2412" stroke-width="2"/><path d="M56 44 Q60 36 68 37" stroke="#3A2412" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M30 38 L68 74" stroke="#E53935" stroke-width="6" stroke-linecap="round"/></symbol><symbol id="icFreeze" viewBox="0 0 100 100"><defs></defs><g fill="none" stroke="#3A2412" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"><path transform="rotate(0 50 50)" d="M50 50 V9 M50 22 L39 13 M50 22 L61 13 M50 35 L41 29 M50 35 L59 29"/><path transform="rotate(60 50 50)" d="M50 50 V9 M50 22 L39 13 M50 22 L61 13 M50 35 L41 29 M50 35 L59 29"/><path transform="rotate(120 50 50)" d="M50 50 V9 M50 22 L39 13 M50 22 L61 13 M50 35 L41 29 M50 35 L59 29"/><path transform="rotate(180 50 50)" d="M50 50 V9 M50 22 L39 13 M50 22 L61 13 M50 35 L41 29 M50 35 L59 29"/><path transform="rotate(240 50 50)" d="M50 50 V9 M50 22 L39 13 M50 22 L61 13 M50 35 L41 29 M50 35 L59 29"/><path transform="rotate(300 50 50)" d="M50 50 V9 M50 22 L39 13 M50 22 L61 13 M50 35 L41 29 M50 35 L59 29"/></g><g fill="none" stroke="#8FD8FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path transform="rotate(0 50 50)" d="M50 50 V9 M50 22 L39 13 M50 22 L61 13 M50 35 L41 29 M50 35 L59 29"/><path transform="rotate(60 50 50)" d="M50 50 V9 M50 22 L39 13 M50 22 L61 13 M50 35 L41 29 M50 35 L59 29"/><path transform="rotate(120 50 50)" d="M50 50 V9 M50 22 L39 13 M50 22 L61 13 M50 35 L41 29 M50 35 L59 29"/><path transform="rotate(180 50 50)" d="M50 50 V9 M50 22 L39 13 M50 22 L61 13 M50 35 L41 29 M50 35 L59 29"/><path transform="rotate(240 50 50)" d="M50 50 V9 M50 22 L39 13 M50 22 L61 13 M50 35 L41 29 M50 35 L59 29"/><path transform="rotate(300 50 50)" d="M50 50 V9 M50 22 L39 13 M50 22 L61 13 M50 35 L41 29 M50 35 L59 29"/></g><polygon points="50,40 58.7,45 58.7,55 50,60 41.3,55 41.3,45" fill="#E6F6FF" stroke="#3A2412" stroke-width="2.5" stroke-linejoin="round"/><circle cx="47" cy="47" r="2.5" fill="#FFFFFF"/></symbol><symbol id="icFire" viewBox="0 0 100 100"><defs><linearGradient id="icFire_H_hFire" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE14A"/><stop offset=".5" stop-color="#FF9F1C"/><stop offset="1" stop-color="#E53935"/></linearGradient></defs><path d="M50 6 Q70 32 66 50 Q78 44 76 30 Q92 52 84 74 Q76 94 50 94 Q24 94 18 74 Q12 54 30 40 Q30 56 40 58 Q30 30 50 6 Z" fill="url(#icFire_H_hFire)" stroke="#3A2412" stroke-width="3" stroke-linejoin="round"/><text x="50" y="78" text-anchor="middle" font-family="'Baloo 2', sans-serif" font-weight="800" font-size="26" fill="#FFFFFF" stroke="#3A2412" stroke-width="4" paint-order="stroke">x3</text></symbol><symbol id="icChest" viewBox="0 0 100 100"><defs><symbol id="icChest_N_iChest" viewBox="0 0 100 100"><path d="M12 42 Q12 18 50 18 Q88 18 88 42 Z" fill="url(#icChest_N_nChestWood)" stroke="#3A2412" stroke-width="5" stroke-linejoin="round"/><rect x="12" y="42" width="76" height="44" rx="6" fill="url(#icChest_N_nChestWood)" stroke="#3A2412" stroke-width="5"/><path d="M12 42 H88 M30 20 V86 M70 20 V86" stroke="#3A2412" stroke-width="4"/><path d="M30 20 V86 M70 20 V86" stroke="#FFC93C" stroke-width="2.5"/><rect x="42" y="36" width="16" height="18" rx="4" fill="url(#icChest_N_nCoin)" stroke="#3A2412" stroke-width="4"/></symbol><radialGradient id="icChest_N_nCoin" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFF3A0"/><stop offset=".55" stop-color="#FFC93C"/><stop offset="1" stop-color="#D08A00"/></radialGradient><linearGradient id="icChest_N_nChestWood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D9A066"/><stop offset="1" stop-color="#8A5628"/></linearGradient></defs><use href="#icChest_N_iChest"/></symbol><symbol id="icDino" viewBox="0 0 100 100"><defs><radialGradient id="icCCapy" cx=".38" cy=".3" r=".8"><stop offset="0" stop-color="#E2B98A"/><stop offset=".55" stop-color="#B98754"/><stop offset="1" stop-color="#7E5530"/></radialGradient></defs><circle cx="27" cy="34" r="7" fill="url(#icCCapy)" stroke="#3A2412" stroke-width="2.4"/><circle cx="73" cy="34" r="7" fill="url(#icCCapy)" stroke="#3A2412" stroke-width="2.4"/><circle cx="27" cy="34" r="3" fill="#7E5530"/><circle cx="73" cy="34" r="3" fill="#7E5530"/><path d="M18 60 Q16 34 50 32 Q84 34 82 60 Q84 88 50 88 Q16 88 18 60 Z" fill="url(#icCCapy)" stroke="#3A2412" stroke-width="2.5"/><ellipse cx="38" cy="42" rx="10" ry="4.5" fill="#FFFFFF" opacity=".4" transform="rotate(-20 38 42)"/><path d="M28 66 Q28 56 50 56 Q72 56 72 66 L72 74 Q72 86 50 86 Q28 86 28 74 Z" fill="#A87A4A" opacity=".75"/><path d="M41 64 Q43 61 45 64 M55 64 Q57 61 59 64" stroke="#3A2412" stroke-width="2.4" fill="none" stroke-linecap="round"/><path d="M50 70 V77 M43 78 H57" stroke="#3A2412" stroke-width="2" fill="none" stroke-linecap="round"/><g class="eyes"><path d="M31 50 H43 M57 50 H69" stroke="#1E120A" stroke-width="3" fill="none" stroke-linecap="round"/></g></symbol><symbol id="icVip" viewBox="0 0 100 100"><defs><linearGradient id="icBBatWood" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#C99A5C"/><stop offset=".45" stop-color="#F6DDAE"/><stop offset="1" stop-color="#B07F45"/></linearGradient></defs><g transform="rotate(-38 50 52)"><path d="M44 92 L42.5 54 Q36 30 36 16 Q36 4 50 4 Q64 4 64 16 Q64 30 57.5 54 L56 92 Z" fill="url(#icBBatWood)" stroke="#3A2412" stroke-width="3" stroke-linejoin="round"/><path d="M43 12 Q42 26 45 42" stroke="#FFFFFF" stroke-width="3" opacity=".55" fill="none" stroke-linecap="round"/><path d="M42.8 66 L57.2 66 M43.1 72 L56.9 72 M43.4 78 L56.6 78 M43.7 84 L56.3 84" stroke="#C0392B" stroke-width="4"/><path d="M42.8 66 L57.2 66 M43.1 72 L56.9 72 M43.4 78 L56.6 78 M43.7 84 L56.3 84" stroke="#3A2412" stroke-width="1" opacity=".35"/><path d="M44 92 L42.5 54 M56 92 L57.5 54" stroke="#3A2412" stroke-width="3" fill="none"/><ellipse cx="50" cy="94" rx="10" ry="5" fill="#B07F45" stroke="#3A2412" stroke-width="3"/></g></symbol></defs></svg>
+  <svg class="rays" aria-hidden="true" viewBox="0 0 400 400" width="760" height="760" style="position: absolute; left: -185px; top: -200px; opacity: .2"><g fill="#FFFFFF"><path d="M200 200 L190 0 L210 0 Z"/><path d="M200 200 L290 20 L305 30 Z"/><path d="M200 200 L370 95 L378 112 Z"/><path d="M200 200 L400 190 L400 210 Z"/><path d="M200 200 L378 288 L370 305 Z"/><path d="M200 200 L305 370 L290 380 Z"/><path d="M200 200 L210 400 L190 400 Z"/><path d="M200 200 L110 380 L95 370 Z"/><path d="M200 200 L30 305 L22 288 Z"/><path d="M200 200 L0 210 L0 190 Z"/><path d="M200 200 L22 112 L30 95 Z"/><path d="M200 200 L95 30 L110 20 Z"/></g></svg>
+  <div style="position: relative; height: 100%; box-sizing: border-box; padding: 52px 16px 20px; display: flex; flex-direction: column; gap: 10px">
+    <div style="display: flex; align-items: center; gap: 12px">
+      <a href="Main25D.dc.html" aria-label="Quay lại trang chủ" class="gbtn" style="--hi: #FFFFFF; --base: #F1ECE2; --lo: #D9D0BF; --edge: #A8977A; width: 48px; height: 48px; padding: 0; border-radius: 14px">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#3A2412" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="position: relative"><path d="M15 5l-7 7 7 7"/></svg>
+      </a>
+      <h1 class="txt3d" style="margin: 0; flex: 1; min-width: 0; font-size: 30px; line-height: 1; color: #FFFFFF; white-space: nowrap">ĐIỂM DANH</h1>
+    </div>
+
+    <!-- grand prize -->
+    <div style="position: relative; display: flex; align-items: center; gap: 10px; padding: 10px 12px 12px; border: 3px solid #3A2412; border-radius: 22px; background: linear-gradient(180deg, #FFF3B0, #FFC93C 70%, #F0A400); box-shadow: 0 5px 0 #B87800, 0 12px 18px rgba(0,0,0,.22)">
+      <span class="shine"></span>
+      <div class="bounce" style="flex: none; width: 76px; height: 76px; border-radius: 18px; border: 3px solid #3A2412; background: radial-gradient(circle at 40% 35%, #F3E8FF, #B07CF0 70%, #7A44C8); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 0 #5A2AA0">
+        <svg viewBox="0 0 100 100" width="62" height="62" aria-hidden="true"><use href="#icVip"/></svg>
+      </div>
+      <div style="position: relative; flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+        <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap"><span style="font-size: 12px; font-weight: 800; color: #6B4A00">Quà ngày 30</span></div>
+        <div style="font-size: 20px; font-weight: 800; line-height: 1">Gậy Bóng Chày</div>
+        <div style="font-size: 11.5px; font-weight: 700; color: #5E3E00; line-height: 1.15">Dùng miễn phí 7 ngày · +20% xu mỗi ván</div>
+        <div style="position: relative; height: 26px; margin: 2px 6px 0 2px">
+          <div style="position: absolute; left: 0; right: 0; top: 7px; height: 12px; border-radius: 6px; border: 2px solid #3A2412; background: linear-gradient(180deg, #CFC5B2, #E9E1D0); overflow: hidden; box-sizing: border-box"><div class="fill" style="{{barStyle}}"></div></div>
+          <div style="position: absolute; left: calc(23.33%); top: 50%; transform: translate(-50%, -50%); width: 26px; height: 26px; border-radius: 50%; border: 2.5px solid #3A2412; background: {{m7.bg}}; display: flex; align-items: center; justify-content: center; box-sizing: border-box"><svg viewBox="0 0 100 100" width="18" height="18" aria-hidden="true"><use href="#icChest"/></svg></div><div style="position: absolute; left: calc(46.67%); top: 50%; transform: translate(-50%, -50%); width: 26px; height: 26px; border-radius: 50%; border: 2.5px solid #3A2412; background: {{m14.bg}}; display: flex; align-items: center; justify-content: center; box-sizing: border-box"><svg viewBox="0 0 100 100" width="18" height="18" aria-hidden="true"><use href="#icDino"/></svg></div><div style="position: absolute; left: calc(70.00%); top: 50%; transform: translate(-50%, -50%); width: 26px; height: 26px; border-radius: 50%; border: 2.5px solid #3A2412; background: {{m21.bg}}; display: flex; align-items: center; justify-content: center; box-sizing: border-box"><svg viewBox="0 0 100 100" width="18" height="18" aria-hidden="true"><use href="#icChest"/></svg></div><div style="position: absolute; left: calc(100% - 6px); top: 50%; transform: translate(-50%, -50%); width: 26px; height: 26px; border-radius: 50%; border: 2.5px solid #3A2412; background: {{m30.bg}}; display: flex; align-items: center; justify-content: center; box-sizing: border-box"><svg viewBox="0 0 100 100" width="18" height="18" aria-hidden="true"><use href="#icVip"/></svg></div>
+        </div>
+        <div style="font-size: 12px; font-weight: 800">Đã điểm danh {{count}}/30 ngày</div>
+      </div>
+    </div>
+
+    <!-- calendar -->
+    <div style="background: linear-gradient(180deg, #FFFBEF, #F7E9C6); border: 3px solid #3A2412; border-radius: 24px; box-shadow: 0 6px 0 #B9A98C, 0 18px 26px rgba(0,0,0,.25); padding: 14px 10px 10px; display: flex; flex-direction: column; gap: 8px">
+      <div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px 6px">
+        <sc-for list="{{days}}" as="c" hint-placeholder-count="30">
+          <div class="{{c.cls}}" style="{{c.style}}" aria-label="{{c.aria}}">
+            <span class="dn">{{c.n}}</span>
+            <svg class="ic" viewBox="0 0 100 100" aria-hidden="true"><use href="{{c.icon}}"/></svg>
+            <span class="lb">{{c.label}}</span>
+            <sc-if value="{{c.claimed}}" hint-placeholder-val="{{ false }}"><span class="tick" aria-label="Đã nhận"><svg viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span></sc-if>
+            <sc-if value="{{c.missed}}" hint-placeholder-val="{{ false }}"><span class="miss"><button class="bu" onClick="{{c.makeUp}}" aria-label="Xem quảng cáo để điểm danh bù"><svg viewBox="0 0 24 24" width="11" height="11" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="3" fill="#FFFFFF" stroke="#3A2412" stroke-width="2"/><path d="M10 9.5v5l4.5-2.5z" fill="#3A2412"/></svg>Bù</button></span></sc-if>
+            <sc-if value="{{c.today}}" hint-placeholder-val="{{ false }}"><span class="todayTag">HÔM NAY</span></sc-if>
+          </div>
+        </sc-for>
+      </div>
+      <p style="margin: 0; text-align: center; font-size: 11.5px; font-weight: 700; color: #5E4E3A; line-height: 1.3">Lỡ ngày? Xem quảng cáo để điểm danh bù · còn {{makeUpLeft}}/3</p>
+    </div>
+
+    <div style="flex: 1"></div>
+    <sc-if value="{{canClaim}}" hint-placeholder-val="{{ true }}">
+      <button onClick="{{claim}}" class="gbtn breathe" style="--hi: #FFE68A; --base: #FFC93C; --lo: #F0A400; --edge: #B87800; height: 60px; font-size: 26px; border-radius: 22px"><span class="txt3d" style="position: relative; color: #FFFFFF; -webkit-text-stroke-width: 4px; text-shadow: 0 3px 0 #3A2412">NHẬN</span></button>
+      <button onClick="{{claimDouble}}" class="gbtn" style="--hi: #D8F1FF; --base: #8FD3FF; --lo: #4FB0EE; --edge: #2A7FBF; height: 48px; font-size: 16px; border-radius: 18px">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" style="position: relative"><rect x="2.5" y="5" width="19" height="14" rx="3" fill="#FFFFFF" stroke="#3A2412" stroke-width="1.8"/><path d="M10 9.5v5l4.5-2.5z" fill="#3A2412"/></svg>
+        <span style="position: relative">Xem quảng cáo nhận x2</span>
+      </button>
+    </sc-if>
+    <sc-if value="{{claimedToday}}" hint-placeholder-val="{{ false }}">
+      <div role="status" style="display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px; border: 3px dashed #FFFFFF; border-radius: 20px; background: rgba(255,255,255,.18); color: #FFFFFF; text-shadow: 0 2px 0 rgba(0,0,0,.35)">
+        <span style="font-size: 19px; font-weight: 800">Đã nhận {{gotText}}!</span>
+        <span style="font-size: 14px; font-weight: 800">Điểm danh tiếp sau {{nextText}}</span>
+      </div>
+      <a href="Main25D.dc.html" class="gbtn" style="--hi: #FFE68A; --base: #FFC93C; --lo: #F0A400; --edge: #B87800; height: 52px; font-size: 19px; border-radius: 20px"><span style="position: relative">Về trang chủ</span></a>
+    </sc-if>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(p) {
+    super(p);
+    // Ví dụ: hôm nay là ngày 12 của tháng, đã điểm danh 1–11 trừ ngày 9 (bỏ lỡ)
+    const claimed = {}; for (let d = 1; d <= 11; d++) if (d !== 9) claimed[d] = true;
+    this.state = { today: 12, claimed, makeUpLeft: 3, got: '', left: 14 * 3600 + 25 * 60 };
+    this.R = {"1": ["coin", "#icCoin", "100 xu", "100 xu"], "2": ["time", "#icTime", "×2", "+5 Giây x2"], "3": ["coin", "#icCoin", "150 xu", "150 xu"], "4": ["x2", "#icX2", "×1", "Nhân Đôi x1"], "5": ["coin", "#icCoin", "200 xu", "200 xu"], "6": ["shield", "#icShield", "×2", "Khiên x2"], "7": ["chest", "#icChest", "Bí ẩn", "Rương bí ẩn"], "8": ["coin", "#icCoin", "150 xu", "150 xu"], "9": ["freeze", "#icFreeze", "×2", "Đóng Băng x2"], "10": ["coin", "#icCoin", "200 xu", "200 xu"], "11": ["fire", "#icFire", "×1", "Bùa Combo x1"], "12": ["coin", "#icCoin", "250 xu", "250 xu"], "13": ["time", "#icTime", "×3", "+5 Giây x3"], "14": ["dino", "#icDino", "Capybara", "Capybara"], "15": ["coin", "#icCoin", "200 xu", "200 xu"], "16": ["x2", "#icX2", "×2", "Nhân Đôi x2"], "17": ["coin", "#icCoin", "250 xu", "250 xu"], "18": ["shield", "#icShield", "×3", "Khiên x3"], "19": ["coin", "#icCoin", "300 xu", "300 xu"], "20": ["freeze", "#icFreeze", "×3", "Đóng Băng x3"], "21": ["chest", "#icChest", "Bí ẩn", "Rương bí ẩn"], "22": ["coin", "#icCoin", "250 xu", "250 xu"], "23": ["fire", "#icFire", "×2", "Bùa Combo x2"], "24": ["coin", "#icCoin", "300 xu", "300 xu"], "25": ["time", "#icTime", "×5", "+5 Giây x5"], "26": ["coin", "#icCoin", "400 xu", "400 xu"], "27": ["x2", "#icX2", "×3", "Nhân Đôi x3"], "28": ["coin", "#icCoin", "500 xu", "500 xu"], "29": ["chest", "#icChest", "Bí ẩn", "Rương bí ẩn"], "30": ["vip", "#icVip", "7 ngày", "Gậy Bóng Chày (dùng miễn phí 7 ngày)"]};
+  }
+  componentDidMount() { this.iv = setInterval(() => this.setState({ left: Math.max(0, this.state.left - 1) }), 1000); }
+  componentWillUnmount() { clearInterval(this.iv); }
+  renderVals() {
+    const s = this.state, R = this.R, pad = (n) => (n < 10 ? '0' : '') + n;
+    const MILE = { 7: 1, 14: 1, 21: 1, 30: 2 };
+    const count = Object.keys(s.claimed).length;
+    const days = [];
+    for (let d = 1; d <= 30; d++) {
+      const [kind, icon, label, full] = R[d];
+      const claimed = !!s.claimed[d], today = d === s.today && !claimed, missed = d < s.today && !claimed, future = d > s.today;
+      const m = MILE[d];
+      const purple = d === 14;
+      let bg = m === 2 ? 'linear-gradient(180deg, #FFF3B0, #FFC93C)' : purple ? 'linear-gradient(180deg, #F3E8FF, #D8BEFA)' : 'linear-gradient(180deg, #FFFFFF, #F1EADC)';
+      let edge = m === 2 ? '#B87800' : purple ? '#8A62C4' : '#B9A98C';
+      if (today) { bg = 'linear-gradient(180deg, #FFF6C8, #FFD84A)'; edge = '#B87800'; }
+      if (claimed && m !== 2 && !purple) { bg = 'linear-gradient(180deg, #F1FBEA, #CFEFC4)'; edge = '#8FBF7E'; }
+      days.push({
+        n: d, icon, label, claimed, today, missed,
+        cls: 'cell' + (m ? ' big' : '') + (today ? ' glow' : ''),
+        aria: 'Ngày ' + d + ': ' + full + (claimed ? ', đã nhận' : missed ? ', bỏ lỡ' : today ? ', hôm nay' : ''),
+        style: 'background: ' + bg + '; box-shadow: 0 3px 0 ' + edge + (future ? '; opacity: .9' : '') + '; animation-delay: ' + ((d - 1) * 0.015).toFixed(3) + 's',
+        makeUp: () => { if (s.makeUpLeft <= 0) return; this.setState({ claimed: Object.assign({}, s.claimed, { [d]: true }), makeUpLeft: s.makeUpLeft - 1 }); }
+      });
+    }
+    const mile = (d) => ({ bg: s.claimed[d] ? 'linear-gradient(180deg, #A6F09A, #4CC25E)' : d === 30 ? 'linear-gradient(180deg, #E3CCFF, #B07CF0)' : 'linear-gradient(180deg, #FFFFFF, #F1EADC)' });
+    const claimedToday = !!s.claimed[s.today];
+    const take = (txt) => this.setState({ claimed: Object.assign({}, s.claimed, { [s.today]: true }), got: txt });
+    const h = Math.floor(s.left / 3600), mi = Math.floor((s.left % 3600) / 60), se = s.left % 60;
+    return {
+      days, count, makeUpLeft: s.makeUpLeft,
+      barStyle: 'width: ' + Math.round(count / 30 * 100) + '%',
+      m7: mile(7), m14: mile(14), m21: mile(21), m30: mile(30),
+      canClaim: !claimedToday, claimedToday,
+      gotText: s.got || R[s.today][3],
+      nextText: pad(h) + ':' + pad(mi) + ':' + pad(se),
+      claim: () => take(R[s.today][3]),
+      claimDouble: () => take(R[s.today][3] + ' (x2)')
+    };
+  }
+}
+</script>
+</body>
+</html>

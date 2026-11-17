@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 523a9a6d1258693419c554830cf6b7a7, type: 3}
+  m_Name: Pet_Desert_desert_snake
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.PetData
+  id: base_desert_snake
+  displayName: "R\u1EAFn"
+  cardName: 
+  description: "U\u1ED1n l\u01B0\u1EE3n ch\u1EEF S tr\u1ED3i l\xEAn kh\u1ECFi c\xE1t."
+  icon: {fileID: 21300000, guid: a568e1da5da2db540b06146a95b30921, type: 3}
+  price: 0
+  cashPrice: 
+  premium: 0
+  freeHint: 
+  mapId: desert
+  isBase: 1
+  points: 14
+  critter: {fileID: 11400000, guid: 2d1ec92e839e8eb4782fec20d9a24062, type: 2}

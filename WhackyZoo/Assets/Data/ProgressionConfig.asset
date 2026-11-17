@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 598b946bf9b8ae14c9bcb6010512204d, type: 3}
+  m_Name: ProgressionConfig
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.ProgressionConfig
+  missions:
+  - {fileID: 11400000, guid: 8d8d5d847ef3c7c42afb149e1f5b33c6, type: 2}
+  - {fileID: 11400000, guid: 0a1141f51e63cd249964e8885562ea2e, type: 2}
+  - {fileID: 11400000, guid: cb6cf9aef415e6244956677aa88a9487, type: 2}
+  - {fileID: 11400000, guid: a0f966c3364d57b40b3a0b0a7596f7c1, type: 2}
+  - {fileID: 11400000, guid: 5d83fc88ad6f4cc4cbba334b57b955e0, type: 2}
+  - {fileID: 11400000, guid: 28c9b0af111177341b905f8f49c9d9f8, type: 2}
+  - {fileID: 11400000, guid: 728ca5da790b9e64f9b1e19e0a3555cb, type: 2}
+  - {fileID: 11400000, guid: 1b80140b5e124784fb4632d323c87390, type: 2}
+  - {fileID: 11400000, guid: c99eefed4ec79fa45a3de72f1d30adf7, type: 2}
+  - {fileID: 11400000, guid: 5e65cab7d63c9324da9301167c1c1eb9, type: 2}
+  - {fileID: 11400000, guid: 924d99b515adc64468a423043b5a7ae4, type: 2}
+  - {fileID: 11400000, guid: 3d89ce97e4bac214aa4e6a7656dad3be, type: 2}
+  - {fileID: 11400000, guid: 0a7604c26c3c1e04a8ec696b1a21c31d, type: 2}
+  maxMissionPoints: 100
+  chestPoints: 1e0000003c00000064000000i
+  chestRewards: c8000000f4010000b0040000i
+  xpDivisor: 10
+  xpPerLevel: 100
+  levelUpCoins: 50

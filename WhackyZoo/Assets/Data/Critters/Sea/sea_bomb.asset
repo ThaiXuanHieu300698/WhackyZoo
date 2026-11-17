@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18829b0c93e09764899920a603c39d06, type: 3}
+  m_Name: sea_bomb
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.CritterData
+  id: sea_bomb
+  displayName: Bom
+  shortName: 
+  hint: "\u0110\u1EEBng \u0111\u1EADp! M\u1EA5t combo"
+  sprite: {fileID: 21300000, guid: b6a3ced5734e35446a421d071a9c9e63, type: 3}
+  kind: 2
+  points: -20
+  animSprite: {fileID: 21300000, guid: 94bac1b7ae2e30048a8ccf7835b06994, type: 3}
+  blinkHalf: {fileID: 21300000, guid: ec50db90b9336fa47b317406a7bd68ca, type: 3}
+  blinkClosed: {fileID: 21300000, guid: 68506a937407c1f49b0ae0b74e076cc7, type: 3}
+  spark: {fileID: 21300000, guid: 2fc0c4d93b8b15b4db53826fcfbc3333, type: 3}
+  sparkCenter: {x: 0.82, y: 0.85}
+  sparkPivot: {x: 0.5, y: 0.5}
+  sparkSize: {x: 0.24666667, y: 0.24666667}

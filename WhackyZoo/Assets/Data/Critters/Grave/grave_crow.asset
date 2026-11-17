@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18829b0c93e09764899920a603c39d06, type: 3}
+  m_Name: grave_crow
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.CritterData
+  id: grave_crow
+  displayName: "Qu\u1EA1"
+  shortName: 
+  hint: 
+  sprite: {fileID: 21300000, guid: 96c5899933c2c0c40914a8cf9be12a99, type: 3}
+  kind: 0
+  points: 18
+  animSprite: {fileID: 0}
+  blinkHalf: {fileID: 21300000, guid: ea7182c9f30bbc24a97b9ff58baed2cd, type: 3}
+  blinkClosed: {fileID: 21300000, guid: 52cf412ee2e30aa47bb89632a5fefed6, type: 3}
+  spark: {fileID: 0}
+  sparkCenter: {x: 0, y: 0}
+  sparkPivot: {x: 0, y: 0}
+  sparkSize: {x: 0, y: 0}

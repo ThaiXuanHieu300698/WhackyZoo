@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a372eda370edf94697ab428b3555d25, type: 3}
+  m_Name: SoundBank
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.SoundBank
+  homeMusic: {fileID: 8300000, guid: ca30fb6fec6b90b4e9bce480dd50800d, type: 3}
+  sounds:
+  - id: 0
+    clips:
+    - {fileID: 8300000, guid: eeb70133fb0066b4fa2ae7631b622e57, type: 3}
+    volume: 0.9
+    pitchMin: 0.92
+    pitchMax: 1.08
+    minInterval: 0.02
+  - id: 1
+    clips:
+    - {fileID: 8300000, guid: cbfe70fb51ac8414abe89ade5b48568f, type: 3}
+    volume: 0.8
+    pitchMin: 1
+    pitchMax: 1
+    minInterval: 0.05
+  - id: 2
+    clips:
+    - {fileID: 8300000, guid: 4b120558b833ab640bacd7ebb85c489c, type: 3}
+    volume: 0.9
+    pitchMin: 0.95
+    pitchMax: 1.05
+    minInterval: 0.05
+  - id: 3
+    clips:
+    - {fileID: 8300000, guid: 1b60132b623313b479d28dea7b0596b4, type: 3}
+    volume: 0.8
+    pitchMin: 1
+    pitchMax: 1
+    minInterval: 0.05
+  - id: 4
+    clips:
+    - {fileID: 8300000, guid: 14d6de6d912590743ab7e3d6ddf7243a, type: 3}
+    volume: 0.35
+    pitchMin: 0.9
+    pitchMax: 1.15
+    minInterval: 0.04
+  - id: 5
+    clips:
+    - {fileID: 8300000, guid: 1bcfd5109583f474d85182ebb12729bf, type: 3}
+    volume: 0.45
+    pitchMin: 0.9
+    pitchMax: 1.1
+    minInterval: 0.02
+  - id: 6
+    clips:
+    - {fileID: 8300000, guid: 584a8458a4343624db77ab702a157cb3, type: 3}
+    volume: 0.7
+    pitchMin: 1
+    pitchMax: 1
+    minInterval: 0.1
+  - id: 7
+    clips:
+    - {fileID: 8300000, guid: 129ae0e0ad36c5a43afe11bdce41c805, type: 3}
+    volume: 0.6
+    pitchMin: 1
+    pitchMax: 1
+    minInterval: 0.3
+  - id: 8
+    clips:
+    - {fileID: 8300000, guid: cca36610f86f84447b0a6520f591d3de, type: 3}
+    volume: 0.85
+    pitchMin: 1
+    pitchMax: 1
+    minInterval: 0.5
+  - id: 9
+    clips:
+    - {fileID: 8300000, guid: a0d551b0bb31c334b813d07e86459efe, type: 3}
+    volume: 0.7
+    pitchMin: 1
+    pitchMax: 1
+    minInterval: 0.05
+  - id: 10
+    clips:
+    - {fileID: 8300000, guid: 80376a888ddd3d743b93ba7f844f93d4, type: 3}
+    volume: 0.5
+    pitchMin: 0.95
+    pitchMax: 1.05
+    minInterval: 0.03
+  - id: 11
+    clips:
+    - {fileID: 8300000, guid: 26e9137ff6e243346861845c8c65dd75, type: 3}
+    volume: 0.8
+    pitchMin: 1
+    pitchMax: 1
+    minInterval: 0.1
+  - id: 12
+    clips:
+    - {fileID: 8300000, guid: dc56b54beba85d244995bfe5b39849ae, type: 3}
+    volume: 0.8
+    pitchMin: 1
+    pitchMax: 1
+    minInterval: 0.1
+  - id: 13
+    clips:
+    - {fileID: 8300000, guid: 6bd03d82dc5f99d4c9cc26b7bb1332cb, type: 3}
+    volume: 0.75
+    pitchMin: 1
+    pitchMax: 1
+    minInterval: 0.1
+  - id: 14
+    clips:
+    - {fileID: 8300000, guid: bbe9fed790633a24385687244832e495, type: 3}
+    volume: 0.75
+    pitchMin: 1
+    pitchMax: 1
+    minInterval: 0.1
+  - id: 15
+    clips:
+    - {fileID: 8300000, guid: 1938eb2fdf1e8f441ba55eba80cdd06d, type: 3}
+    volume: 0.8
+    pitchMin: 0.95
+    pitchMax: 1.05
+    minInterval: 0.1
+  - id: 16
+    clips:
+    - {fileID: 8300000, guid: b164789c3435bf74bae4251ce3bb8f87, type: 3}
+    volume: 0.85
+    pitchMin: 1
+    pitchMax: 1
+    minInterval: 0.5
+  musicFade: 0.8
+  musicGain: 0.6
+  comboStep: 5
+  generatorVersion: 20

@@ -1,0 +1,502 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a82f8d59a3886a43bd86bba2d99e635, type: 3}
+  m_Name: DailyRewardMonth
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.DailyRewardMonth
+  days:
+  - gift:
+      kind: 0
+      id: 
+      amount: 100
+      booster: {fileID: 0}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: 100 xu
+    fullName: 100 xu
+    icon: {fileID: 21300000, guid: cdad04245f8b49e48af638789de4037b, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 1
+      id: time
+      amount: 2
+      booster: {fileID: 11400000, guid: acd55c09c26725a4cb57cc186973c76d, type: 2}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: "\xD72"
+    fullName: "+5 Gi\xE2y x2"
+    icon: {fileID: 21300000, guid: 47165712922176043956299ef8b48728, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 0
+      id: 
+      amount: 150
+      booster: {fileID: 0}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: 150 xu
+    fullName: 150 xu
+    icon: {fileID: 21300000, guid: cdad04245f8b49e48af638789de4037b, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 1
+      id: x2
+      amount: 1
+      booster: {fileID: 11400000, guid: 24e8c791c26d54e418b5f42cdf2093a1, type: 2}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: "\xD71"
+    fullName: "Nh\xE2n \u0110\xF4i x1"
+    icon: {fileID: 21300000, guid: 13bc65d46747e9f4da81b0ebff761dd7, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 0
+      id: 
+      amount: 200
+      booster: {fileID: 0}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: 200 xu
+    fullName: 200 xu
+    icon: {fileID: 21300000, guid: cdad04245f8b49e48af638789de4037b, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 1
+      id: shield
+      amount: 2
+      booster: {fileID: 11400000, guid: 0bad990bb0f26d64eba444031821027a, type: 2}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: "\xD72"
+    fullName: "Khi\xEAn x2"
+    icon: {fileID: 21300000, guid: f868bd706359a2945b5ffcacd7975923, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 0
+      id: 
+      amount: 0
+      booster: {fileID: 0}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: "B\xED \u1EA9n"
+    fullName: "R\u01B0\u01A1ng b\xED \u1EA9n"
+    icon: {fileID: 21300000, guid: 37c836f7cf9100943a14223e48d612aa, type: 3}
+    milestone: 1
+    mystery: 1
+    chest:
+    - kind: 0
+      id: 
+      amount: 1000
+      booster: {fileID: 0}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    allowDouble: 1
+  - gift:
+      kind: 0
+      id: 
+      amount: 150
+      booster: {fileID: 0}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: 150 xu
+    fullName: 150 xu
+    icon: {fileID: 21300000, guid: cdad04245f8b49e48af638789de4037b, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 1
+      id: freeze
+      amount: 2
+      booster: {fileID: 11400000, guid: 5f998feadbd10b04b823a896e867c699, type: 2}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: "\xD72"
+    fullName: "\u0110\xF3ng B\u0103ng x2"
+    icon: {fileID: 21300000, guid: bbc9f808fccf4ae45929119879fe20ea, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 0
+      id: 
+      amount: 200
+      booster: {fileID: 0}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: 200 xu
+    fullName: 200 xu
+    icon: {fileID: 21300000, guid: cdad04245f8b49e48af638789de4037b, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 1
+      id: fire
+      amount: 1
+      booster: {fileID: 11400000, guid: cefc16f0a6fc89e47a6afd653ee01ac9, type: 2}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: "\xD71"
+    fullName: "B\xF9a Combo x1"
+    icon: {fileID: 21300000, guid: 2d9fbab62302c1d41b4a56eae4a31a7e, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 0
+      id: 
+      amount: 250
+      booster: {fileID: 0}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: 250 xu
+    fullName: 250 xu
+    icon: {fileID: 21300000, guid: cdad04245f8b49e48af638789de4037b, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 1
+      id: time
+      amount: 3
+      booster: {fileID: 11400000, guid: acd55c09c26725a4cb57cc186973c76d, type: 2}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: "\xD73"
+    fullName: "+5 Gi\xE2y x3"
+    icon: {fileID: 21300000, guid: 47165712922176043956299ef8b48728, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 2
+      id: capy
+      amount: 1
+      booster: {fileID: 0}
+      pet: {fileID: 11400000, guid: 5c821237304674043a89f591cc332805, type: 2}
+      tool: {fileID: 0}
+    label: Capybara
+    fullName: Capybara
+    icon: {fileID: 21300000, guid: c268ad130b65e6c419bb7f409f2d4c47, type: 3}
+    milestone: 1
+    mystery: 0
+    chest: []
+    allowDouble: 0
+  - gift:
+      kind: 0
+      id: 
+      amount: 200
+      booster: {fileID: 0}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: 200 xu
+    fullName: 200 xu
+    icon: {fileID: 21300000, guid: cdad04245f8b49e48af638789de4037b, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 1
+      id: x2
+      amount: 2
+      booster: {fileID: 11400000, guid: 24e8c791c26d54e418b5f42cdf2093a1, type: 2}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: "\xD72"
+    fullName: "Nh\xE2n \u0110\xF4i x2"
+    icon: {fileID: 21300000, guid: 13bc65d46747e9f4da81b0ebff761dd7, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 0
+      id: 
+      amount: 250
+      booster: {fileID: 0}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: 250 xu
+    fullName: 250 xu
+    icon: {fileID: 21300000, guid: cdad04245f8b49e48af638789de4037b, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 1
+      id: shield
+      amount: 3
+      booster: {fileID: 11400000, guid: 0bad990bb0f26d64eba444031821027a, type: 2}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: "\xD73"
+    fullName: "Khi\xEAn x3"
+    icon: {fileID: 21300000, guid: f868bd706359a2945b5ffcacd7975923, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 0
+      id: 
+      amount: 300
+      booster: {fileID: 0}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: 300 xu
+    fullName: 300 xu
+    icon: {fileID: 21300000, guid: cdad04245f8b49e48af638789de4037b, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 1
+      id: freeze
+      amount: 3
+      booster: {fileID: 11400000, guid: 5f998feadbd10b04b823a896e867c699, type: 2}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: "\xD73"
+    fullName: "\u0110\xF3ng B\u0103ng x3"
+    icon: {fileID: 21300000, guid: bbc9f808fccf4ae45929119879fe20ea, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 0
+      id: 
+      amount: 0
+      booster: {fileID: 0}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: "B\xED \u1EA9n"
+    fullName: "R\u01B0\u01A1ng b\xED \u1EA9n"
+    icon: {fileID: 21300000, guid: 37c836f7cf9100943a14223e48d612aa, type: 3}
+    milestone: 1
+    mystery: 1
+    chest:
+    - kind: 1
+      id: time
+      amount: 2
+      booster: {fileID: 11400000, guid: acd55c09c26725a4cb57cc186973c76d, type: 2}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    - kind: 1
+      id: x2
+      amount: 2
+      booster: {fileID: 11400000, guid: 24e8c791c26d54e418b5f42cdf2093a1, type: 2}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    - kind: 1
+      id: shield
+      amount: 2
+      booster: {fileID: 11400000, guid: 0bad990bb0f26d64eba444031821027a, type: 2}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    - kind: 1
+      id: freeze
+      amount: 2
+      booster: {fileID: 11400000, guid: 5f998feadbd10b04b823a896e867c699, type: 2}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    - kind: 1
+      id: fire
+      amount: 2
+      booster: {fileID: 11400000, guid: cefc16f0a6fc89e47a6afd653ee01ac9, type: 2}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    allowDouble: 1
+  - gift:
+      kind: 0
+      id: 
+      amount: 250
+      booster: {fileID: 0}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: 250 xu
+    fullName: 250 xu
+    icon: {fileID: 21300000, guid: cdad04245f8b49e48af638789de4037b, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 1
+      id: fire
+      amount: 2
+      booster: {fileID: 11400000, guid: cefc16f0a6fc89e47a6afd653ee01ac9, type: 2}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: "\xD72"
+    fullName: "B\xF9a Combo x2"
+    icon: {fileID: 21300000, guid: 2d9fbab62302c1d41b4a56eae4a31a7e, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 0
+      id: 
+      amount: 300
+      booster: {fileID: 0}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: 300 xu
+    fullName: 300 xu
+    icon: {fileID: 21300000, guid: cdad04245f8b49e48af638789de4037b, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 1
+      id: time
+      amount: 5
+      booster: {fileID: 11400000, guid: acd55c09c26725a4cb57cc186973c76d, type: 2}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: "\xD75"
+    fullName: "+5 Gi\xE2y x5"
+    icon: {fileID: 21300000, guid: 47165712922176043956299ef8b48728, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 0
+      id: 
+      amount: 400
+      booster: {fileID: 0}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: 400 xu
+    fullName: 400 xu
+    icon: {fileID: 21300000, guid: cdad04245f8b49e48af638789de4037b, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 1
+      id: x2
+      amount: 3
+      booster: {fileID: 11400000, guid: 24e8c791c26d54e418b5f42cdf2093a1, type: 2}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: "\xD73"
+    fullName: "Nh\xE2n \u0110\xF4i x3"
+    icon: {fileID: 21300000, guid: 13bc65d46747e9f4da81b0ebff761dd7, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 0
+      id: 
+      amount: 500
+      booster: {fileID: 0}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: 500 xu
+    fullName: 500 xu
+    icon: {fileID: 21300000, guid: cdad04245f8b49e48af638789de4037b, type: 3}
+    milestone: 0
+    mystery: 0
+    chest: []
+    allowDouble: 1
+  - gift:
+      kind: 0
+      id: 
+      amount: 0
+      booster: {fileID: 0}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    label: "B\xED \u1EA9n"
+    fullName: "R\u01B0\u01A1ng b\xED \u1EA9n"
+    icon: {fileID: 21300000, guid: 37c836f7cf9100943a14223e48d612aa, type: 3}
+    milestone: 0
+    mystery: 1
+    chest:
+    - kind: 1
+      id: time
+      amount: 2
+      booster: {fileID: 11400000, guid: acd55c09c26725a4cb57cc186973c76d, type: 2}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    - kind: 1
+      id: x2
+      amount: 2
+      booster: {fileID: 11400000, guid: 24e8c791c26d54e418b5f42cdf2093a1, type: 2}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    - kind: 1
+      id: shield
+      amount: 2
+      booster: {fileID: 11400000, guid: 0bad990bb0f26d64eba444031821027a, type: 2}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    - kind: 1
+      id: freeze
+      amount: 2
+      booster: {fileID: 11400000, guid: 5f998feadbd10b04b823a896e867c699, type: 2}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    - kind: 1
+      id: fire
+      amount: 2
+      booster: {fileID: 11400000, guid: cefc16f0a6fc89e47a6afd653ee01ac9, type: 2}
+      pet: {fileID: 0}
+      tool: {fileID: 0}
+    allowDouble: 1
+  - gift:
+      kind: 3
+      id: bbat
+      amount: 7
+      booster: {fileID: 0}
+      pet: {fileID: 0}
+      tool: {fileID: 11400000, guid: bbcf71bcf83a21a4a84a6c40518d58be, type: 2}
+    label: "7 ng\xE0y"
+    fullName: "G\u1EADy B\xF3ng Ch\xE0y (7 ng\xE0y)"
+    icon: {fileID: 21300000, guid: 0f414340571ead6468f3cef3db28e812, type: 3}
+    milestone: 1
+    mystery: 0
+    chest: []
+    allowDouble: 0
+  makeUpsPerMonth: 3

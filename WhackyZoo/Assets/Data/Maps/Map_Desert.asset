@@ -1,0 +1,287 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47fa2e001e8bd4e40963abc498e043b6, type: 3}
+  m_Name: Map_Desert
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.MapData
+  id: desert
+  displayName: "Sa M\u1EA1c"
+  background: {fileID: 21300000, guid: e6da5b35a14eb0447aa39cddd7a65eaf, type: 3}
+  music: {fileID: 8300000, guid: 59c4163f2be053649a94501bef4ad5d0, type: 3}
+  holeBack: {fileID: 21300000, guid: 1edbe30aa371e6e49a3a6be799e5b1c3, type: 3}
+  holeFront: {fileID: 21300000, guid: 7e7e28bb724d96940838ae602c23173a, type: 3}
+  holeMask: {fileID: 21300000, guid: 6772d0c541aae994fa602e6b8f30023b, type: 3}
+  normalCritters:
+  - {fileID: 11400000, guid: 44e465c0450476240bee7735fcd7f632, type: 2}
+  - {fileID: 11400000, guid: 2d1ec92e839e8eb4782fec20d9a24062, type: 2}
+  - {fileID: 11400000, guid: 59a3d39a8532d704290b32f4da331f82, type: 2}
+  - {fileID: 11400000, guid: 36dfc7a34a2e7984098a74635c77a92a, type: 2}
+  bonus: {fileID: 11400000, guid: 943057d00e3d1ec45b6521f2b894a4c7, type: 2}
+  obstacle: {fileID: 11400000, guid: 6b53699b5f71fac40994b39ddaa46f5f, type: 2}
+  ambient: []
+  ambientFx:
+  - name: WindBand0
+    sprite: {fileID: 21300000, guid: ffd5cf6c117f0574f9303bb9858a6b25, type: 3}
+    frames: []
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: -1
+    left: 0
+    top: 172
+    width: 220
+    height: 12
+    pivot: {x: 0.5, y: 0.5}
+    clip: 1
+    fillHorizontal: 0
+    period: 7
+    delay: 0
+    ease: 4
+    alternate: 0
+    moveKeys:
+    - {x: 0, y: -260, z: 0}
+    - {x: 1, y: 420, z: 0}
+    alphaKeys:
+    - {x: 0, y: 0}
+    - {x: 0.2, y: 1}
+    - {x: 0.8, y: 1}
+    - {x: 1, y: 0}
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 0
+    restRotation: 0
+  - name: WindBand1
+    sprite: {fileID: 21300000, guid: ffd5cf6c117f0574f9303bb9858a6b25, type: 3}
+    frames: []
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: -1
+    left: 0
+    top: 204
+    width: 160
+    height: 10
+    pivot: {x: 0.5, y: 0.5}
+    clip: 1
+    fillHorizontal: 0
+    period: 8.5
+    delay: 2
+    ease: 4
+    alternate: 0
+    moveKeys:
+    - {x: 0, y: -260, z: 0}
+    - {x: 1, y: 420, z: 0}
+    alphaKeys:
+    - {x: 0, y: 0}
+    - {x: 0.2, y: 1}
+    - {x: 0.8, y: 1}
+    - {x: 1, y: 0}
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 0
+    restRotation: 0
+  - name: WindBand2
+    sprite: {fileID: 21300000, guid: ffd5cf6c117f0574f9303bb9858a6b25, type: 3}
+    frames: []
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: -1
+    left: 0
+    top: 232
+    width: 240
+    height: 13
+    pivot: {x: 0.5, y: 0.5}
+    clip: 1
+    fillHorizontal: 0
+    period: 7.6
+    delay: 3.8
+    ease: 4
+    alternate: 0
+    moveKeys:
+    - {x: 0, y: -260, z: 0}
+    - {x: 1, y: 420, z: 0}
+    alphaKeys:
+    - {x: 0, y: 0}
+    - {x: 0.2, y: 1}
+    - {x: 0.8, y: 1}
+    - {x: 1, y: 0}
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 0
+    restRotation: 0
+  - name: WindBand3
+    sprite: {fileID: 21300000, guid: ffd5cf6c117f0574f9303bb9858a6b25, type: 3}
+    frames: []
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: -1
+    left: 0
+    top: 188
+    width: 130
+    height: 9
+    pivot: {x: 0.5, y: 0.5}
+    clip: 1
+    fillHorizontal: 0
+    period: 9
+    delay: 5.2
+    ease: 4
+    alternate: 0
+    moveKeys:
+    - {x: 0, y: -260, z: 0}
+    - {x: 1, y: 420, z: 0}
+    alphaKeys:
+    - {x: 0, y: 0}
+    - {x: 0.2, y: 1}
+    - {x: 0.8, y: 1}
+    - {x: 1, y: 0}
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 0
+    restRotation: 0
+  ambientFxMask: {fileID: 21300000, guid: f2525ba12a6f56549bd1f9590c0e5c20, type: 3}
+  banner: {fileID: 21300000, guid: c923aa5ac7692d344b357cf0ed320226, type: 3}
+  cardEffects:
+  - name: WindBand0
+    sprite: {fileID: 21300000, guid: ffd5cf6c117f0574f9303bb9858a6b25, type: 3}
+    frames: []
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: -1
+    left: 0
+    top: 14
+    width: 150
+    height: 10
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 6
+    delay: 0
+    ease: 4
+    alternate: 0
+    moveKeys:
+    - {x: 0, y: -180, z: 0}
+    - {x: 1, y: 380, z: 0}
+    alphaKeys:
+    - {x: 0, y: 0}
+    - {x: 0.2, y: 1}
+    - {x: 0.8, y: 1}
+    - {x: 1, y: 0}
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 0
+    restRotation: 0
+  - name: WindBand1
+    sprite: {fileID: 21300000, guid: ffd5cf6c117f0574f9303bb9858a6b25, type: 3}
+    frames: []
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: -1
+    left: 0
+    top: 34
+    width: 110
+    height: 9
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 7.5
+    delay: 1.8
+    ease: 4
+    alternate: 0
+    moveKeys:
+    - {x: 0, y: -180, z: 0}
+    - {x: 1, y: 380, z: 0}
+    alphaKeys:
+    - {x: 0, y: 0}
+    - {x: 0.2, y: 1}
+    - {x: 0.8, y: 1}
+    - {x: 1, y: 0}
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 0
+    restRotation: 0
+  - name: WindBand2
+    sprite: {fileID: 21300000, guid: ffd5cf6c117f0574f9303bb9858a6b25, type: 3}
+    frames: []
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: -1
+    left: 0
+    top: 52
+    width: 170
+    height: 11
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 6.8
+    delay: 3.4
+    ease: 4
+    alternate: 0
+    moveKeys:
+    - {x: 0, y: -180, z: 0}
+    - {x: 1, y: 380, z: 0}
+    alphaKeys:
+    - {x: 0, y: 0}
+    - {x: 0.2, y: 1}
+    - {x: 0.8, y: 1}
+    - {x: 1, y: 0}
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 0
+    restRotation: 0
+  - name: WindBand3
+    sprite: {fileID: 21300000, guid: ffd5cf6c117f0574f9303bb9858a6b25, type: 3}
+    frames: []
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: -1
+    left: 0
+    top: 24
+    width: 90
+    height: 8
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 8
+    delay: 4.6
+    ease: 4
+    alternate: 0
+    moveKeys:
+    - {x: 0, y: -180, z: 0}
+    - {x: 1, y: 380, z: 0}
+    alphaKeys:
+    - {x: 0, y: 0}
+    - {x: 0.2, y: 1}
+    - {x: 0.8, y: 1}
+    - {x: 1, y: 0}
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 0
+    restRotation: 0
+  cardSkyMask: {fileID: 0}
+  cardSkyBottom: 60
+  isNew: 0
+  normalLabel: "Th\xFA sa m\u1EA1c"
+  mapChip:
+    sprite: {fileID: 21300000, guid: d6627d40e566c0b4694308dcb6d8df7c, type: 3}
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    textColor: {r: 1, g: 1, b: 1, a: 1}
+  normalChip:
+    sprite: {fileID: 21300000, guid: 8b44c33270459824fbf29f36de25afd5, type: 3}
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    textColor: {r: 0.22745098, g: 0.14117648, b: 0.07058824, a: 1}
+  bonusChip:
+    sprite: {fileID: 21300000, guid: 2ab94122b1bf1e540bec1df937ac61d4, type: 3}
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    textColor: {r: 0.22745098, g: 0.14117648, b: 0.07058824, a: 1}
+  obstacleChip:
+    sprite: {fileID: 21300000, guid: bed23e930331cc840b176490baa2f17f, type: 3}
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    textColor: {r: 1, g: 1, b: 1, a: 1}
+  howToTop: {r: 0.7607843, g: 0.3529412, b: 0.10980392, a: 1}
+  howToBottom: {r: 0.9411765, g: 0.627451, b: 0.29411766, a: 1}

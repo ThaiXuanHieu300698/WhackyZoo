@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 523a9a6d1258693419c554830cf6b7a7, type: 3}
+  m_Name: Pet_Grave_grave_spider
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.PetData
+  id: base_grave_spider
+  displayName: "Nh\u1EC7n"
+  cardName: 
+  description: "\u0110u t\u01A1 th\u1EA3 xu\u1ED1ng r\u1ED3i leo l\xEAn tho\u0103n tho\u1EAFt."
+  icon: {fileID: 21300000, guid: 0962cd93bb3d0e74b9def0fef94ddfc5, type: 3}
+  price: 0
+  cashPrice: 
+  premium: 0
+  freeHint: 
+  mapId: grave
+  isBase: 1
+  points: 18
+  critter: {fileID: 11400000, guid: c7a0861b4845e75468a8813ce26f8112, type: 2}

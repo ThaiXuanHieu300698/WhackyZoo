@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 523a9a6d1258693419c554830cf6b7a7, type: 3}
+  m_Name: Pet_Camel
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.PetData
+  id: camel
+  displayName: "L\u1EA1c \u0110\xE0"
+  cardName: 
+  description: "Nhai c\u1ECF kh\xF4 thong th\u1EA3, ch\u1EB3ng v\u1ED9i tr\u1ED1n \u0111i \u0111\xE2u."
+  icon: {fileID: 21300000, guid: 26366d1cadf77fd4a88980037a02c6b1, type: 3}
+  price: 4000
+  cashPrice: 
+  premium: 0
+  freeHint: 
+  mapId: desert
+  isBase: 0
+  points: 24
+  critter: {fileID: 11400000, guid: ffd36597815519b4e876f63d5a590307, type: 2}

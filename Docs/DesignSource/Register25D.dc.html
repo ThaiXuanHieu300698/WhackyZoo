@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Đăng ký 2.5D – Đập Thú</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#3A2412;text-decoration:none}a:hover{color:#000}
+.txt3d{-webkit-text-stroke:5px #3A2412;paint-order:stroke fill;text-shadow:0 4px 0 #3A2412,0 8px 12px rgba(0,0,0,.25)}
+.gbtn{display:flex;align-items:center;justify-content:center;gap:8px;border:3px solid #3A2412;border-radius:18px;background:linear-gradient(180deg,var(--hi) 0%,var(--base) 55%,var(--lo) 100%);box-shadow:0 5px 0 var(--edge),0 10px 14px rgba(0,0,0,.22),inset 0 -3px 0 rgba(0,0,0,.08);position:relative;font-family:inherit;font-weight:800;color:#3A2412;cursor:pointer;transition:transform .08s,box-shadow .08s}
+.gbtn::after{content:"";position:absolute;left:8%;right:8%;top:3px;height:40%;border-radius:12px;background:linear-gradient(rgba(255,255,255,.75),rgba(255,255,255,0));pointer-events:none}
+.gbtn:active{transform:translateY(4px);box-shadow:0 1px 0 var(--edge),0 4px 6px rgba(0,0,0,.25)}
+.gbtn[disabled]{cursor:default;filter:saturate(.4);opacity:.75}
+.panel{background:linear-gradient(180deg,#FFFFFF 0%,#F3EEE4 100%);border:3px solid #3A2412;border-radius:16px;box-shadow:0 4px 0 #B9A98C,0 8px 12px rgba(0,0,0,.18)}
+.card{background:linear-gradient(180deg,#FFFBEF,#F7E9C6);border:3px solid #3A2412;border-radius:26px;box-shadow:0 6px 0 #B9A98C,0 18px 26px rgba(0,0,0,.25)}
+.field{display:flex;flex-direction:column;gap:4px}
+.lbl{font-size:14px;font-weight:800}
+.inp{display:flex;align-items:center;gap:8px;height:50px;padding:0 8px 0 12px;border:3px solid #3A2412;border-radius:16px;background:linear-gradient(180deg,#FFFFFF,#F6F1E7);box-shadow:inset 0 3px 0 rgba(0,0,0,.06),0 3px 0 #C9BB9E;transition:box-shadow .15s,border-color .15s}
+.inp:focus-within{border-color:#E07A1A;box-shadow:0 0 0 4px rgba(255,159,28,.35),0 3px 0 #C9BB9E}
+.inp input{flex:1;min-width:0;height:100%;border:0;background:none;outline:none;font-family:inherit;font-size:16px;font-weight:700;color:#3A2412}
+.inp input::placeholder{color:#8F7F68}
+.eye{flex:none;width:40px;height:40px;padding:0;border:0;border-radius:12px;background:none;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.eye:hover{background:rgba(58,36,18,.08)}
+.link{font-weight:800;color:#C4520A;text-decoration:underline;text-underline-offset:3px}
+.check{appearance:none;-webkit-appearance:none;width:24px;height:24px;margin:0;flex:none;cursor:pointer;border:3px solid #3A2412;border-radius:8px;background:#FFFFFF;box-shadow:inset 0 -2px 0 rgba(0,0,0,.08);box-sizing:border-box;display:inline-grid;place-content:center;transition:background .15s}
+.check::after{content:"";width:12px;height:7px;border-left:3px solid #FFFFFF;border-bottom:3px solid #FFFFFF;border-radius:1px;transform:translateY(-2px) rotate(-45deg) scale(0);transition:transform .15s}
+.check:checked{background:linear-gradient(180deg,#7FE08A,#3DB654)}
+.check:checked::after{transform:translateY(-2px) rotate(-45deg) scale(1)}
+.check:focus-visible{outline:3px solid #FFC93C;outline-offset:2px}
+.cloud{position:absolute;background:#FFFFFF;border-radius:40px;box-shadow:inset 0 -6px 0 rgba(160,200,230,.45);animation:drift 24s ease-in-out infinite alternate}
+.bob{animation:bob 1.6s ease-in-out infinite}
+.enter{animation:enter .5s cubic-bezier(.2,.9,.3,1.2) both}
+.av{flex:none;border-radius:50%;border:3px solid #3A2412;display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:inset 0 -4px 0 rgba(0,0,0,.12)}
+@keyframes drift{from{transform:translateX(-16px)}to{transform:translateX(20px)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes enter{from{transform:translateY(26px);opacity:0}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition:none !important}}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: linear-gradient(180deg, #45B2F5 0%, #8FD3FF 45%, #CBEEFF 70%); font-family: 'Baloo 2', system-ui, sans-serif; color: #3A2412">
+  <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+    <defs>
+      <radialGradient id="kCoin" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFF3A0"/><stop offset=".55" stop-color="#FFC93C"/><stop offset="1" stop-color="#D08A00"/></radialGradient>
+      <radialGradient id="kDog" cx=".38" cy=".3" r=".78"><stop offset="0" stop-color="#F4C385"/><stop offset=".55" stop-color="#C98A4B"/><stop offset="1" stop-color="#7E4B20"/></radialGradient>
+      <radialGradient id="kCat" cx=".38" cy=".3" r=".78"><stop offset="0" stop-color="#FFCB8A"/><stop offset=".55" stop-color="#F29A38"/><stop offset="1" stop-color="#B35A12"/></radialGradient>
+      <radialGradient id="kMouse" cx=".38" cy=".3" r=".78"><stop offset="0" stop-color="#F1F4F7"/><stop offset=".55" stop-color="#B8C0C8"/><stop offset="1" stop-color="#76808C"/></radialGradient>
+      <radialGradient id="kPig" cx=".38" cy=".3" r=".78"><stop offset="0" stop-color="#FFDCE5"/><stop offset=".55" stop-color="#F7A1B5"/><stop offset="1" stop-color="#C2617D"/></radialGradient>
+      <radialGradient id="kCrab" cx=".38" cy=".3" r=".8"><stop offset="0" stop-color="#FF9D8C"/><stop offset=".55" stop-color="#E94B3C"/><stop offset="1" stop-color="#A3241A"/></radialGradient>
+      <radialGradient id="kFox" cx=".38" cy=".3" r=".8"><stop offset="0" stop-color="#FFE0B0"/><stop offset=".55" stop-color="#F0A65A"/><stop offset="1" stop-color="#B8682A"/></radialGradient>
+      <radialGradient id="kOcto" cx=".38" cy=".3" r=".8"><stop offset="0" stop-color="#DCC0FF"/><stop offset=".55" stop-color="#9B5DE5"/><stop offset="1" stop-color="#5A2AA0"/></radialGradient>
+      <symbol id="aDog" viewBox="0 0 100 100"><g>
+                    <ellipse cx="20" cy="50" rx="12" ry="24" fill="url(#L_gDogEar)" stroke="#3A2412" stroke-width="2.5" transform="rotate(14 20 50)"/>
+                    <ellipse cx="80" cy="50" rx="12" ry="24" fill="url(#L_gDogEar)" stroke="#3A2412" stroke-width="2.5" transform="rotate(-14 80 50)"/>
+                    <circle cx="50" cy="55" r="32" fill="url(#L_gDog)" stroke="#3A2412" stroke-width="2.5"/>
+                    <ellipse cx="38" cy="35" rx="12" ry="6" fill="#FFFFFF" opacity=".38" transform="rotate(-25 38 35)"/>
+                    <ellipse cx="50" cy="71" rx="18" ry="13" fill="url(#L_gMuzzle)"/>
+                    <g><ellipse cx="39" cy="51" rx="5.5" ry="6.5" fill="#1E120A"/><ellipse cx="61" cy="51" rx="5.5" ry="6.5" fill="#1E120A"/><circle cx="41" cy="48.5" r="2.2" fill="#FFFFFF"/><circle cx="63" cy="48.5" r="2.2" fill="#FFFFFF"/></g>
+                    <ellipse cx="50" cy="64" rx="7.5" ry="5.5" fill="#1E120A"/><ellipse cx="48" cy="62.5" rx="2.6" ry="1.4" fill="#FFFFFF" opacity=".7"/>
+                    <path d="M43 73 Q50 79 57 73" stroke="#3A2412" stroke-width="2.5" fill="none" stroke-linecap="round"/><ellipse cx="50" cy="78" rx="4" ry="3" fill="#FF7A8A"/>
+                  </g></symbol>
+      <symbol id="aCat" viewBox="0 0 100 100"><g>
+                    <path d="M21 46 L25 10 L48 29 Z" fill="url(#L_gCat)" stroke="#3A2412" stroke-width="2.5" stroke-linejoin="round"/><path d="M27 38 L29 20 L41 30 Z" fill="url(#L_gPink)"/>
+                    <path d="M79 46 L75 10 L52 29 Z" fill="url(#L_gCat)" stroke="#3A2412" stroke-width="2.5" stroke-linejoin="round"/><path d="M73 38 L71 20 L59 30 Z" fill="url(#L_gPink)"/>
+                    <circle cx="50" cy="57" r="32" fill="url(#L_gCat)" stroke="#3A2412" stroke-width="2.5"/>
+                    <path d="M41 30 L44 40 M50 28 L50 40 M59 30 L56 40" stroke="#B35A12" stroke-width="3" stroke-linecap="round"/>
+                    <ellipse cx="37" cy="38" rx="11" ry="5.5" fill="#FFFFFF" opacity=".35" transform="rotate(-25 37 38)"/>
+                    <g><ellipse cx="39" cy="55" rx="5.5" ry="7" fill="#1E120A"/><ellipse cx="61" cy="55" rx="5.5" ry="7" fill="#1E120A"/><circle cx="41" cy="52" r="2.2" fill="#FFFFFF"/><circle cx="63" cy="52" r="2.2" fill="#FFFFFF"/></g>
+                    <circle cx="30" cy="66" r="5" fill="#FF8FA3" opacity=".6"/><circle cx="70" cy="66" r="5" fill="#FF8FA3" opacity=".6"/>
+                    <path d="M46 65 L54 65 L50 70 Z" fill="#F27D9A" stroke="#3A2412" stroke-width="1.5" stroke-linejoin="round"/>
+                    <path d="M44 74 Q47 77 50 74 Q53 77 56 74" stroke="#3A2412" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    <path d="M18 63 L34 65 M18 71 L34 69 M82 63 L66 65 M82 71 L66 69" stroke="#3A2412" stroke-width="1.8" stroke-linecap="round"/>
+                  </g></symbol>
+      <symbol id="aMouse" viewBox="0 0 100 100"><g>
+                    <circle cx="23" cy="31" r="18" fill="url(#L_gMouse)" stroke="#3A2412" stroke-width="2.5"/><circle cx="23" cy="31" r="10" fill="url(#L_gPink)"/>
+                    <circle cx="77" cy="31" r="18" fill="url(#L_gMouse)" stroke="#3A2412" stroke-width="2.5"/><circle cx="77" cy="31" r="10" fill="url(#L_gPink)"/>
+                    <circle cx="50" cy="59" r="30" fill="url(#L_gMouse)" stroke="#3A2412" stroke-width="2.5"/>
+                    <ellipse cx="39" cy="42" rx="10" ry="5" fill="#FFFFFF" opacity=".5" transform="rotate(-25 39 42)"/>
+                    <g><ellipse cx="40" cy="56" rx="5" ry="6" fill="#1E120A"/><ellipse cx="60" cy="56" rx="5" ry="6" fill="#1E120A"/><circle cx="42" cy="53.5" r="2" fill="#FFFFFF"/><circle cx="62" cy="53.5" r="2" fill="#FFFFFF"/></g>
+                    <circle cx="50" cy="66" r="5" fill="url(#L_gSnout)" stroke="#3A2412" stroke-width="1.5"/>
+                    <rect x="45" y="72" width="10" height="9" rx="2" fill="#FFFFFF" stroke="#3A2412" stroke-width="2"/><path d="M50 72 V81" stroke="#3A2412" stroke-width="1.2"/>
+                    <path d="M22 65 L38 67 M22 73 L38 71 M78 65 L62 67 M78 73 L62 71" stroke="#3A2412" stroke-width="1.8" stroke-linecap="round"/>
+                  </g></symbol>
+      <symbol id="aPig" viewBox="0 0 100 100"><g>
+                    <path d="M24 42 L20 16 L43 29 Z" fill="url(#L_gPig)" stroke="#3A2412" stroke-width="2.5" stroke-linejoin="round"/>
+                    <path d="M76 42 L80 16 L57 29 Z" fill="url(#L_gPig)" stroke="#3A2412" stroke-width="2.5" stroke-linejoin="round"/>
+                    <circle cx="50" cy="57" r="32" fill="url(#L_gPig)" stroke="#3A2412" stroke-width="2.5"/>
+                    <ellipse cx="37" cy="38" rx="11" ry="5.5" fill="#FFFFFF" opacity=".45" transform="rotate(-25 37 38)"/>
+                    <g><ellipse cx="38" cy="50" rx="4.8" ry="5.8" fill="#1E120A"/><ellipse cx="62" cy="50" rx="4.8" ry="5.8" fill="#1E120A"/><circle cx="40" cy="48" r="1.9" fill="#FFFFFF"/><circle cx="64" cy="48" r="1.9" fill="#FFFFFF"/></g>
+                    <ellipse cx="50" cy="68" rx="15" ry="11" fill="url(#L_gSnout)" stroke="#3A2412" stroke-width="2.5"/><ellipse cx="46" cy="64" rx="6" ry="2.5" fill="#FFFFFF" opacity=".4"/>
+                    <ellipse cx="45" cy="69" rx="2.6" ry="3.6" fill="#5A1E2C"/><ellipse cx="55" cy="69" rx="2.6" ry="3.6" fill="#5A1E2C"/>
+                    <circle cx="27" cy="64" r="5" fill="#FF7F9C" opacity=".55"/><circle cx="73" cy="64" r="5" fill="#FF7F9C" opacity=".55"/>
+                  </g></symbol>
+      <symbol id="aCrab" viewBox="0 0 100 100"><g>
+                    <path d="M36 42 L32 20 M64 42 L68 20" stroke="#3A2412" stroke-width="3" stroke-linecap="round"/>
+                    <g><circle cx="32" cy="18" r="7.5" fill="#FFFFFF" stroke="#3A2412" stroke-width="2.5"/><circle cx="68" cy="18" r="7.5" fill="#FFFFFF" stroke="#3A2412" stroke-width="2.5"/><circle cx="33" cy="18" r="3.2" fill="#1E120A"/><circle cx="67" cy="18" r="3.2" fill="#1E120A"/></g>
+                    <path d="M4 48 A12 12 0 1 1 24 54 L14 50 Z" fill="url(#S_wCrab)" stroke="#3A2412" stroke-width="2.5" stroke-linejoin="round"/>
+                    <path d="M96 48 A12 12 0 1 0 76 54 L86 50 Z" fill="url(#S_wCrab)" stroke="#3A2412" stroke-width="2.5" stroke-linejoin="round"/>
+                    <ellipse cx="50" cy="63" rx="32" ry="22" fill="url(#S_wCrab)" stroke="#3A2412" stroke-width="2.5"/>
+                    <ellipse cx="38" cy="51" rx="11" ry="4.5" fill="#FFFFFF" opacity=".42" transform="rotate(-10 38 51)"/>
+                    <circle cx="34" cy="68" r="2" fill="#B32A1E"/><circle cx="66" cy="68" r="2" fill="#B32A1E"/>
+                    <path d="M42 67 Q50 73 58 67" stroke="#3A2412" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                  </g></symbol>
+      <symbol id="aFox" viewBox="0 0 100 100"><g><path d="M20 54 L8 8 L44 32 Z" fill="url(#D_dFox)" stroke="#3A2412" stroke-width="2.5" stroke-linejoin="round"/><path d="M21 44 L14 18 L36 33 Z" fill="url(#D_dEarIn)"/><path d="M80 54 L92 8 L56 32 Z" fill="url(#D_dFox)" stroke="#3A2412" stroke-width="2.5" stroke-linejoin="round"/><path d="M79 44 L86 18 L64 33 Z" fill="url(#D_dEarIn)"/><circle cx="50" cy="60" r="30" fill="url(#D_dFox)" stroke="#3A2412" stroke-width="2.5"/><path d="M28 66 Q50 96 72 66 Q62 76 50 76 Q38 76 28 66 Z" fill="#FFF6E6"/><ellipse cx="38" cy="42" rx="10" ry="5" fill="#FFFFFF" opacity=".4" transform="rotate(-25 38 42)"/><g><ellipse cx="39" cy="57" rx="5" ry="6.5" fill="#1E120A"/><ellipse cx="61" cy="57" rx="5" ry="6.5" fill="#1E120A"/><circle cx="41" cy="54.5" r="2" fill="#FFFFFF"/><circle cx="63" cy="54.5" r="2" fill="#FFFFFF"/></g><ellipse cx="50" cy="71" rx="5" ry="3.8" fill="#1E120A"/></g></symbol>
+      <symbol id="aOcto" viewBox="0 0 100 100"><g>
+                    <g><path d="M26 64 Q18 84 28 92 M42 70 Q38 90 46 94 M58 70 Q62 90 54 94 M74 64 Q82 84 72 92" stroke="#3A2412" stroke-width="10.5" fill="none" stroke-linecap="round"/><path d="M26 64 Q18 84 28 92 M42 70 Q38 90 46 94 M58 70 Q62 90 54 94 M74 64 Q82 84 72 92" stroke="#8A4FD8" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+                    <ellipse cx="50" cy="44" rx="30" ry="30" fill="url(#S_wOcto)" stroke="#3A2412" stroke-width="2.5"/>
+                    <ellipse cx="40" cy="25" rx="11" ry="5.5" fill="#FFFFFF" opacity=".42" transform="rotate(-20 40 25)"/>
+                    <circle cx="66" cy="30" r="3" fill="#C9A8F5"/><circle cx="30" cy="36" r="2.2" fill="#C9A8F5"/>
+                    <g><ellipse cx="40" cy="47" rx="5.2" ry="6.2" fill="#1E120A"/><ellipse cx="60" cy="47" rx="5.2" ry="6.2" fill="#1E120A"/><circle cx="42" cy="44.5" r="2" fill="#FFFFFF"/><circle cx="62" cy="44.5" r="2" fill="#FFFFFF"/></g>
+                    <circle cx="31" cy="56" r="4.5" fill="#FF8FC0" opacity=".55"/><circle cx="69" cy="56" r="4.5" fill="#FF8FC0" opacity=".55"/>
+                    <path d="M45 57 Q50 61 55 57" stroke="#3A2412" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                  </g></symbol>
+      <symbol id="iCoin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="url(#kCoin)" stroke="#3A2412" stroke-width="2"/><circle cx="12" cy="12" r="5.5" fill="none" stroke="#C07A00" stroke-width="2"/></symbol>
+    <radialGradient id="L_gDog" cx=".38" cy=".3" r=".78"><stop offset="0" stop-color="#F4C385"/><stop offset=".55" stop-color="#C98A4B"/><stop offset="1" stop-color="#7E4B20"/></radialGradient><radialGradient id="L_gMuzzle" cx=".45" cy=".3" r=".8"><stop offset="0" stop-color="#FFF8EA"/><stop offset="1" stop-color="#E2BF93"/></radialGradient><linearGradient id="L_gDogEar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9A6234"/><stop offset="1" stop-color="#54301A"/></linearGradient><radialGradient id="L_gPink" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#FFD3DD"/><stop offset="1" stop-color="#EE8AA2"/></radialGradient><radialGradient id="L_gCat" cx=".38" cy=".3" r=".78"><stop offset="0" stop-color="#FFCB8A"/><stop offset=".55" stop-color="#F29A38"/><stop offset="1" stop-color="#B35A12"/></radialGradient><radialGradient id="L_gMouse" cx=".38" cy=".3" r=".78"><stop offset="0" stop-color="#F1F4F7"/><stop offset=".55" stop-color="#B8C0C8"/><stop offset="1" stop-color="#76808C"/></radialGradient><radialGradient id="L_gPink" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#FFD3DD"/><stop offset="1" stop-color="#EE8AA2"/></radialGradient><radialGradient id="L_gSnout" cx=".45" cy=".3" r=".8"><stop offset="0" stop-color="#FFB8C9"/><stop offset="1" stop-color="#D9637F"/></radialGradient><radialGradient id="L_gPig" cx=".38" cy=".3" r=".78"><stop offset="0" stop-color="#FFDCE5"/><stop offset=".55" stop-color="#F7A1B5"/><stop offset="1" stop-color="#C2617D"/></radialGradient><radialGradient id="L_gSnout" cx=".45" cy=".3" r=".8"><stop offset="0" stop-color="#FFB8C9"/><stop offset="1" stop-color="#D9637F"/></radialGradient><radialGradient id="S_wCrab" cx=".38" cy=".3" r=".8"><stop offset="0" stop-color="#FF9D8C"/><stop offset=".55" stop-color="#E94B3C"/><stop offset="1" stop-color="#A3241A"/></radialGradient><radialGradient id="D_dFox" cx=".38" cy=".3" r=".8"><stop offset="0" stop-color="#FFE0B0"/><stop offset=".55" stop-color="#F0A65A"/><stop offset="1" stop-color="#B8682A"/></radialGradient><radialGradient id="D_dEarIn" cx=".5" cy=".6" r=".7"><stop offset="0" stop-color="#FFE3E8"/><stop offset="1" stop-color="#F2A6B4"/></radialGradient><radialGradient id="S_wOcto" cx=".38" cy=".3" r=".8"><stop offset="0" stop-color="#DCC0FF"/><stop offset=".55" stop-color="#9B5DE5"/><stop offset="1" stop-color="#5A2AA0"/></radialGradient></defs>
+  </svg>
+  <div aria-hidden="true" class="cloud" style="left: -30px; top: 110px; width: 140px; height: 44px"></div>
+  <div aria-hidden="true" class="cloud" style="right: -24px; top: 190px; width: 110px; height: 36px; animation-duration: 30s"></div>
+  <div aria-hidden="true" style="position: absolute; left: -90px; right: -90px; bottom: -140px; height: 400px; border-radius: 50% 50% 0 0 / 130px 130px 0 0; background: linear-gradient(180deg, #96DB70 0%, #6CC04A 35%, #55AE40 100%); border-top: 3px solid #2F6E25; box-shadow: inset 0 10px 0 rgba(255,255,255,.18)"></div>
+  <div style="position: relative; height: 100%; box-sizing: border-box; padding: 56px 20px 22px; display: flex; flex-direction: column; gap: 12px">
+    <div style="display: flex; align-items: center; gap: 12px">
+      <a href="Login25D.dc.html" aria-label="Quay lại đăng nhập" class="gbtn" style="--hi: #FFFFFF; --base: #F1ECE2; --lo: #D9D0BF; --edge: #A8977A; width: 48px; height: 48px; padding: 0; border-radius: 14px">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#3A2412" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="position: relative"><path d="M15 5l-7 7 7 7"/></svg>
+      </a>
+      <h1 class="txt3d" style="margin: 0; flex: 1; min-width: 0; font-size: 30px; line-height: 1; color: #FFFFFF; white-space: nowrap">ĐĂNG KÝ</h1>
+      <span style="flex: none; display: flex; align-items: center; gap: 4px; border: 2px solid #3A2412; border-radius: 999px; padding: 0 10px; background: linear-gradient(180deg, #FFF3A0, #FFC93C); font-size: 13px; font-weight: 800; line-height: 26px">Quà +500 xu</span>
+    </div>
+
+    <div class="card enter" style="padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 10px">
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <span class="lbl" id="av-label">Chọn nhân vật đại diện</span>
+        <div role="radiogroup" aria-labelledby="av-label" style="display: flex; justify-content: space-between">
+          <sc-for list="{{avatars}}" as="a" hint-placeholder-count="5">
+            <button role="radio" aria-checked="{{a.checked}}" aria-label="{{a.label}}" onClick="{{a.pick}}" class="av" style="{{a.style}}"><svg viewBox="0 0 100 100" width="80%" height="80%" aria-hidden="true"><use href="{{a.href}}"></use></svg></button>
+          </sc-for>
+        </div>
+      </div>
+        <div class="field">
+          <label class="lbl" for="reg-name">Tên hiển thị</label>
+          <div class="inp"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#7A6448" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8.5" r="4"/><path d="M4.5 20c1.5-4 4.3-5.5 7.5-5.5s6 1.5 7.5 5.5"/></svg><input id="reg-name" type="text" placeholder="Tên bạn bè sẽ thấy" autocomplete="nickname"></div>
+        </div>
+        <div class="field">
+          <label class="lbl" for="reg-mail">Email</label>
+          <div class="inp"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#7A6448" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></svg><input id="reg-mail" type="email" placeholder="vd: ban@email.com" autocomplete="email"></div>
+        </div>
+        <div class="field">
+          <label class="lbl" for="reg-pw">Mật khẩu</label>
+          <div class="inp"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#7A6448" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg><input id="reg-pw" type="{{showPwType}}" placeholder="Ít nhất 8 ký tự" autocomplete="current-password" onChange="{{onPw}}">
+            <button class="eye" onClick="{{togglePw}}" aria-label="{{showPwLabel}}">
+              <sc-if value="{{showPw}}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#3A2412" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/><path d="M4 4l16 16"/></svg></sc-if>
+              <sc-if value="{{showPwHidden}}" hint-placeholder-val="{{ true }}"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#3A2412" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></svg></sc-if>
+            </button>
+          </div>
+        </div>
+        <div class="field">
+          <label class="lbl" for="reg-pw2">Nhập lại mật khẩu</label>
+          <div class="inp"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#7A6448" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg><input id="reg-pw2" type="{{showPw2Type}}" placeholder="Nhập lại mật khẩu" autocomplete="current-password">
+            <button class="eye" onClick="{{togglePw2}}" aria-label="{{showPw2Label}}">
+              <sc-if value="{{showPw2}}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#3A2412" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/><path d="M4 4l16 16"/></svg></sc-if>
+              <sc-if value="{{showPw2Hidden}}" hint-placeholder-val="{{ true }}"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#3A2412" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></svg></sc-if>
+            </button>
+          </div>
+        </div>
+        <label style="display: flex; align-items: flex-start; gap: 8px; font-size: 13px; font-weight: 700; line-height: 1.3; cursor: pointer">
+          <input type="checkbox" class="check" onChange="{{toggleAgree}}">
+          <span>Tôi đồng ý với <a href="#" class="link">Điều khoản</a> và <a href="#" class="link">Chính sách bảo mật</a></span>
+        </label>
+        <sc-if value="{{agree}}" hint-placeholder-val="{{ false }}">
+          <a href="Main25D.dc.html" class="gbtn" style="--hi: #B8F5B0; --base: #5BD06A; --lo: #2FA444; --edge: #1F7A33; height: 56px; font-size: 20px; border-radius: 20px"><span class="txt3d" style="position: relative; color: #FFFFFF; -webkit-text-stroke-width: 4px; text-shadow: 0 3px 0 #3A2412">TẠO TÀI KHOẢN</span></a>
+        </sc-if>
+        <sc-if value="{{notAgree}}" hint-placeholder-val="{{ true }}">
+          <button disabled class="gbtn" style="--hi: #B8F5B0; --base: #5BD06A; --lo: #2FA444; --edge: #1F7A33; height: 56px; font-size: 20px; border-radius: 20px"><span class="txt3d" style="position: relative; color: #FFFFFF; -webkit-text-stroke-width: 4px; text-shadow: 0 3px 0 #3A2412">TẠO TÀI KHOẢN</span></button>
+        </sc-if>
+      <div style="text-align: center; font-size: 15px; font-weight: 700; color: #5A4630">Đã có tài khoản? <a href="Login25D.dc.html" class="link">Đăng nhập</a></div>
+    </div>
+    <div style="flex: 1"></div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { showPw: false, showPw2: false, av: 'aDog', pw: '', agree: false }; }
+  renderVals() {
+    const s = this.state;
+    const opts = [['aDog', 'Chó'], ['aCat', 'Mèo'], ['aMouse', 'Chuột'], ['aPig', 'Heo'], ['aFox', 'Cáo']];
+    const bgs = { aDog: '#FFF3D6', aCat: '#FFE9D2', aMouse: '#EEF2F6', aPig: '#FFE9EF', aFox: '#FFF0DC' };
+    return {
+      showPw: !!s.showPw,
+      showPwHidden: !s.showPw,
+      showPwType: s.showPw ? 'text' : 'password',
+      showPwLabel: s.showPw ? 'Ẩn mật khẩu' : 'Hiện mật khẩu',
+      showPw2: !!s.showPw2,
+      showPw2Hidden: !s.showPw2,
+      showPw2Type: s.showPw2 ? 'text' : 'password',
+      showPw2Label: s.showPw2 ? 'Ẩn mật khẩu' : 'Hiện mật khẩu',
+      togglePw: () => this.setState({ showPw: !s.showPw }),
+      togglePw2: () => this.setState({ showPw2: !s.showPw2 }),
+      onPw: (e) => this.setState({ pw: e.target.value }),
+      agree: s.agree,
+      notAgree: !s.agree,
+      toggleAgree: () => this.setState({ agree: !s.agree }),
+      avatars: opts.map(([id, label]) => ({
+        href: '#' + id,
+        label,
+        checked: String(s.av === id),
+        style: 'width: 56px; height: 56px; padding: 0; cursor: pointer; background: ' + bgs[id] + '; ' + (s.av === id ? 'box-shadow: 0 0 0 4px #FF9F1C, 0 6px 10px rgba(0,0,0,.2); transform: translateY(-3px)' : 'opacity: .8'),
+        pick: () => this.setState({ av: id })
+      }))
+    };
+  }
+}
+</script>
+</body>
+</html>

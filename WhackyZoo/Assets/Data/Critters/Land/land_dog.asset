@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18829b0c93e09764899920a603c39d06, type: 3}
+  m_Name: land_dog
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.CritterData
+  id: land_dog
+  displayName: "Ch\xF3"
+  shortName: 
+  hint: 
+  sprite: {fileID: 21300000, guid: 8d0e4f4deac31214487f105abb1c00ff, type: 3}
+  kind: 0
+  points: 10
+  animSprite: {fileID: 0}
+  blinkHalf: {fileID: 21300000, guid: 49e0064b500716c4498fcc62e43c97de, type: 3}
+  blinkClosed: {fileID: 21300000, guid: 1505ece9ff977204c8a65c54a789cd5e, type: 3}
+  spark: {fileID: 0}
+  sparkCenter: {x: 0, y: 0}
+  sparkPivot: {x: 0, y: 0}
+  sparkSize: {x: 0, y: 0}

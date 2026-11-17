@@ -1,0 +1,288 @@
+# Bảng dịch Tiếng Việt → English (Loc.cs). Mỗi dòng: câu tiếng Việt [Tab] câu tiếng Anh. \n = xuống dòng, {0} = chỗ điền.
+# Câu tiếng Việt phải đúng từng ký tự với chữ trong game. Câu không có ở đây giữ nguyên tiếng Việt.
+# ── Chung ──
+Trang chủ	Home
+Về trang chủ	Back to Home
+Tiếp tục	Continue
+Chơi lại	Play Again
+Chơi	Play
+Nhận	Claim
+NHẬN	CLAIM
+Xem	View
+Đóng	Close
+Bỏ qua	Skip
+Chọn	Select
+Dùng	Use
+Đang dùng	In use
+Đã có	Owned
+Có sẵn	Built-in
+Đổi	Change
+Sắp có	Soon
+Xem quảng cáo	Watch ad
+{0} xu	{0} coins
++{0} xu	+{0} coins
+Mua {0}	Buy {0}
+Thiếu {0} xu	Need {0} more
+Lv {0}	Lv {0}
+# ── Trang chủ ──
+ĐẬP THÚ	WHACKY
+VUI NHỘN	ZOO
+CHƠI NGAY	PLAY NOW
+Cửa hàng	Shop
+Xếp hạng	Ranking
+Nhiệm vụ	Missions
+Quà hằng ngày	Daily Gift
+Ngày {0}/{1}	Day {0}/{1}
+Ngày {0}/{1} · {2}	Day {0}/{1} · {2}
+Đã nhận hôm nay · Ngày {0}/{1}	Claimed today · Day {0}/{1}
+Ngày 1/7 · +100 xu	Day 1/7 · +100 coins
+Búa Gỗ	Wooden Mallet
+# ── Chọn map ──
+CHỌN MAP	CHOOSE MAP
+MỚI	NEW
+Map mới	New map
+Sắp ra mắt	Coming soon
+Trên Cạn	Meadow
+Dưới Biển	Under the Sea
+Sa Mạc	Desert
+Bắc Cực	North Pole
+Nghĩa Trang	Graveyard
+Trên cạn	Meadow
+Dưới biển	Under the Sea
+Sa mạc	Desert
+Bắc cực	North Pole
+Nghĩa trang	Graveyard
+# ── Cài đặt ──
+CÀI ĐẶT	SETTINGS
+Thời gian mỗi ván	Round length
+Nhanh	Quick
+Thường	Normal
+Thử thách	Challenge
+Âm thanh	Sound
+Nhạc nền	Music
+Hiệu ứng	Effects
+Rung khi đập trúng	Vibrate on hit
+Ngôn ngữ	Language
+Tiếng Việt	Tiếng Việt
+# ── Màn chơi ──
+ĐIỂM	SCORE
+CÁCH CHƠI	HOW TO PLAY
+ĐẬP ĐỂ GHI ĐIỂM	WHACK TO SCORE
+VẬT PHẨM HỖ TRỢ	BOOSTERS
+Chạm vào vật phẩm ở thanh dưới cùng để dùng. Đập trúng liên tiếp để tăng <b>COMBO</b>, đập nhầm sẽ mất combo.	Tap a booster in the bottom bar to use it. Hit in a row to build a <b>COMBO</b>; a wrong hit breaks it.
+Chuẩn bị vào màn… {0}%	Getting ready… {0}%
+Hiếm, ló rất nhanh	Rare, very quick
+Hiếm, mở rất nhanh	Rare, opens very quickly
+Đừng đập! Mất combo	Don't hit! Breaks combo
+Thú thường	Animals
+Thú	Animals
+Hải sản	Sea creatures
+Thú sa mạc	Desert animals
+Bom	Bomb
+TẠM DỪNG	PAUSED
+HẾT GIỜ!	TIME'S UP!
+ĐIỂM VÁN NÀY	ROUND SCORE
+ĐẬP TRÚNG	HITS
+BẬT	ON
+# ── Thú ──
+Chó	Dog
+Mèo	Cat
+Chuột	Mouse
+Heo	Pig
+Gà vàng	Golden Chick
+Cua	Crab
+Bạch tuộc	Octopus
+Bạch Tuộc	Octopus
+Cá	Fish
+Sao biển	Starfish
+Sao Biển	Starfish
+Ngọc trai	Pearl
+Cáo	Fox
+Rắn	Snake
+Thằn lằn	Lizard
+Thằn Lằn	Lizard
+Chồn đất	Meerkat
+Chồn Đất	Meerkat
+Bình vàng	Golden Vase
+Gấu bắc cực	Polar Bear
+Gấu Bắc Cực	Polar Bear
+Cánh cụt	Penguin
+Cánh Cụt	Penguin
+Hải cẩu	Seal
+Hải Cẩu	Seal
+Cá voi sát thủ	Orca
+Cá Voi Sát Thủ	Orca
+Cá voi	Orca
+Cá Voi	Orca
+Cá hồi vàng	Golden Salmon
+Cá hồi	Salmon
+Dơi	Bat
+Mèo đen	Black Cat
+Mèo Đen	Black Cat
+Quạ	Crow
+Nhện	Spider
+Đom đóm vàng	Golden Firefly
+Đom đóm	Firefly
+Thỏ	Rabbit
+Vịt	Duck
+Gấu Trúc	Panda
+Kỳ Lân	Unicorn
+Cá Heo	Dolphin
+Rùa Biển	Sea Turtle
+Khủng Long	Dino
+Lạc Đà	Camel
+Cú Tuyết	Snowy Owl
+Ma Nhỏ	Little Ghost
+Cú Mèo	Horned Owl
+# ── Mô tả thú ──
+Bạn thân của mọi nhà, ló lên đều đặn.	Everyone's best friend, pops up steadily.
+Lười biếng thò đầu ra rồi ngáp một cái.	Lazily pokes its head out and yawns.
+Nhỏ xíu mà lẹ làng, chui ra chui vào liên tục.	Tiny but nimble, in and out all the time.
+Ủn ỉn tròn trịa, chạy chẳng nổi.	Round and oinky, too chubby to run.
+Bò ngang ra khỏi hố, giơ càng chào.	Scuttles out sideways and waves its claws.
+Tám xúc tu ngọ nguậy, phun mực khi rụt xuống.	Eight wiggly arms, squirts ink when it hides.
+Quẫy đuôi ló lên rồi lượn mất.	Flicks its tail, pops up and swims away.
+Nằm im cười tươi giữa đáy biển.	Lies still, smiling on the sea floor.
+Tai to thính, nghe động là lủi ngay.	Big sharp ears, dashes off at any sound.
+Uốn lượn chữ S trồi lên khỏi cát.	Slithers up out of the sand in an S.
+Lè lưỡi liếm mép rồi vụt chạy.	Licks its lips, then zips away.
+Đứng thẳng ngó nghiêng canh gác.	Stands tall, keeping watch.
+To xác lông trắng, thò đầu ra chào.	Big and fluffy, pops out to say hi.
+Lạch bạch trượt bụng ra khỏi hố băng.	Waddles and belly-slides out of the ice.
+Mắt tròn long lanh, vỗ vây chào.	Big shiny eyes, flaps a flipper hello.
+Vây lưng nhô lên trước, rồi cả thân vọt ra.	The fin shows first, then the whole body leaps out.
+Treo ngược ngủ ngày, đêm đến vỗ cánh ló ra.	Sleeps upside down by day, flaps out at night.
+Mắt vàng sáng rực trong bóng tối.	Golden eyes glowing in the dark.
+Kêu “quạ quạ” rồi vụt bay lên.	Cries "caw caw" and flies off.
+Đu tơ thả xuống rồi leo lên thoăn thoắt.	Drops down on a thread and climbs back fast.
+Tai dài vểnh cao, ló lên là nhún nhảy liên hồi.	Long ears up, hops and bounces all the time.
+Kêu “quạc quạc” mỗi lần ló lên khỏi hố.	Goes "quack quack" every time it pops up.
+Tròn trịa đen trắng, vừa ló lên đã nhai trúc.	Round, black and white, munching bamboo.
+Sừng vàng lấp lánh, bờm óng ánh sắc cầu vồng.	Sparkly golden horn and a rainbow mane.
+Nhảy vọt khỏi mặt nước rồi lặn mất tăm.	Leaps out of the water and dives away.
+Thò đầu khỏi mai, chớp mắt nhìn quanh.	Peeks out of its shell and blinks around.
+Khủng long con lạch bạch chui lên từ cát.	A baby dino waddling up out of the sand.
+Nhai cỏ khô thong thả, chẳng vội trốn đi đâu.	Chews dry grass slowly, in no hurry at all.
+Xoay đầu nhìn quanh rồi vụt bay mất.	Turns its head around, then flies off.
+Lúc ẩn lúc hiện, cười khúc khích trong đêm.	Now you see it, now you don't, giggling in the night.
+Mắt tròn xoe canh đêm, nghe động là rụt cổ.	Round eyes watching the night, ducks at any sound.
+Điểm thưởng: +{0} điểm mỗi lần đập trúng	Reward: +{0} points per hit
+# ── Cửa hàng ──
+CỬA HÀNG	SHOP
+Dụng cụ	Tools
+Vật phẩm	Items
+Tích xu miễn phí	Free coins
+Xem quảng cáo ngắn · còn 4 lượt hôm nay	Watch a short ad · 4 left today
++100 xu	+100 coins
+HUYỀN THOẠI	LEGENDARY
+Ô bị đập	Hit cells
+Ô bạn chạm	Tapped cell
+Đang có:	You have:
+Trang bị	Equip
+Mua x1	Buy x1
+Mua x5	Buy x5
+Dép Lào	Flip-Flop
+Vợt Muỗi	Bug Zapper
+Búa Hơi	Squeaky Hammer
+Chảo Gang	Iron Pan
+Búa Thor	Thor's Hammer
+Tầm đập 1 ô: trúng đúng ô bạn chạm.	Range 1 cell: hits the cell you tap.
+Tầm đập 6 ô tam giác, sấm sét lan khắp bàn.	Range 6 cells in a triangle, lightning spreads across the board.
+# ── Vật phẩm hỗ trợ ──
++5 Giây	+5 Seconds
++5 giây	+5 sec
+Cộng 5 giây	Adds 5 seconds
+Cộng thêm 5 giây vào đồng hồ khi đang chơi.	Adds 5 seconds to the clock while playing.
+Nhân Đôi Điểm	Double Points
+Nhân Đôi	Double
+Nhân đôi	Double
+Điểm x2 trong 10s	x2 points for 10s
+Mọi điểm nhận được tăng gấp đôi trong 10 giây.	All points are doubled for 10 seconds.
+Khiên Bom	Bomb Shield
+Khiên	Shield
+Đỡ 1 lần đập nhầm	Blocks 1 wrong hit
+Đỡ một lần đập nhầm vật cản: không bị trừ điểm, giữ combo.	Blocks one hit on a bomb: no penalty, combo kept.
+Đóng Băng Giờ	Time Freeze
+Đóng Băng	Freeze
+Đóng băng	Freeze
+Băng	Freeze
+Dừng giờ 5 giây	Stops time for 5s
+Dừng đồng hồ 5 giây, thú vẫn ló lên bình thường.	Stops the clock for 5 seconds; animals keep popping up.
+Bùa Combo	Combo Charm
+Bùa combo	Combo charm
+Combo luôn từ x3	Combo starts at x3
+Combo bắt đầu từ x3 thay vì x1 trong cả ván.	Combo starts at x3 instead of x1 for the whole round.
+# ── Nhiệm vụ ──
+NHIỆM VỤ	MISSIONS
+Hằng ngày	Daily
+Hằng tuần	Weekly
+Thành tựu	Achievements
+Điểm nhiệm vụ	Mission points
+Làm mới\n{0}	Resets in\n{0}
+Xong	Done
+ · +{0} điểm	 · +{0} pts
+Đã mở rương!	Chest opened!
+Đã nhận hôm nay	Claimed today
+Cần {0} điểm	Need {0} pts
+Đã mở	Opened
+Đạt combo x10 trong một ván	Reach a x10 combo in one round
+Đập trúng 50 con thú	Hit 50 animals
+Đập 3 con thưởng vàng	Hit 3 golden bonuses
+Chơi 3 ván bất kỳ	Play any 3 rounds
+Xem 1 quảng cáo nhân đôi xu	Watch 1 double-coins ad
+Chơi 20 ván	Play 20 rounds
+Đập trúng 500 con thú	Hit 500 animals
+Chơi đủ cả 5 map	Play all 5 maps
+Đạt combo x25	Reach a x25 combo
+Thợ đập tập sự: đập 1.000 thú	Rookie Whacker: hit 1,000 animals
+Thợ đập lành nghề: đập 5.000 thú	Pro Whacker: hit 5,000 animals
+Cao thủ: đạt 1.000 điểm trong một ván	Master: score 1,000 in one round
+Săn vàng: đập 100 con thưởng vàng	Gold Hunter: hit 100 golden bonuses
+# ── Điểm danh tháng ──
+Điểm danh	Check-in
+ĐIỂM DANH	CHECK-IN
+Quà ngày 30	Day 30 gift
+Gậy Bóng Chày	Baseball Bat
+Dùng miễn phí 7 ngày · +20% xu mỗi ván	Free for 7 days · +20% coins per round
+Đã điểm danh {0}/{1} ngày	Checked in {0}/{1} days
+Lỡ ngày? Xem quảng cáo để điểm danh bù · còn {0}/{1}	Missed a day? Watch an ad to make it up · {0}/{1} left
+Lỡ ngày? Xem quảng cáo để điểm danh bù · còn 3/3	Missed a day? Watch an ad to make it up · 3/3 left
+Xem quảng cáo nhận x2	Watch ad for x2
+Đã nhận {0}!	Got {0}!
+Điểm danh tiếp sau {0}	Next check-in in {0}
+Điểm danh tiếp sau 00:00:00	Next check-in in 00:00:00
+Đã hết ô điểm danh tháng này!	No more check-ins this month!
+HÔM NAY	TODAY
+Bù	Make up
+Bí ẩn	Mystery
+Rương bí ẩn	Mystery chest
+Bạn nhận được	You got
+Tuyệt!	Great!
+7 ngày	7 days
+Capybara	Capybara
+Gậy Bóng Chày (7 ngày)	Baseball Bat (7 days)
+{0} ({1} ngày)	{0} ({1} days)
++5 Giây x2	+5 Seconds x2
++5 Giây x3	+5 Seconds x3
++5 Giây x5	+5 Seconds x5
+Nhân Đôi x1	Double x1
+Nhân Đôi x2	Double x2
+Nhân Đôi x3	Double x3
+Khiên x2	Shield x2
+Khiên x3	Shield x3
+Đóng Băng x2	Freeze x2
+Đóng Băng x3	Freeze x3
+Bùa Combo x1	Combo Charm x1
+Bùa Combo x2	Combo Charm x2
+Ngày 1/30 · +100 xu	Day 1/30 · +100 coins
+# ── Gậy Bóng Chày, Capybara, dùng thử ──
+Tầm đập 1 ô, mỗi ván được thêm 20% xu.	Range 1 cell, +20% coins every round.
+Chill nhất hội, thong thả ló lên chẳng sợ ai.	The chillest of all, pops up slowly and fears nobody.
+Dùng miễn phí 7 ngày khi điểm danh ngày 30	Free for 7 days on check-in day 30
+Miễn phí khi điểm danh ngày 14	Free on check-in day 14
+Dùng thử	Trial
+Đang dùng thử · còn {0}	On trial · {0} left
+Dùng thử · còn {0}	Trial · {0} left
+{0} ngày {1} giờ	{0}d {1}h
+{0} giờ {1} phút	{0}h {1}m
+{0} phút	{0}m

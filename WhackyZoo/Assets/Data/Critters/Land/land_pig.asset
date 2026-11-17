@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18829b0c93e09764899920a603c39d06, type: 3}
+  m_Name: land_pig
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.CritterData
+  id: land_pig
+  displayName: Heo
+  shortName: 
+  hint: 
+  sprite: {fileID: 21300000, guid: c14938e8afc36274f9360176493a210f, type: 3}
+  kind: 0
+  points: 10
+  animSprite: {fileID: 0}
+  blinkHalf: {fileID: 21300000, guid: d52e113b775e97142b824bbf85bef2ec, type: 3}
+  blinkClosed: {fileID: 21300000, guid: fa94ea2c469510d468840f6af0d8c067, type: 3}
+  spark: {fileID: 0}
+  sparkCenter: {x: 0, y: 0}
+  sparkPivot: {x: 0, y: 0}
+  sparkSize: {x: 0, y: 0}

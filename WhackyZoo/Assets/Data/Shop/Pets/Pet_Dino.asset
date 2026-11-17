@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 523a9a6d1258693419c554830cf6b7a7, type: 3}
+  m_Name: Pet_Dino
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.PetData
+  id: dino
+  displayName: "Kh\u1EE7ng Long"
+  cardName: 
+  description: "Kh\u1EE7ng long con l\u1EA1ch b\u1EA1ch chui l\xEAn t\u1EEB c\xE1t."
+  icon: {fileID: 21300000, guid: 52aad1754375c2f4a83e64d65154e93f, type: 3}
+  price: 5000
+  cashPrice: 
+  premium: 0
+  freeHint: 
+  mapId: desert
+  isBase: 0
+  points: 25
+  critter: {fileID: 11400000, guid: 75640e0223acdca4c8e8467ee8aaf126, type: 2}

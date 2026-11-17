@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed0ca992231c8304bbbffe3fc5361872, type: 3}
+  m_Name: Booster_X2
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.BoosterData
+  id: x2
+  effect: 1
+  amount: 2
+  duration: 10
+  displayName: "Nh\xE2n \u0110\xF4i \u0110i\u1EC3m"
+  barLabel: x2
+  guideName: "Nh\xE2n \u0111\xF4i"
+  guideHint: "\u0110i\u1EC3m x2 trong 10s"
+  shopCardName: "Nh\xE2n \u0110\xF4i"
+  shopDescription: "M\u1ECDi \u0111i\u1EC3m nh\u1EADn \u0111\u01B0\u1EE3c t\u0103ng g\u1EA5p \u0111\xF4i trong 10 gi\xE2y."
+  icon: {fileID: 21300000, guid: 13bc65d46747e9f4da81b0ebff761dd7, type: 3}
+  buttonSprite: {fileID: 21300000, guid: 96fe2dfbccb8ce044913f0245183b703, type: 3}
+  price: 300
+  packPrice: 1200
+  packSize: 5
+  starterCount: 1

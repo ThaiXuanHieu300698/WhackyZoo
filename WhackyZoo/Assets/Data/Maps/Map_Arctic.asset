@@ -1,0 +1,443 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47fa2e001e8bd4e40963abc498e043b6, type: 3}
+  m_Name: Map_Arctic
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.MapData
+  id: arctic
+  displayName: "B\u1EAFc C\u1EF1c"
+  background: {fileID: 21300000, guid: f32858bb7ad1b404ba73ee73b1048b08, type: 3}
+  music: {fileID: 8300000, guid: eac49aa6b9a22904b857d5bee9090999, type: 3}
+  holeBack: {fileID: 21300000, guid: 4438b33e1033db143a67108bf6dbd20b, type: 3}
+  holeFront: {fileID: 21300000, guid: 7da35a017e4cf6d4ea3a7d309b930a2a, type: 3}
+  holeMask: {fileID: 21300000, guid: c51e096b7ae24ef40b3bcea1d19927e3, type: 3}
+  normalCritters:
+  - {fileID: 11400000, guid: ab5e7f65d9747ee428078550f2d99d98, type: 2}
+  - {fileID: 11400000, guid: f48aae5b88980d94fa918168c3875cf9, type: 2}
+  - {fileID: 11400000, guid: a07e1569971dbf04ba6cc95822ef3c5c, type: 2}
+  - {fileID: 11400000, guid: 3ec3c3d8ce682964b85605e4c279726d, type: 2}
+  bonus: {fileID: 11400000, guid: a0efaa34becaa1749beb028c30aad59f, type: 2}
+  obstacle: {fileID: 11400000, guid: ea44671063e49d044a7de7e8df826cdb, type: 2}
+  ambient:
+  - name: Flake
+    sprite: {fileID: 21300000, guid: 9b7646ca056a30a4f93befce7a930ab5, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    position: {x: 34, y: 124}
+    size: {x: 16, y: 16}
+    pivot: {x: 0.5, y: 0.5}
+    clipBelowY: 0
+    motion: 1
+    period: 9
+    delay: 0
+    angleFrom: 0
+    angleTo: 0
+    midOffset: {x: -10, y: 280}
+    endOffset: {x: -20, y: 560}
+    fadeInAt: 0.1
+    linear: 0
+    alphaKeys: {x: 1, y: 1, z: 1}
+  - name: Flake
+    sprite: {fileID: 21300000, guid: 9b7646ca056a30a4f93befce7a930ab5, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    position: {x: 93, y: 63}
+    size: {x: 14, y: 14}
+    pivot: {x: 0.5, y: 0.5}
+    clipBelowY: 0
+    motion: 1
+    period: 11
+    delay: 2.2
+    angleFrom: 0
+    angleTo: 0
+    midOffset: {x: -10, y: 280}
+    endOffset: {x: -20, y: 560}
+    fadeInAt: 0.1
+    linear: 0
+    alphaKeys: {x: 1, y: 1, z: 1}
+  - name: Flake
+    sprite: {fileID: 21300000, guid: 9b7646ca056a30a4f93befce7a930ab5, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    position: {x: 165, y: 155}
+    size: {x: 18, y: 18}
+    pivot: {x: 0.5, y: 0.5}
+    clipBelowY: 0
+    motion: 1
+    period: 10
+    delay: 1.1
+    angleFrom: 0
+    angleTo: 0
+    midOffset: {x: -10, y: 280}
+    endOffset: {x: -20, y: 560}
+    fadeInAt: 0.1
+    linear: 0
+    alphaKeys: {x: 1, y: 1, z: 1}
+  - name: Flake
+    sprite: {fileID: 21300000, guid: 9b7646ca056a30a4f93befce7a930ab5, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    position: {x: 233.5, y: 93.5}
+    size: {x: 15, y: 15}
+    pivot: {x: 0.5, y: 0.5}
+    clipBelowY: 0
+    motion: 1
+    period: 12
+    delay: 3.4
+    angleFrom: 0
+    angleTo: 0
+    midOffset: {x: -10, y: 280}
+    endOffset: {x: -20, y: 560}
+    fadeInAt: 0.1
+    linear: 0
+    alphaKeys: {x: 1, y: 1, z: 1}
+  - name: Flake
+    sprite: {fileID: 21300000, guid: 9b7646ca056a30a4f93befce7a930ab5, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    position: {x: 304.5, y: 144.5}
+    size: {x: 17, y: 17}
+    pivot: {x: 0.5, y: 0.5}
+    clipBelowY: 0
+    motion: 1
+    period: 9
+    delay: 0.6
+    angleFrom: 0
+    angleTo: 0
+    midOffset: {x: -10, y: 280}
+    endOffset: {x: -20, y: 560}
+    fadeInAt: 0.1
+    linear: 0
+    alphaKeys: {x: 1, y: 1, z: 1}
+  - name: Flake
+    sprite: {fileID: 21300000, guid: 9b7646ca056a30a4f93befce7a930ab5, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    position: {x: 353, y: 73}
+    size: {x: 14, y: 14}
+    pivot: {x: 0.5, y: 0.5}
+    clipBelowY: 0
+    motion: 1
+    period: 11
+    delay: 4.1
+    angleFrom: 0
+    angleTo: 0
+    midOffset: {x: -10, y: 280}
+    endOffset: {x: -20, y: 560}
+    fadeInAt: 0.1
+    linear: 0
+    alphaKeys: {x: 1, y: 1, z: 1}
+  - name: Flake
+    sprite: {fileID: 21300000, guid: 9b7646ca056a30a4f93befce7a930ab5, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    position: {x: 123.5, y: 223.5}
+    size: {x: 15, y: 15}
+    pivot: {x: 0.5, y: 0.5}
+    clipBelowY: 0
+    motion: 1
+    period: 10
+    delay: 5
+    angleFrom: 0
+    angleTo: 0
+    midOffset: {x: -10, y: 280}
+    endOffset: {x: -20, y: 560}
+    fadeInAt: 0.1
+    linear: 0
+    alphaKeys: {x: 1, y: 1, z: 1}
+  - name: Flake
+    sprite: {fileID: 21300000, guid: 9b7646ca056a30a4f93befce7a930ab5, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    position: {x: 274, y: 214}
+    size: {x: 16, y: 16}
+    pivot: {x: 0.5, y: 0.5}
+    clipBelowY: 0
+    motion: 1
+    period: 12
+    delay: 2.8
+    angleFrom: 0
+    angleTo: 0
+    midOffset: {x: -10, y: 280}
+    endOffset: {x: -20, y: 560}
+    fadeInAt: 0.1
+    linear: 0
+    alphaKeys: {x: 1, y: 1, z: 1}
+  ambientFx: []
+  ambientFxMask: {fileID: 0}
+  banner: {fileID: 21300000, guid: 72b79c58a91345345ad1a472502a5fac, type: 3}
+  cardEffects:
+  - name: Flake0
+    sprite: {fileID: 21300000, guid: e3bdb84844919a1409d53bba7683b811, type: 3}
+    frames: []
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: -1
+    left: 17
+    top: -11
+    width: 12
+    height: 12
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 4.6
+    delay: 0
+    ease: 0
+    alternate: 0
+    moveKeys:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: -12, z: 136}
+    alphaKeys:
+    - {x: 0, y: 0}
+    - {x: 0.12, y: 1}
+    - {x: 1, y: 0.2}
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 0
+    restRotation: 0
+  - name: Flake1
+    sprite: {fileID: 21300000, guid: e3bdb84844919a1409d53bba7683b811, type: 3}
+    frames: []
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: -1
+    left: 60
+    top: -10
+    width: 8
+    height: 8
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 5.8
+    delay: 1.8
+    ease: 0
+    alternate: 0
+    moveKeys:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: -12, z: 136}
+    alphaKeys:
+    - {x: 0, y: 0}
+    - {x: 0.12, y: 1}
+    - {x: 1, y: 0.2}
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 0
+    restRotation: 0
+  - name: Flake2
+    sprite: {fileID: 21300000, guid: e3bdb84844919a1409d53bba7683b811, type: 3}
+    frames: []
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: -1
+    left: 100.5
+    top: -11.5
+    width: 14
+    height: 14
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 4.2
+    delay: 3.1
+    ease: 0
+    alternate: 0
+    moveKeys:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: -12, z: 136}
+    alphaKeys:
+    - {x: 0, y: 0}
+    - {x: 0.12, y: 1}
+    - {x: 1, y: 0.2}
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 0
+    restRotation: 0
+  - name: Flake3
+    sprite: {fileID: 21300000, guid: e3bdb84844919a1409d53bba7683b811, type: 3}
+    frames: []
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: -1
+    left: 147.5
+    top: -10.5
+    width: 10
+    height: 10
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 5.2
+    delay: 0.7
+    ease: 0
+    alternate: 0
+    moveKeys:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: -12, z: 136}
+    alphaKeys:
+    - {x: 0, y: 0}
+    - {x: 0.12, y: 1}
+    - {x: 1, y: 0.2}
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 0
+    restRotation: 0
+  - name: Flake4
+    sprite: {fileID: 21300000, guid: e3bdb84844919a1409d53bba7683b811, type: 3}
+    frames: []
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: -1
+    left: 193
+    top: -11
+    width: 12
+    height: 12
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 4.8
+    delay: 2.4
+    ease: 0
+    alternate: 0
+    moveKeys:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: -12, z: 136}
+    alphaKeys:
+    - {x: 0, y: 0}
+    - {x: 0.12, y: 1}
+    - {x: 1, y: 0.2}
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 0
+    restRotation: 0
+  - name: Flake5
+    sprite: {fileID: 21300000, guid: e3bdb84844919a1409d53bba7683b811, type: 3}
+    frames: []
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: -1
+    left: 236
+    top: -10
+    width: 8
+    height: 8
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 6
+    delay: 4
+    ease: 0
+    alternate: 0
+    moveKeys:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: -12, z: 136}
+    alphaKeys:
+    - {x: 0, y: 0}
+    - {x: 0.12, y: 1}
+    - {x: 1, y: 0.2}
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 0
+    restRotation: 0
+  - name: Flake6
+    sprite: {fileID: 21300000, guid: e3bdb84844919a1409d53bba7683b811, type: 3}
+    frames: []
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: -1
+    left: 272.5
+    top: -11.5
+    width: 14
+    height: 14
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 4.4
+    delay: 1.2
+    ease: 0
+    alternate: 0
+    moveKeys:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: -12, z: 136}
+    alphaKeys:
+    - {x: 0, y: 0}
+    - {x: 0.12, y: 1}
+    - {x: 1, y: 0.2}
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 0
+    restRotation: 0
+  - name: Flake7
+    sprite: {fileID: 21300000, guid: e3bdb84844919a1409d53bba7683b811, type: 3}
+    frames: []
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: -1
+    left: 315.5
+    top: -10.5
+    width: 10
+    height: 10
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 5.4
+    delay: 3.6
+    ease: 0
+    alternate: 0
+    moveKeys:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: -12, z: 136}
+    alphaKeys:
+    - {x: 0, y: 0}
+    - {x: 0.12, y: 1}
+    - {x: 1, y: 0.2}
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 0
+    restRotation: 0
+  - name: Flake8
+    sprite: {fileID: 21300000, guid: e3bdb84844919a1409d53bba7683b811, type: 3}
+    frames: []
+    frameInterval: 0.22
+    color: {r: 1, g: 1, b: 1, a: 1}
+    parent: -1
+    left: 128
+    top: -10
+    width: 8
+    height: 8
+    pivot: {x: 0.5, y: 0.5}
+    clip: 0
+    fillHorizontal: 0
+    period: 6.2
+    delay: 5
+    ease: 0
+    alternate: 0
+    moveKeys:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: -12, z: 136}
+    alphaKeys:
+    - {x: 0, y: 0}
+    - {x: 0.12, y: 1}
+    - {x: 1, y: 0.2}
+    fillKeys: []
+    rotateKeys: []
+    restAlpha: 0
+    restRotation: 0
+  cardSkyMask: {fileID: 0}
+  cardSkyBottom: 60
+  isNew: 0
+  normalLabel: "Th\xFA"
+  mapChip:
+    sprite: {fileID: 21300000, guid: 2810acbcfbadd2a45baddc75fe447d21, type: 3}
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    textColor: {r: 1, g: 1, b: 1, a: 1}
+  normalChip:
+    sprite: {fileID: 21300000, guid: 8b44c33270459824fbf29f36de25afd5, type: 3}
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    textColor: {r: 0.22745098, g: 0.14117648, b: 0.07058824, a: 1}
+  bonusChip:
+    sprite: {fileID: 21300000, guid: 2ab94122b1bf1e540bec1df937ac61d4, type: 3}
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    textColor: {r: 0.22745098, g: 0.14117648, b: 0.07058824, a: 1}
+  obstacleChip:
+    sprite: {fileID: 21300000, guid: bed23e930331cc840b176490baa2f17f, type: 3}
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    textColor: {r: 1, g: 1, b: 1, a: 1}
+  howToTop: {r: 0.17254902, g: 0.43137255, b: 0.61960787, a: 1}
+  howToBottom: {r: 0.54901963, g: 0.78431374, b: 0.9254902, a: 1}

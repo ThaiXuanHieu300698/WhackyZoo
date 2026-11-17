@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 523a9a6d1258693419c554830cf6b7a7, type: 3}
+  m_Name: Pet_Duck
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.PetData
+  id: duck
+  displayName: "V\u1ECBt"
+  cardName: 
+  description: "K\xEAu \u201Cqu\u1EA1c qu\u1EA1c\u201D m\u1ED7i l\u1EA7n l\xF3 l\xEAn kh\u1ECFi h\u1ED1."
+  icon: {fileID: 21300000, guid: 3e4b2e3e91c0eaf4d8aae1d8c41cd287, type: 3}
+  price: 1000
+  cashPrice: 
+  premium: 0
+  freeHint: 
+  mapId: land
+  isBase: 0
+  points: 12
+  critter: {fileID: 11400000, guid: 070ec93d72dbca24f834b56583647931, type: 2}

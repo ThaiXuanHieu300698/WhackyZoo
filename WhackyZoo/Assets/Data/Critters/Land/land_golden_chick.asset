@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18829b0c93e09764899920a603c39d06, type: 3}
+  m_Name: land_golden_chick
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.CritterData
+  id: land_golden_chick
+  displayName: "G\xE0 v\xE0ng"
+  shortName: 
+  hint: "Hi\u1EBFm, l\xF3 r\u1EA5t nhanh"
+  sprite: {fileID: 21300000, guid: 9a2a334a2bf117443952bb986d372326, type: 3}
+  kind: 1
+  points: 50
+  animSprite: {fileID: 21300000, guid: 596ab616f07f3674c85edd9ce930bd0a, type: 3}
+  blinkHalf: {fileID: 21300000, guid: ef00648cff0908d40878be14761bed8c, type: 3}
+  blinkClosed: {fileID: 21300000, guid: cd386e604014c574b9ee77ff89b433d5, type: 3}
+  spark: {fileID: 21300000, guid: ec8c32fbc3e39694db170e10b605220a, type: 3}
+  sparkCenter: {x: 0.86, y: 0.75}
+  sparkPivot: {x: 0.5, y: 0.5}
+  sparkSize: {x: 0.26666668, y: 0.26666668}

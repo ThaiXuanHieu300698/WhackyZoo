@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 523a9a6d1258693419c554830cf6b7a7, type: 3}
+  m_Name: Pet_Land_land_dog
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.PetData
+  id: base_land_dog
+  displayName: "Ch\xF3"
+  cardName: 
+  description: "B\u1EA1n th\xE2n c\u1EE7a m\u1ECDi nh\xE0, l\xF3 l\xEAn \u0111\u1EC1u \u0111\u1EB7n."
+  icon: {fileID: 21300000, guid: 8d0e4f4deac31214487f105abb1c00ff, type: 3}
+  price: 0
+  cashPrice: 
+  premium: 0
+  freeHint: 
+  mapId: land
+  isBase: 1
+  points: 10
+  critter: {fileID: 11400000, guid: 062fb3affd755524b924a3c5dface815, type: 2}

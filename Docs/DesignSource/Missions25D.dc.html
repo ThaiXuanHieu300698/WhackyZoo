@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Nhiệm vụ 2.5D – Đập Thú</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#3A2412;text-decoration:none}a:hover{color:#000}
+.txt3d{-webkit-text-stroke:5px #3A2412;paint-order:stroke fill;text-shadow:0 4px 0 #3A2412,0 8px 12px rgba(0,0,0,.25)}
+.gbtn{display:flex;align-items:center;justify-content:center;gap:6px;border:3px solid #3A2412;border-radius:18px;background:linear-gradient(180deg,var(--hi) 0%,var(--base) 55%,var(--lo) 100%);box-shadow:0 5px 0 var(--edge),0 10px 14px rgba(0,0,0,.22),inset 0 -3px 0 rgba(0,0,0,.08);position:relative;font-family:inherit;font-weight:800;color:#3A2412;cursor:pointer;transition:transform .08s,box-shadow .08s}
+.gbtn::after{content:"";position:absolute;left:8%;right:8%;top:3px;height:40%;border-radius:12px;background:linear-gradient(rgba(255,255,255,.75),rgba(255,255,255,0));pointer-events:none}
+.gbtn:active{transform:translateY(4px);box-shadow:0 1px 0 var(--edge),0 4px 6px rgba(0,0,0,.25)}
+.gbtn[disabled]{cursor:default;filter:saturate(.5);opacity:.85}
+.panel{background:linear-gradient(180deg,#FFFFFF 0%,#F3EEE4 100%);border:3px solid #3A2412;border-radius:16px;box-shadow:0 4px 0 #B9A98C,0 8px 12px rgba(0,0,0,.18)}
+.bar{height:12px;border-radius:6px;background:linear-gradient(180deg,#CFC5B2,#E9E1D0);border:2px solid #3A2412;overflow:hidden;box-shadow:inset 0 2px 3px rgba(0,0,0,.2)}
+.fill{height:100%;border-radius:4px;box-shadow:inset 0 2px 0 rgba(255,255,255,.5);transition:width .4s cubic-bezier(.2,.9,.3,1.2)}
+.row{animation:rowIn .4s cubic-bezier(.2,.9,.3,1.2) both}
+.ready{animation:pulse .8s ease-in-out infinite alternate}
+.chestReady{animation:chest 1.2s ease-in-out infinite;transform-origin:50% 90%}
+.bumpA{animation:bumpA .35s ease-out}
+.bumpB{animation:bumpB .35s ease-out}
+@keyframes rowIn{from{transform:translateX(30px);opacity:0}to{transform:none;opacity:1}}
+@keyframes pulse{from{transform:scale(1)}to{transform:scale(1.07)}}
+@keyframes chest{0%,70%,100%{transform:rotate(0)}76%{transform:rotate(-10deg) scale(1.08)}84%{transform:rotate(9deg) scale(1.08)}92%{transform:rotate(-5deg)}}
+@keyframes bumpA{40%{transform:scale(1.18)}}
+@keyframes bumpB{40%{transform:scale(1.18)}}
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition:none !important}}
+.soft-scroll{scrollbar-width:none;-ms-overflow-style:none;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;scroll-behavior:smooth}
+.soft-scroll::-webkit-scrollbar{display:none;width:0;height:0}
+.fade-y{-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 14px,#000 calc(100% - 28px),transparent 100%);mask-image:linear-gradient(180deg,transparent 0,#000 14px,#000 calc(100% - 28px),transparent 100%)}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: radial-gradient(ellipse at 50% 0%, #E9F7FF 0%, #A8DCFF 55%, #6FC0F2 100%); font-family: 'Baloo 2', system-ui, sans-serif; color: #3A2412">
+  <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+    <defs>
+      <radialGradient id="nCoin" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFF3A0"/><stop offset=".55" stop-color="#FFC93C"/><stop offset="1" stop-color="#D08A00"/></radialGradient>
+      <linearGradient id="nWood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3C584"/><stop offset=".6" stop-color="#D09050"/><stop offset="1" stop-color="#9A6230"/></linearGradient>
+      <linearGradient id="nFire" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE14A"/><stop offset=".5" stop-color="#FF9F1C"/><stop offset="1" stop-color="#E53935"/></linearGradient>
+      <radialGradient id="nGreen" cx=".38" cy=".3" r=".8"><stop offset="0" stop-color="#B8F5B0"/><stop offset=".55" stop-color="#5BD06A"/><stop offset="1" stop-color="#2FA444"/></radialGradient>
+      <radialGradient id="nChick" cx=".38" cy=".3" r=".78"><stop offset="0" stop-color="#FFF7B8"/><stop offset=".55" stop-color="#FFD84A"/><stop offset="1" stop-color="#D99A00"/></radialGradient>
+      <radialGradient id="nBlue" cx=".38" cy=".3" r=".8"><stop offset="0" stop-color="#D8F1FF"/><stop offset=".55" stop-color="#4FB0EE"/><stop offset="1" stop-color="#1F7FC4"/></radialGradient>
+      <radialGradient id="nPurple" cx=".38" cy=".3" r=".8"><stop offset="0" stop-color="#DCC0FF"/><stop offset=".55" stop-color="#9B5DE5"/><stop offset="1" stop-color="#5A2AA0"/></radialGradient>
+      <linearGradient id="nChestWood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D9A066"/><stop offset="1" stop-color="#8A5628"/></linearGradient>
+      <symbol id="iHammer" viewBox="0 0 100 100"><g transform="rotate(-30 50 50)"><rect x="44" y="40" width="12" height="56" rx="5" fill="#B5793F" stroke="#3A2412" stroke-width="5"/><rect x="14" y="12" width="72" height="34" rx="11" fill="url(#nWood)" stroke="#3A2412" stroke-width="5"/></g></symbol>
+      <symbol id="iFire" viewBox="0 0 100 100"><path d="M50 6 Q70 32 66 50 Q78 44 76 30 Q92 52 84 74 Q76 94 50 94 Q24 94 18 74 Q12 54 30 40 Q30 56 40 58 Q30 30 50 6 Z" fill="url(#nFire)" stroke="#3A2412" stroke-width="5" stroke-linejoin="round"/></symbol>
+      <symbol id="iPlay" viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="url(#nGreen)" stroke="#3A2412" stroke-width="5"/><path d="M40 30 L72 50 L40 70 Z" fill="#FFFFFF" stroke="#3A2412" stroke-width="4" stroke-linejoin="round"/></symbol>
+      <symbol id="iChick" viewBox="0 0 100 100"><path d="M41 28 Q42 8 51 22 Q58 8 63 28" fill="#FF8A2B" stroke="#3A2412" stroke-width="4" stroke-linejoin="round"/><circle cx="50" cy="57" r="34" fill="url(#nChick)" stroke="#3A2412" stroke-width="5"/><circle cx="39" cy="52" r="5" fill="#1E120A"/><circle cx="61" cy="52" r="5" fill="#1E120A"/><path d="M41 62 L50 57 L59 62 L50 71 Z" fill="#FF8A2B" stroke="#3A2412" stroke-width="3" stroke-linejoin="round"/></symbol>
+      <symbol id="iAd" viewBox="0 0 100 100"><rect x="8" y="20" width="84" height="60" rx="14" fill="url(#nBlue)" stroke="#3A2412" stroke-width="5"/><path d="M42 36 L64 50 L42 64 Z" fill="#FFFFFF" stroke="#3A2412" stroke-width="4" stroke-linejoin="round"/></symbol>
+      <symbol id="iStar" viewBox="0 0 100 100"><path d="M50 6 L62 36 L94 38 L69 58 L78 90 L50 72 L22 90 L31 58 L6 38 L38 36 Z" fill="url(#nCoin)" stroke="#3A2412" stroke-width="5" stroke-linejoin="round"/></symbol>
+      <symbol id="iMap" viewBox="0 0 100 100"><path d="M8 22 L36 12 L64 22 L92 12 V78 L64 88 L36 78 L8 88 Z" fill="#FFF3D0" stroke="#3A2412" stroke-width="5" stroke-linejoin="round"/><path d="M36 12 V78 M64 22 V88" stroke="#3A2412" stroke-width="4"/><path d="M20 60 Q40 40 50 52 T80 36" fill="none" stroke="#E53935" stroke-width="4" stroke-dasharray="6 5" stroke-linecap="round"/></symbol>
+      <symbol id="iTrophy" viewBox="0 0 100 100"><path d="M28 12 H72 V38 Q72 62 50 62 Q28 62 28 38 Z" fill="url(#nCoin)" stroke="#3A2412" stroke-width="5" stroke-linejoin="round"/><path d="M28 20 H14 V28 Q14 44 30 46 M72 20 H86 V28 Q86 44 70 46" fill="none" stroke="#3A2412" stroke-width="5"/><path d="M44 62 V76 H56 V62" fill="#D08A00" stroke="#3A2412" stroke-width="4"/><rect x="30" y="76" width="40" height="12" rx="4" fill="url(#nPurple)" stroke="#3A2412" stroke-width="4"/></symbol>
+      <symbol id="iChest" viewBox="0 0 100 100"><path d="M12 42 Q12 18 50 18 Q88 18 88 42 Z" fill="url(#nChestWood)" stroke="#3A2412" stroke-width="5" stroke-linejoin="round"/><rect x="12" y="42" width="76" height="44" rx="6" fill="url(#nChestWood)" stroke="#3A2412" stroke-width="5"/><path d="M12 42 H88 M30 20 V86 M70 20 V86" stroke="#3A2412" stroke-width="4"/><path d="M30 20 V86 M70 20 V86" stroke="#FFC93C" stroke-width="2.5"/><rect x="42" y="36" width="16" height="18" rx="4" fill="url(#nCoin)" stroke="#3A2412" stroke-width="4"/></symbol>
+      <symbol id="iCoin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="url(#nCoin)" stroke="#3A2412" stroke-width="2"/><circle cx="12" cy="12" r="5.5" fill="none" stroke="#C07A00" stroke-width="2"/><ellipse cx="9" cy="8" rx="3" ry="1.6" fill="#FFFFFF" opacity=".6"/></symbol>
+    </defs>
+  </svg>
+
+  <div style="height: 100%; box-sizing: border-box; padding: 56px 16px 20px; display: flex; flex-direction: column; gap: 12px">
+    <div style="display: flex; align-items: center; gap: 12px">
+      <a href="Main25D.dc.html" aria-label="Quay lại trang chủ" class="gbtn" style="--hi: #FFFFFF; --base: #F1ECE2; --lo: #D9D0BF; --edge: #A8977A; width: 48px; height: 48px; padding: 0; border-radius: 14px">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#3A2412" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="position: relative"><path d="M15 5l-7 7 7 7"/></svg>
+      </a>
+      <h1 class="txt3d" style="margin: 0; flex: 1; min-width: 0; font-size: 30px; line-height: 1; color: #FFFFFF; white-space: nowrap">NHIỆM VỤ</h1>
+      <div class="panel {{bumpCls}}" style="display: flex; align-items: center; gap: 6px; border-radius: 999px; padding: 4px 12px 4px 6px; font-weight: 800; font-size: 16px">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><use href="#iCoin"></use></svg>
+        {{coinsText}}
+      </div>
+    </div>
+
+    <div role="tablist" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); background: linear-gradient(180deg, #E9DFCB, #F6F0E4); border: 3px solid #3A2412; border-radius: 16px; padding: 4px; gap: 4px; box-shadow: inset 0 3px 4px rgba(0,0,0,.15)">
+      <sc-for list="{{tabs}}" as="tb" hint-placeholder-count="3">
+        <button role="tab" aria-selected="{{tb.selected}}" onClick="{{tb.pick}}" class="gbtn" style="{{tb.style}}">{{tb.label}}</button>
+      </sc-for>
+    </div>
+
+    <!-- milestone chests -->
+    <div class="panel" style="background: linear-gradient(180deg, #FFFBEF, #F7E9C6); border-radius: 20px; padding: 10px 14px 12px; box-shadow: 0 5px 0 #B9A98C, 0 12px 16px rgba(0,0,0,.2)">
+      <div style="display: flex; align-items: center; gap: 8px">
+        <svg viewBox="0 0 100 100" width="26" height="26" aria-hidden="true"><use href="#iStar"></use></svg>
+        <span style="font-size: 16px; font-weight: 800; white-space: nowrap">Điểm nhiệm vụ</span>
+        <span style="font-size: 16px; font-weight: 800; color: #C46A00">{{points}}/100</span>
+        <span style="flex: 1"></span>
+        <span style="font-size: 12px; font-weight: 800; color: #5E4E3A; white-space: nowrap; text-align: right; line-height: 1.1">Làm mới<br>{{resetText}}</span>
+      </div>
+      <div style="position: relative; height: 66px; margin-top: 4px">
+        <div class="bar" style="position: absolute; left: 0; right: 22px; top: 40px; height: 14px"><div class="fill" style="{{pointsStyle}}"></div></div>
+        <sc-for list="{{chests}}" as="ch" hint-placeholder-count="3">
+          <button onClick="{{ch.claim}}" disabled="{{ch.locked}}" aria-label="{{ch.aria}}" style="{{ch.wrapStyle}}">
+            <svg class="{{ch.cls}}" viewBox="0 0 100 100" width="44" height="44" aria-hidden="true" style="{{ch.iconStyle}}"><use href="#iChest"></use></svg>
+            <span style="{{ch.labelStyle}}">{{ch.label}}</span>
+          </button>
+        </sc-for>
+      </div>
+    </div>
+
+    <!-- mission list -->
+    <div class="soft-scroll fade-y" style="flex: 1; min-height: 0; overflow-y: auto; margin: 0 -8px; padding: 2px 8px 12px; display: flex; flex-direction: column; gap: 10px">
+      <sc-for list="{{missions}}" as="m" hint-placeholder-count="5">
+        <div class="panel row" style="{{m.rowStyle}}">
+          <div style="flex: none; width: 52px; height: 52px; border-radius: 14px; border: 3px solid #3A2412; background: radial-gradient(circle at 40% 35%, #FFFFFF, #E9F4FB); display: flex; align-items: center; justify-content: center; box-shadow: inset 0 -3px 0 rgba(0,0,0,.08)">
+            <svg viewBox="0 0 100 100" width="36" height="36" aria-hidden="true"><use href="{{m.icon}}"></use></svg>
+          </div>
+          <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+            <div style="font-size: 15px; font-weight: 800; line-height: 1.15">{{m.title}}</div>
+            <div style="display: flex; align-items: center; gap: 6px">
+              <div class="bar" style="flex: 1; height: 10px"><div class="fill" style="{{m.barStyle}}"></div></div>
+              <span style="font-size: 12px; font-weight: 800; color: #5E4E3A; min-width: 40px; text-align: right">{{m.progress}}</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 4px; font-size: 13px; font-weight: 800; color: #8A5A00">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#iCoin"></use></svg>
+              +{{m.reward}}
+              <span style="color: #5E4E3A; font-weight: 700">· +{{m.pts}} điểm</span>
+            </div>
+          </div>
+          <sc-if value="{{m.canClaim}}" hint-placeholder-val="{{ false }}">
+            <button onClick="{{m.claim}}" class="gbtn ready" style="--hi: #FFE68A; --base: #FFC93C; --lo: #F0A400; --edge: #B87800; flex: none; width: 72px; height: 44px; border-radius: 14px; font-size: 16px"><span style="position: relative">Nhận</span></button>
+          </sc-if>
+          <sc-if value="{{m.canGo}}" hint-placeholder-val="{{ true }}">
+            <a href="MapSelect25D.dc.html" class="gbtn" style="--hi: #B8F5B0; --base: #5BD06A; --lo: #2FA444; --edge: #1F7A33; flex: none; width: 72px; height: 44px; border-radius: 14px; font-size: 16px"><span style="position: relative">Chơi</span></a>
+          </sc-if>
+          <sc-if value="{{m.done}}" hint-placeholder-val="{{ false }}">
+            <span style="flex: none; width: 72px; height: 44px; display: flex; align-items: center; justify-content: center; gap: 4px; border: 3px dashed #2E9E44; border-radius: 14px; font-size: 14px; font-weight: 800; color: #1F6B2E">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#1F6B2E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Xong
+            </span>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(p) {
+    super(p);
+    this.state = { tab: 'daily', coins: 12450, points: 50, claimed: { play3: true, ad1: true, w_map: true }, chests: { 30: true }, left: 8 * 3600 + 42 * 60 + 15, bumpN: 0 };
+    this.data = {
+      daily: [
+        { id: 'combo10', icon: '#iFire', title: 'Đạt combo x10 trong một ván', cur: 10, goal: 10, reward: 150, pts: 20 },
+        { id: 'hit50', icon: '#iHammer', title: 'Đập trúng 50 con thú', cur: 32, goal: 50, reward: 100, pts: 20 },
+        { id: 'gold3', icon: '#iChick', title: 'Đập 3 gà vàng hoặc ngọc trai', cur: 1, goal: 3, reward: 200, pts: 30 },
+        { id: 'play3', icon: '#iPlay', title: 'Chơi 3 ván bất kỳ', cur: 3, goal: 3, reward: 80, pts: 20 },
+        { id: 'ad1', icon: '#iAd', title: 'Xem 1 quảng cáo nhân đôi xu', cur: 1, goal: 1, reward: 50, pts: 10 }
+      ],
+      weekly: [
+        { id: 'w_star', icon: '#iStar', title: 'Đạt 3 sao trong 5 ván', cur: 5, goal: 5, reward: 500, pts: 30 },
+        { id: 'w_hit', icon: '#iHammer', title: 'Đập trúng 500 con thú', cur: 310, goal: 500, reward: 800, pts: 30 },
+        { id: 'w_map', icon: '#iMap', title: 'Chơi đủ cả 3 map', cur: 3, goal: 3, reward: 600, pts: 20 },
+        { id: 'w_combo', icon: '#iFire', title: 'Đạt combo x25', cur: 14, goal: 25, reward: 1000, pts: 40 }
+      ],
+      achieve: [
+        { id: 'a_1000', icon: '#iTrophy', title: 'Thợ đập tập sự: đập 1.000 thú', cur: 1000, goal: 1000, reward: 1000, pts: 0 },
+        { id: 'a_5000', icon: '#iTrophy', title: 'Thợ đập lành nghề: đập 5.000 thú', cur: 2840, goal: 5000, reward: 3000, pts: 0 },
+        { id: 'a_map12', icon: '#iMap', title: 'Qua hết 12 màn Trên cạn', cur: 7, goal: 12, reward: 2000, pts: 0 },
+        { id: 'a_gold', icon: '#iChick', title: 'Săn vàng: đập 100 gà vàng', cur: 46, goal: 100, reward: 1500, pts: 0 }
+      ]
+    };
+  }
+  componentDidMount() { this.iv = setInterval(() => this.setState({ left: Math.max(0, this.state.left - 1) }), 1000); }
+  componentWillUnmount() { clearInterval(this.iv); }
+  renderVals() {
+    const s = this.state;
+    const fmt = (n) => n.toLocaleString('vi-VN');
+    const pad = (n) => (n < 10 ? '0' : '') + n;
+    const h = Math.floor(s.left / 3600), m = Math.floor((s.left % 3600) / 60), sec = s.left % 60;
+    const tabDefs = [['daily', 'Hằng ngày'], ['weekly', 'Hằng tuần'], ['achieve', 'Thành tựu']];
+    const bump = { bumpN: s.bumpN + 1 };
+    const list = this.data[s.tab].map((x, i) => {
+      const done = !!s.claimed[x.id];
+      const full = x.cur >= x.goal;
+      return {
+        icon: x.icon,
+        title: x.title,
+        reward: fmt(x.reward),
+        pts: x.pts,
+        progress: fmt(Math.min(x.cur, x.goal)) + '/' + fmt(x.goal),
+        barStyle: 'width: ' + Math.round(Math.min(1, x.cur / x.goal) * 100) + '%; background: ' + (full ? 'linear-gradient(180deg, #A6F09A, #4CC25E 60%, #2E9E44)' : 'linear-gradient(180deg, #A8DCFF, #3FA9F5 60%, #1F7FC4)'),
+        canClaim: full && !done,
+        canGo: !full,
+        done,
+        rowStyle: 'display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 18px; flex: none; animation-delay: ' + (i * 0.06) + 's' + (full && !done ? '; background: linear-gradient(180deg, #FFFBE0, #FFEBA8); box-shadow: 0 4px 0 #C99A2E, 0 8px 12px rgba(0,0,0,.18)' : '') + (done ? '; opacity: .7' : ''),
+        claim: () => this.setState(Object.assign({ coins: s.coins + x.reward, points: Math.min(100, s.points + x.pts), claimed: Object.assign({}, s.claimed, { [x.id]: true }) }, bump))
+      };
+    });
+    const rewards = { 30: 200, 60: 500, 100: 1200 };
+    const chests = [30, 60, 100].map((v) => {
+      const got = !!s.chests[v];
+      const ready = !got && s.points >= v;
+      const locked = !got && !ready;
+      return {
+        locked,
+        aria: got ? 'Rương ' + v + ' điểm: đã mở' : ready ? 'Mở rương ' + v + ' điểm, nhận ' + rewards[v] + ' xu' : 'Rương ' + v + ' điểm: chưa đủ điểm',
+        cls: ready ? 'chestReady' : '',
+        wrapStyle: 'position: absolute; top: 0; left: calc(' + v + '% - ' + (v === 100 ? 44 : 22) + 'px); width: 44px; padding: 0; border: 0; background: none; font-family: inherit; display: flex; flex-direction: column; align-items: center; cursor: ' + (ready ? 'pointer' : 'default'),
+        iconStyle: 'filter: ' + (got ? 'grayscale(.8) opacity(.6)' : locked ? 'saturate(.6)' : 'drop-shadow(0 0 6px #FFE14A)'),
+        labelStyle: 'margin-top: 6px; white-space: nowrap; font-size: 12px; font-weight: 800; line-height: 18px; border: 2px solid #3A2412; border-radius: 999px; padding: 0 6px; color: #3A2412; background: ' + (ready ? 'linear-gradient(180deg, #FFE68A, #FFC93C)' : got ? '#E3DACA' : '#FFFFFF'),
+        label: got ? 'Đã mở' : String(v),
+        claim: () => { if (ready) this.setState(Object.assign({ coins: s.coins + rewards[v], chests: Object.assign({}, s.chests, { [v]: true }) }, bump)); }
+      };
+    });
+    return {
+      coinsText: fmt(s.coins),
+      bumpCls: s.bumpN === 0 ? '' : (s.bumpN % 2 ? 'bumpA' : 'bumpB'),
+      points: s.points,
+      resetText: pad(h) + ':' + pad(m) + ':' + pad(sec),
+      pointsStyle: 'width: ' + s.points + '%; background: linear-gradient(180deg, #FFE68A, #FFC93C 55%, #F0A400)',
+      chests,
+      missions: list,
+      tabs: tabDefs.map(([id, label]) => ({
+        label,
+        selected: String(s.tab === id),
+        style: 'height: 40px; border-width: 2px; border-radius: 12px; font-size: 15px; ' + (s.tab === id ? '--hi: #FFE68A; --base: #FFC93C; --lo: #F0A400; --edge: #B87800; box-shadow: 0 3px 0 #B87800' : '--hi: transparent; --base: transparent; --lo: transparent; --edge: transparent; border-color: transparent; box-shadow: none; color: #5E4E3A'),
+        pick: () => this.setState({ tab: id })
+      }))
+    };
+  }
+}
+</script>
+</body>
+</html>

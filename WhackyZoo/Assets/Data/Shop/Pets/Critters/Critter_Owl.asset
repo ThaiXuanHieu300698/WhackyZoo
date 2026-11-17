@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18829b0c93e09764899920a603c39d06, type: 3}
+  m_Name: Critter_Owl
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.CritterData
+  id: owl
+  displayName: "C\xFA Tuy\u1EBFt"
+  shortName: 
+  hint: 
+  sprite: {fileID: 21300000, guid: 83916328666b2a64eb15713aba486e0a, type: 3}
+  kind: 0
+  points: 22
+  animSprite: {fileID: 0}
+  blinkHalf: {fileID: 21300000, guid: 1c7dffa840040ed46af9d52cc00ea1d6, type: 3}
+  blinkClosed: {fileID: 21300000, guid: cc6f7215e72dd0341a37545f52c6ee75, type: 3}
+  spark: {fileID: 0}
+  sparkCenter: {x: 0, y: 0}
+  sparkPivot: {x: 0, y: 0}
+  sparkSize: {x: 0, y: 0}

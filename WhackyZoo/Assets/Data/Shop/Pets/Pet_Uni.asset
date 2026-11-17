@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 523a9a6d1258693419c554830cf6b7a7, type: 3}
+  m_Name: Pet_Uni
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.PetData
+  id: uni
+  displayName: "K\u1EF3 L\xE2n"
+  cardName: 
+  description: "S\u1EEBng v\xE0ng l\u1EA5p l\xE1nh, b\u1EDDm \xF3ng \xE1nh s\u1EAFc c\u1EA7u v\u1ED3ng."
+  icon: {fileID: 21300000, guid: 0ba277ad4138bab4d92025fe30cdc276, type: 3}
+  price: 9900
+  cashPrice: "49.000\u0111"
+  premium: 1
+  freeHint: 
+  mapId: land
+  isBase: 0
+  points: 40
+  critter: {fileID: 11400000, guid: a4e4647fe6103a0429aee38df52b9143, type: 2}

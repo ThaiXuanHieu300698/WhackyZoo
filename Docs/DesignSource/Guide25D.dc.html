@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Cài đặt 2.5D – Đập Thú</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#3A2412;text-decoration:none}a:hover{color:#000}
+.txt3d{-webkit-text-stroke:5px #3A2412;paint-order:stroke fill;text-shadow:0 4px 0 #3A2412,0 8px 12px rgba(0,0,0,.25)}
+.gbtn{display:flex;align-items:center;justify-content:center;gap:8px;border:3px solid #3A2412;border-radius:18px;background:linear-gradient(180deg,var(--hi) 0%,var(--base) 55%,var(--lo) 100%);box-shadow:0 5px 0 var(--edge),0 10px 14px rgba(0,0,0,.22),inset 0 -3px 0 rgba(0,0,0,.08);position:relative;font-family:inherit;font-weight:800;color:#3A2412;cursor:pointer;transition:transform .08s,box-shadow .08s}
+.gbtn::after{content:"";position:absolute;left:8%;right:8%;top:3px;height:40%;border-radius:12px;background:linear-gradient(rgba(255,255,255,.75),rgba(255,255,255,0));pointer-events:none}
+.gbtn:active{transform:translateY(4px);box-shadow:0 1px 0 var(--edge),0 4px 6px rgba(0,0,0,.25)}
+.bob{transform-box:fill-box;transform-origin:50% 100%;animation:bob 1.4s ease-in-out infinite}
+.eyes{transform-box:fill-box;transform-origin:50% 50%;animation:blink 3.2s linear infinite}
+.spark{transform-box:fill-box;transform-origin:50% 50%;animation:flicker .25s ease-in-out infinite alternate}
+.cloud{position:absolute;background:#FFFFFF;border-radius:40px;box-shadow:inset 0 -6px 0 rgba(160,200,230,.45),0 6px 12px rgba(80,140,190,.2);animation:drift 24s ease-in-out infinite alternate}
+.slider{-webkit-appearance:none;appearance:none;width:100%;margin:0;height:24px;background:transparent;cursor:pointer}.slider::-webkit-slider-runnable-track{height:6px;border-radius:3px;background:linear-gradient(90deg,#FF9F1C 0 var(--p),#3B3B3B var(--p) 100%)}.slider::-moz-range-track{height:6px;border-radius:3px;background:linear-gradient(90deg,#FF9F1C 0 var(--p),#3B3B3B var(--p) 100%)}.slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:16px;height:16px;margin-top:-5px;border:0;border-radius:50%;background:#FF9F1C}.slider::-moz-range-thumb{width:16px;height:16px;border:0;border-radius:50%;background:#FF9F1C}.slider:focus{outline:none}.slider:focus-visible{outline:2px solid #FF9F1C;outline-offset:4px;border-radius:4px}
+.enter{animation:enter .5s cubic-bezier(.2,.9,.3,1.2) both}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@keyframes blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+@keyframes flicker{from{transform:scale(.8);opacity:.8}to{transform:scale(1.2);opacity:1}}
+@keyframes drift{from{transform:translateX(-16px)}to{transform:translateX(20px)}}
+@keyframes enter{from{transform:translateY(24px);opacity:0}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;animation-iteration-count:1 !important}}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: linear-gradient(180deg, #45B2F5 0%, #8FD3FF 45%, #CBEEFF 70%); font-family: 'Baloo 2', system-ui, sans-serif; color: #3A2412">
+  <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+        <defs>
+          <radialGradient id="qDog" cx=".38" cy=".3" r=".78"><stop offset="0" stop-color="#F4C385"/><stop offset=".55" stop-color="#C98A4B"/><stop offset="1" stop-color="#7E4B20"/></radialGradient>
+          <linearGradient id="qDogEar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9A6234"/><stop offset="1" stop-color="#54301A"/></linearGradient>
+          <radialGradient id="qMuzzle" cx=".45" cy=".3" r=".8"><stop offset="0" stop-color="#FFF8EA"/><stop offset="1" stop-color="#E2BF93"/></radialGradient>
+          <radialGradient id="qCat" cx=".38" cy=".3" r=".78"><stop offset="0" stop-color="#FFCB8A"/><stop offset=".55" stop-color="#F29A38"/><stop offset="1" stop-color="#B35A12"/></radialGradient>
+          <radialGradient id="qCrab" cx=".38" cy=".3" r=".8"><stop offset="0" stop-color="#FF9D8C"/><stop offset=".55" stop-color="#E94B3C"/><stop offset="1" stop-color="#A3241A"/></radialGradient>
+          <radialGradient id="qFish" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFE7B0"/><stop offset=".55" stop-color="#FFB84D"/><stop offset="1" stop-color="#D3720A"/></radialGradient>
+          <linearGradient id="qFin" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFB060"/><stop offset="1" stop-color="#E6700F"/></linearGradient>
+          <radialGradient id="qChick" cx=".38" cy=".3" r=".78"><stop offset="0" stop-color="#FFF7B8"/><stop offset=".55" stop-color="#FFD84A"/><stop offset="1" stop-color="#D99A00"/></radialGradient>
+          <linearGradient id="qBeak" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFB14A"/><stop offset="1" stop-color="#E86A10"/></linearGradient>
+          <linearGradient id="qShellTop" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE0EA"/><stop offset="1" stop-color="#E8879F"/></linearGradient>
+          <linearGradient id="qShellBot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC9D7"/><stop offset="1" stop-color="#D96E8C"/></linearGradient>
+          <radialGradient id="qPearl" cx=".35" cy=".3" r=".75"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".6" stop-color="#E9F3FF"/><stop offset="1" stop-color="#A9C4DE"/></radialGradient>
+          <radialGradient id="qBomb" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#7A7A8A"/><stop offset=".5" stop-color="#3A3A46"/><stop offset="1" stop-color="#121218"/></radialGradient>
+          <radialGradient id="qSpark" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".4" stop-color="#FFE14A"/><stop offset="1" stop-color="#FF6A00" stop-opacity="0"/></radialGradient>
+          <radialGradient id="qPuffer" cx=".38" cy=".3" r=".8"><stop offset="0" stop-color="#F4FFC4"/><stop offset=".55" stop-color="#C9E36B"/><stop offset="1" stop-color="#7E9E24"/></radialGradient>
+        </defs>
+      </svg>
+  <div aria-hidden="true" class="cloud" style="left: -30px; top: 118px; width: 140px; height: 44px"></div>
+  <div aria-hidden="true" class="cloud" style="right: -24px; top: 70px; width: 110px; height: 36px; animation-duration: 30s"></div>
+  <div aria-hidden="true" style="position: absolute; left: -90px; right: -90px; bottom: -140px; height: 400px; border-radius: 50% 50% 0 0 / 130px 130px 0 0; background: linear-gradient(180deg, #96DB70 0%, #6CC04A 35%, #55AE40 100%); border-top: 3px solid #2F6E25; box-shadow: inset 0 10px 0 rgba(255,255,255,.18)"></div>
+
+  <div style="position: relative; height: 100%; box-sizing: border-box; padding: 56px 16px 24px; display: flex; flex-direction: column; gap: 10px">
+    <div style="display: flex; align-items: center; gap: 12px">
+      <a href="Main25D.dc.html" aria-label="Quay lại trang chủ" class="gbtn" style="--hi: #FFFFFF; --base: #F1ECE2; --lo: #D9D0BF; --edge: #A8977A; width: 48px; height: 48px; padding: 0; border-radius: 14px">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#3A2412" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="position: relative"><path d="M15 5l-7 7 7 7"/></svg>
+      </a>
+      <h1 class="txt3d" style="margin: 0; flex: 1; min-width: 0; font-size: 32px; line-height: 1; color: #FFFFFF; white-space: nowrap">CÀI ĐẶT</h1>
+    </div>
+
+
+    <div class="enter" style="display: flex; flex-direction: column; gap: 12px">
+    <div style="background: linear-gradient(180deg, #FFFFFF, #F3EEE4); border: 3px solid #3A2412; border-radius: 22px; box-shadow: 0 4px 0 #B9A98C, 0 8px 12px rgba(0,0,0,.18); padding: 10px 14px 14px">
+      <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><circle cx="12" cy="13" r="8.5" fill="#FFD84A" stroke="#3A2412" stroke-width="2"/><path d="M12 9v4l3 2" stroke="#3A2412" stroke-width="2.4" stroke-linecap="round" fill="none"/><path d="M9 2.5h6" stroke="#3A2412" stroke-width="2.4" stroke-linecap="round"/></svg>
+        <span style="font-size: 18px; font-weight: 800">Thời gian mỗi ván</span>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
+        <sc-for list="{{times}}" as="t" hint-placeholder-count="3">
+          <button onClick="{{t.pick}}" aria-pressed="{{t.pressed}}" class="gbtn" style="{{t.style}}">
+            <span style="position: relative; font-size: 22px; line-height: 1">{{t.label}}</span>
+            <span style="position: relative; font-size: 12px; font-weight: 700; line-height: 1">{{t.sub}}</span>
+          </button>
+        </sc-for>
+      </div>
+    </div>
+    <div style="background: linear-gradient(180deg, #FFFFFF, #F3EEE4); border: 3px solid #3A2412; border-radius: 22px; box-shadow: 0 4px 0 #B9A98C, 0 8px 12px rgba(0,0,0,.18); padding: 10px 14px 14px">
+      <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="#FFC93C" stroke="#3A2412" stroke-width="1.8" stroke-linejoin="round"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="#3A2412" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span style="font-size: 18px; font-weight: 800">Âm thanh</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 92px minmax(0, 1fr) 40px; align-items: center; column-gap: 10px; row-gap: 8px; font-size: 15px; font-weight: 800">
+        <label for="vol-music">Nhạc nền</label>
+        <input id="vol-music" type="range" min="0" max="100" value="{{music}}" onChange="{{setMusic}}" class="slider" style="{{musicStyle}}">
+        <span style="text-align: right; font-size: 14px; color: #5E4E3A">{{music}}%</span>
+        <label for="vol-sfx">Hiệu ứng</label>
+        <input id="vol-sfx" type="range" min="0" max="100" value="{{sfx}}" onChange="{{setSfx}}" class="slider" style="{{sfxStyle}}">
+        <span style="text-align: right; font-size: 14px; color: #5E4E3A">{{sfx}}%</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 10px; margin-top: 10px; padding-top: 10px; border-top: 2px dashed #D9CBB0">
+        <span style="flex: 1; font-size: 15px; font-weight: 800">Rung khi đập trúng</span>
+        <button role="switch" aria-checked="{{vibrateStr}}" aria-label="Rung khi đập trúng" onClick="{{toggleVibrate}}" style="{{switchStyle}}"><span style="{{knobStyle}}"></span></button>
+      </div>
+    </div>
+
+    <div style="background: linear-gradient(180deg, #FFFFFF, #F3EEE4); border: 3px solid #3A2412; border-radius: 22px; box-shadow: 0 4px 0 #B9A98C, 0 8px 12px rgba(0,0,0,.18); padding: 10px 14px 14px">
+      <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><circle cx="12" cy="12" r="9.5" fill="#8FD3FF" stroke="#3A2412" stroke-width="1.8"/><path d="M2.5 12h19M12 2.5c3 3 3 16 0 19M12 2.5c-3 3-3 16 0 19" fill="none" stroke="#3A2412" stroke-width="1.6"/></svg>
+        <span style="font-size: 18px; font-weight: 800">Ngôn ngữ</span>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+        <sc-for list="{{langs}}" as="lg" hint-placeholder-count="2">
+          <button onClick="{{lg.pick}}" aria-pressed="{{lg.pressed}}" class="gbtn" style="{{lg.style}}">
+            <span style="position: relative; border: 2px solid #3A2412; border-radius: 8px; padding: 0 6px; font-size: 13px; line-height: 20px; background: #FFFFFF">{{lg.code}}</span>
+            <span style="position: relative">{{lg.label}}</span>
+          </button>
+        </sc-for>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { picked: 60, tab: 'settings', music: 70, sfx: 85, vibrate: true, lang: 'vi' }; }
+  renderVals() {
+    const opts = [
+      { v: 30, label: '30s', sub: 'Nhanh' },
+      { v: 60, label: '60s', sub: 'Thường' },
+      { v: 90, label: '90s', sub: 'Thử thách' }
+    ];
+    const base = 'flex-direction: column; gap: 2px; height: 56px; border-radius: 16px; ';
+    const on = '--hi: #FFE68A; --base: #FFC93C; --lo: #F0A400; --edge: #B87800; transform: translateY(-2px);';
+    const off = '--hi: #FFFFFF; --base: #F1ECE2; --lo: #D9D0BF; --edge: #A8977A;';
+    const s = this.state;
+    const tabStyle = (on) => 'height: 40px; border-width: 2px; border-radius: 12px; font-size: 16px; ' + (on ? '--hi: #FFE68A; --base: #FFC93C; --lo: #F0A400; --edge: #B87800; box-shadow: 0 3px 0 #B87800' : '--hi: transparent; --base: transparent; --lo: transparent; --edge: transparent; border-color: transparent; box-shadow: none; color: #5E4E3A');
+    return {
+      isSettings: s.tab === 'settings',
+      isGuide: s.tab === 'guide',
+      tabs: [['settings', 'Cài đặt'], ['guide', 'Cách chơi']].map(([id, label]) => ({ label, selected: String(s.tab === id), style: tabStyle(s.tab === id), pick: () => this.setState({ tab: id }) })),
+      music: s.music,
+      sfx: s.sfx,
+      musicStyle: '--p: ' + s.music + '%',
+      sfxStyle: '--p: ' + s.sfx + '%',
+      setMusic: (e) => this.setState({ music: Number(e.target.value) }),
+      setSfx: (e) => this.setState({ sfx: Number(e.target.value) }),
+      vibrateStr: String(s.vibrate),
+      toggleVibrate: () => this.setState({ vibrate: !s.vibrate }),
+      switchStyle: 'position: relative; width: 60px; height: 34px; padding: 0; border: 3px solid #3A2412; border-radius: 999px; cursor: pointer; box-shadow: inset 0 2px 3px rgba(0,0,0,.2); transition: background .2s; background: ' + (s.vibrate ? 'linear-gradient(180deg, #A6F09A, #4CC25E)' : 'linear-gradient(180deg, #CFC5B2, #E9E1D0)'),
+      knobStyle: 'position: absolute; top: 2px; left: ' + (s.vibrate ? '28px' : '2px') + '; width: 24px; height: 24px; border-radius: 50%; background: linear-gradient(180deg, #FFFFFF, #E3DACA); border: 2px solid #3A2412; box-sizing: border-box; transition: left .2s',
+      langs: [['vi', 'VI', 'Tiếng Việt'], ['en', 'EN', 'English']].map(([id, code, label]) => ({ code, label, pressed: String(s.lang === id), style: 'height: 52px; border-radius: 16px; font-size: 17px; ' + (s.lang === id ? '--hi: #FFE68A; --base: #FFC93C; --lo: #F0A400; --edge: #B87800;' : '--hi: #FFFFFF; --base: #F1ECE2; --lo: #D9D0BF; --edge: #A8977A;'), pick: () => this.setState({ lang: id }) })),
+      times: opts.map((o) => ({
+        ...o,
+        pressed: String(this.state.picked === o.v),
+        style: base + (this.state.picked === o.v ? on : off),
+        pick: () => this.setState({ picked: o.v })
+      }))
+    };
+  }
+}
+</script>
+</body>
+</html>

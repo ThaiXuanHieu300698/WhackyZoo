@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 523a9a6d1258693419c554830cf6b7a7, type: 3}
+  m_Name: Pet_Ghost
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.PetData
+  id: ghost
+  displayName: "Ma Nh\u1ECF"
+  cardName: 
+  description: "L\xFAc \u1EA9n l\xFAc hi\u1EC7n, c\u01B0\u1EDDi kh\xFAc kh\xEDch trong \u0111\xEAm."
+  icon: {fileID: 21300000, guid: 0f93d9de932014a4b9c45b295f1fb4af, type: 3}
+  price: 4500
+  cashPrice: 
+  premium: 0
+  freeHint: 
+  mapId: grave
+  isBase: 0
+  points: 26
+  critter: {fileID: 11400000, guid: d0649e2b075f10140922b1c322c45efe, type: 2}

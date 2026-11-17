@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18829b0c93e09764899920a603c39d06, type: 3}
+  m_Name: sea_crab
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.CritterData
+  id: sea_crab
+  displayName: Cua
+  shortName: 
+  hint: 
+  sprite: {fileID: 21300000, guid: 8cbce78716172054a84b8f627a9e1a56, type: 3}
+  kind: 0
+  points: 12
+  animSprite: {fileID: 0}
+  blinkHalf: {fileID: 21300000, guid: d232dd1ed1d696842a7b55e9a069a68f, type: 3}
+  blinkClosed: {fileID: 21300000, guid: b71e2f481d155ae46b208b41abb84f6c, type: 3}
+  spark: {fileID: 0}
+  sparkCenter: {x: 0, y: 0}
+  sparkPivot: {x: 0, y: 0}
+  sparkSize: {x: 0, y: 0}

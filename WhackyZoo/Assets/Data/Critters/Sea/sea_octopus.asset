@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18829b0c93e09764899920a603c39d06, type: 3}
+  m_Name: sea_octopus
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.CritterData
+  id: sea_octopus
+  displayName: "B\u1EA1ch tu\u1ED9c"
+  shortName: 
+  hint: 
+  sprite: {fileID: 21300000, guid: 3a6e04017a10b2b44b00d7e7b4f9b997, type: 3}
+  kind: 0
+  points: 12
+  animSprite: {fileID: 0}
+  blinkHalf: {fileID: 21300000, guid: a637b92b91ea8b14982791618d03504c, type: 3}
+  blinkClosed: {fileID: 21300000, guid: cb479374a0a2d8c4cba3ed10dc54e9cb, type: 3}
+  spark: {fileID: 0}
+  sparkCenter: {x: 0, y: 0}
+  sparkPivot: {x: 0, y: 0}
+  sparkSize: {x: 0, y: 0}

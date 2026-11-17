@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18829b0c93e09764899920a603c39d06, type: 3}
+  m_Name: desert_golden_vase
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.CritterData
+  id: desert_golden_vase
+  displayName: "B\xECnh v\xE0ng"
+  shortName: 
+  hint: "Hi\u1EBFm, l\xF3 r\u1EA5t nhanh"
+  sprite: {fileID: 21300000, guid: 1bec7ca31ef35ad4b9b18e14296a1994, type: 3}
+  kind: 1
+  points: 50
+  animSprite: {fileID: 21300000, guid: 2ed7a0a05d648d148a0701cb8c78fb14, type: 3}
+  blinkHalf: {fileID: 0}
+  blinkClosed: {fileID: 0}
+  spark: {fileID: 21300000, guid: 4372fb4eb418b344b98962fe7de968d5, type: 3}
+  sparkCenter: {x: 0.86, y: 0.79}
+  sparkPivot: {x: 0.5, y: 0.5}
+  sparkSize: {x: 0.26666668, y: 0.26666668}

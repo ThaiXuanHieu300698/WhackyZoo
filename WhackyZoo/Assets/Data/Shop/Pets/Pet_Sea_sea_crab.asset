@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 523a9a6d1258693419c554830cf6b7a7, type: 3}
+  m_Name: Pet_Sea_sea_crab
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.PetData
+  id: base_sea_crab
+  displayName: Cua
+  cardName: 
+  description: "B\xF2 ngang ra kh\u1ECFi h\u1ED1, gi\u01A1 c\xE0ng ch\xE0o."
+  icon: {fileID: 21300000, guid: 8cbce78716172054a84b8f627a9e1a56, type: 3}
+  price: 0
+  cashPrice: 
+  premium: 0
+  freeHint: 
+  mapId: sea
+  isBase: 1
+  points: 12
+  critter: {fileID: 11400000, guid: 54bcf971e17ed774faeb426d41ab99fe, type: 2}

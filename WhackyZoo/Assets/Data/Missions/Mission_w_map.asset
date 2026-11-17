@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f69718ce29aa64ba012d744a30ae8a, type: 3}
+  m_Name: Mission_w_map
+  m_EditorClassIdentifier: Assembly-CSharp::WhackyZoo.MissionData
+  id: w_map
+  period: 1
+  stat: 5
+  title: "Ch\u01A1i \u0111\u1EE7 c\u1EA3 5 map"
+  icon: {fileID: 21300000, guid: 28cc3c20a8971354ca2e3c9e20224ad4, type: 3}
+  goal: 5
+  reward: 600
+  points: 20
+  comingSoon: 0
