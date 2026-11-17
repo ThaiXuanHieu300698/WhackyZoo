@@ -185,9 +185,11 @@ Dép Lào	Flip-Flop
 Vợt Muỗi	Bug Zapper
 Búa Hơi	Squeaky Hammer
 Chảo Gang	Iron Pan
+Gậy Như Ý	Ruyi Staff
 Búa Thor	Thor's Hammer
 Tầm đập 1 ô: trúng đúng ô bạn chạm.	Range 1 cell: hits the cell you tap.
 Tầm đập 6 ô tam giác, sấm sét lan khắp bàn.	Range 6 cells in a triangle, lightning spreads across the board.
+Tầm đập 3 ô cột dọc: ô chạm, ô trên và ô dưới.	Range 3 cells in a column: the tapped cell, above and below.
 # ── Vật phẩm hỗ trợ ──
 +5 Giây	+5 Seconds
 +5 giây	+5 sec

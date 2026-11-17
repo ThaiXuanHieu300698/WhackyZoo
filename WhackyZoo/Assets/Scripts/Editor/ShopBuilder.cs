@@ -25,7 +25,7 @@ namespace WhackyZoo.EditorTools
             public bool premium, isDefault, lightning;
         }
 
-        // Dụng cụ tạm thời chỉ khác nhau ở hình và tầm đập (người dùng chốt): Búa Thor 6 ô kèm sấm sét, còn lại 1 ô.
+        // Dụng cụ tạm thời chỉ khác nhau ở hình và tầm đập (người dùng chốt): Búa Thor 6 ô kèm sấm sét, Gậy Như Ý 3 ô cột dọc, còn lại 1 ô.
         // Mô tả = một dòng về tầm đập; bỏ 3 chỉ số.
         const string SingleDesc = "Tầm đập 1 ô: trúng đúng ô bạn chạm.";
         static readonly ToolDef[] Tools =
@@ -35,6 +35,8 @@ namespace WhackyZoo.EditorTools
             new ToolDef { id = "vot", file = "tool_bug_racket", name = "Vợt Muỗi", price = 1200, desc = SingleDesc },
             new ToolDef { id = "hoi", file = "tool_squeaky_hammer", name = "Búa Hơi", price = 2000, desc = SingleDesc },
             new ToolDef { id = "chao", file = "tool_iron_pan", name = "Chảo Gang", price = 3500, desc = SingleDesc },
+            new ToolDef { id = "nhuy", file = "tool_ruyi_staff", name = "Gậy Như Ý", price = 7500, premium = true,
+                area = HitArea.Column, desc = "Tầm đập 3 ô cột dọc: ô chạm, ô trên và ô dưới." },
             new ToolDef { id = "thor", file = "tool_thor_hammer", name = "Búa Thor", price = 9900, cash = "49.000đ", premium = true,
                 area = HitArea.Triangle, lightning = true, desc = "Tầm đập 6 ô tam giác, sấm sét lan khắp bàn." },
             new ToolDef { id = "bbat", file = "tool_baseball_bat", name = "Gậy Bóng Chày", price = 8000, cash = "39.000đ", premium = true, coinBonus = 20,

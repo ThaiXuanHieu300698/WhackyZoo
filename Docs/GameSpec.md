@@ -93,11 +93,11 @@ Cửa hàng có 3 tab: Dụng cụ, Thú, Vật phẩm. Chỉ số chấm theo t
 | Chảo Gang | 3.500 xu | 4 | 2 | 2 | Thú to cũng gục sau 1 cú |
 | Gậy Răng Sói | 4.500 xu | 4 | 1 | 3 | Mỗi cú trúng +3 điểm |
 | Chùy | 6.000 xu | 5 | 2 | 1 | Đập trúng thú đặc biệt (gà vàng, ngọc trai…) được x2 điểm |
-| Gậy Như Ý | 7.500 xu | 3 | 4 | 4 | Đập trúng cả cột dọc 3 ô (ô bấm + ô trên + ô dưới) |
+| Gậy Như Ý | 7.500 xu | 3 | 4 | 4 | Đập trúng cả cột dọc 3 ô (ô bấm + ô trên + ô dưới) (Huyền thoại) |
 | Búa Thor | 9.900 xu hoặc 49.000đ | 5 | 3 | 3 | Sét đánh cả hàng ngang 3 ô, điểm x1,5 cả ván (Huyền thoại) |
 | Gậy Bóng Chày | 8.000 xu hoặc 39.000đ · miễn phí khi điểm danh ngày 30 | 4 | 2 | 4 | +20% xu mỗi ván (Huyền thoại) |
 
-Gậy Răng Sói, Chùy, Gậy Như Ý: giá và đặc tính là đề xuất, cần chốt khi cân bằng. Hình: `images/sprites/tools/tool_wolf_tooth_club`, `tool_mace`, `tool_ruyi_staff`. Thứ tự trong Cửa hàng: Búa Gỗ, Dép Lào, Vợt Muỗi, Búa Hơi, Chảo Gang, Gậy Răng Sói, Chùy, Gậy Như Ý, Búa Thor, Gậy Bóng Chày.
+Gậy Răng Sói, Chùy: giá và đặc tính là đề xuất, cần chốt khi cân bằng. Gậy Như Ý đã chốt (17/11/2026): Huyền thoại, 7.500 xu, chỉ mua bằng xu (chưa có giá tiền thật), tầm đập cột dọc 3 ô. Hình: `images/sprites/tools/tool_wolf_tooth_club`, `tool_mace`, `tool_ruyi_staff`. Thứ tự trong Cửa hàng: Búa Gỗ, Dép Lào, Vợt Muỗi, Búa Hơi, Chảo Gang, Gậy Răng Sói, Chùy, Gậy Như Ý, Búa Thor, Gậy Bóng Chày.
 
 Thang chữ: Sức mạnh Rất nhẹ → Nhẹ → Vừa → Mạnh → Rất mạnh; Tầm đập 1 ô → Hẹp → Vừa → Rộng → Cả hàng; Tốc độ Rất chậm → Chậm → Vừa → Nhanh → Rất nhanh.
 

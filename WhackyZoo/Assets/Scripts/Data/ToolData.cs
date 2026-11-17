@@ -10,6 +10,8 @@ namespace WhackyZoo
         Single,
         [Tooltip("6 ô: nửa tam giác trên (cột ≥ hàng) hoặc dưới (cột ≤ hàng) theo đường chéo trái-trên → phải-dưới, chọn nửa chứa ô được chạm.")]
         Triangle,
+        [Tooltip("3 ô cột dọc: ô được chạm cùng ô trên và ô dưới (Gậy Như Ý).")]
+        Column,
     }
 
     /// <summary>
@@ -43,6 +45,13 @@ namespace WhackyZoo
                 return;
             }
             int tr = tapped / GridSize, tc = tapped % GridSize;
+            if (area == HitArea.Column)
+            {
+                result.Add(tapped);
+                for (int r = 0; r < GridSize; r++)
+                    if (r != tr) result.Add(r * GridSize + tc);
+                return;
+            }
             bool upper = tc > tr || (tc == tr && upperOnDiagonal);
             result.Add(tapped);
             for (int r = 0; r < GridSize; r++)

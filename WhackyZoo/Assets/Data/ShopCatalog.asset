@@ -18,6 +18,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d2e7bf47e75164f479b870a66dd15934, type: 2}
   - {fileID: 11400000, guid: ae864b14129f04f4680dbfbbec97dad0, type: 2}
   - {fileID: 11400000, guid: d2c855d0a28615647b093404c5617916, type: 2}
+  - {fileID: 11400000, guid: 25be4b09973c4804ca83ef289bf54f48, type: 2}
   - {fileID: 11400000, guid: 73998e36c44767b43be60d373f76884a, type: 2}
   - {fileID: 11400000, guid: bbcf71bcf83a21a4a84a6c40518d58be, type: 2}
   pets:
