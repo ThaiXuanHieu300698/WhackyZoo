@@ -23,7 +23,9 @@ Game đập thú (whack-a-mole) 2.5D cho Android, màn hình dọc. Unity 6 (600
 
 ## Quy trình git
 
-- `main` luôn chạy được; không commit thẳng lên `main`.
-- Mỗi thay đổi một nhánh: `feat/…`, `fix/…`, `chore/…`, `docs/…`.
+- `main`: bản phát hành, luôn chạy được. `dev`: nhánh phát triển, gộp các việc đã xong.
+- Không commit thẳng lên `main` hay `dev`.
+- Mỗi thay đổi một nhánh tạo từ `dev`: `feat/…`, `fix/…`, `chore/…`, `docs/…`.
 - Commit theo [Conventional Commits](https://www.conventionalcommits.org): `feat(shop): thêm Gậy Bóng Chày`.
-- Mở pull request vào `main`, kiểm tra trong Unity rồi merge (squash), xoá nhánh.
+- Mở pull request vào `dev`, kiểm tra trong Unity rồi merge (squash), xoá nhánh.
+- Phát hành: pull request `dev` → `main`, merge kiểu merge commit (không squash).

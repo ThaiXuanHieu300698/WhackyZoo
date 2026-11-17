@@ -37,12 +37,13 @@ Khi cần sprite, chép bản `@3x` (hoặc `@2x`) vào `WhackyZoo/Assets/Art/..
 
 ## Quy trình git
 
-Repo: https://github.com/ThaiXuanHieu300698/WhackyZoo (riêng tư, nhánh chính `main`). Ảnh/âm thanh/font lưu bằng Git LFS (`.gitattributes`).
+Repo: https://github.com/ThaiXuanHieu300698/WhackyZoo (riêng tư). Hai nhánh cố định: `main` là bản phát hành, luôn chạy được; `dev` là nhánh phát triển, nơi gộp các việc đã xong. Ảnh/âm thanh/font lưu bằng Git LFS (`.gitattributes`).
 
-- Không commit thẳng lên `main`. Mỗi yêu cầu sửa một nhánh từ `main` mới nhất: `feat/<việc>`, `fix/<việc>`, `chore/<việc>`, `docs/<việc>` (tên tiếng Anh không dấu, vd. `fix/daily-prize-icon`).
+- Không commit thẳng lên `main` hay `dev`. Mỗi yêu cầu sửa một nhánh từ `dev` mới nhất: `feat/<việc>`, `fix/<việc>`, `chore/<việc>`, `docs/<việc>` (tên tiếng Anh không dấu, vd. `fix/daily-prize-icon`).
 - Commit nhỏ, theo Conventional Commits, mô tả tiếng Việt: `fix(daily): ô Gậy Bóng Chày nhún quanh vị trí gốc`. Phạm vi thường dùng: `gameplay`, `shop`, `daily`, `missions`, `home`, `audio`, `ui`, `data`, `docs`.
-- Xong việc: đẩy nhánh, mở pull request vào `main` (mô tả: đã đổi gì, cần dựng lại scene nào, đã kiểm tra gì); người dùng kiểm tra trong Unity rồi merge kiểu squash và xoá nhánh. Sau đó về `main`, `git pull`.
-- Chỉ commit / đẩy / merge khi người dùng đồng ý; không `push --force` lên `main`.
+- Xong việc: đẩy nhánh, mở pull request vào `dev` (mô tả: đã đổi gì, cần dựng lại scene nào, đã kiểm tra gì); người dùng kiểm tra trong Unity rồi merge kiểu squash và xoá nhánh. Sau đó về `dev`, `git pull`.
+- Phát hành: khi `dev` ổn định và người dùng yêu cầu, mở pull request `dev` → `main` rồi merge kiểu merge commit (không squash, để `dev` và `main` không lệch lịch sử). Không xoá `dev`.
+- Chỉ commit / đẩy / merge khi người dùng đồng ý; không `push --force` lên `main` hay `dev`.
 - Không đưa vào repo: `Library/`, `Temp/`, `Logs/`, `UserSettings/`, `Assets/_Recovery/`, file `.csproj`/`.sln`.
 
 ## Thứ tự làm việc
