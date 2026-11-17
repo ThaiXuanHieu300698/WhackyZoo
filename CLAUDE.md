@@ -35,15 +35,29 @@ Khi cần sprite, chép bản `@3x` (hoặc `@2x`) vào `WhackyZoo/Assets/Art/..
 - Không hard-code số liệu cân bằng trong MonoBehaviour; đưa vào ScriptableObject hoặc một config.
 - Chạy thử bằng nút Play + Device Simulator; chưa có điện thoại Android thật.
 
-## Quy trình git
+## Quy trình git (Git Flow)
 
-Repo: https://github.com/ThaiXuanHieu300698/WhackyZoo (riêng tư). Hai nhánh cố định: `main` là bản phát hành, luôn chạy được; `dev` là nhánh phát triển, nơi gộp các việc đã xong. Ảnh/âm thanh/font lưu bằng Git LFS (`.gitattributes`).
+Repo: https://github.com/ThaiXuanHieu300698/WhackyZoo (riêng tư). Ảnh/âm thanh/font lưu bằng Git LFS (`.gitattributes`).
 
-- Không commit thẳng lên `main` hay `dev`. Mỗi yêu cầu sửa một nhánh từ `dev` mới nhất: `feat/<việc>`, `fix/<việc>`, `chore/<việc>`, `docs/<việc>` (tên tiếng Anh không dấu, vd. `fix/daily-prize-icon`).
-- Commit nhỏ, theo Conventional Commits, mô tả tiếng Việt: `fix(daily): ô Gậy Bóng Chày nhún quanh vị trí gốc`. Phạm vi thường dùng: `gameplay`, `shop`, `daily`, `missions`, `home`, `audio`, `ui`, `data`, `docs`.
-- Xong việc: đẩy nhánh, mở pull request vào `dev` (mô tả: đã đổi gì, cần dựng lại scene nào, đã kiểm tra gì); người dùng kiểm tra trong Unity rồi merge kiểu squash và xoá nhánh. Sau đó về `dev`, `git pull`.
-- Phát hành: khi `dev` ổn định và người dùng yêu cầu, mở pull request `dev` → `main` rồi merge kiểu merge commit (không squash, để `dev` và `main` không lệch lịch sử). Không xoá `dev`.
-- Chỉ commit / đẩy / merge khi người dùng đồng ý; không `push --force` lên `main` hay `dev`.
+| Nhánh | Tạo từ | Gộp vào | Kiểu merge | Dùng cho |
+| --- | --- | --- | --- | --- |
+| `main` | — | — | — | Bản phát hành; mỗi commit trên `main` có tag phiên bản. Không xoá. |
+| `dev` | `main` | — | — | Nhánh phát triển, gộp các việc đã xong. Không xoá. |
+| `feat/` `fix/` `chore/` `docs/` + `<việc>` | `dev` | `dev` | squash | Một yêu cầu sửa (tên tiếng Anh không dấu, vd. `fix/daily-prize-icon`). |
+| `release/<x.y.z>` | `dev` | `main`, rồi `dev` | merge commit | Chốt một bản phát hành: chỉ sửa lỗi, tăng phiên bản. |
+| `hotfix/<x.y.z>` | `main` | `main`, rồi `dev` | merge commit | Sửa lỗi gấp trên bản đã phát hành. |
+
+- Không commit thẳng lên `main` hay `dev`; mọi thay đổi đi qua pull request.
+- Commit nhỏ, theo Conventional Commits, mô tả tiếng Việt: `fix(daily): ô Gậy Bóng Chày nhún quanh vị trí gốc`. Phạm vi thường dùng: `gameplay`, `shop`, `daily`, `missions`, `home`, `audio`, `ui`, `data`, `docs`, `release`.
+- **Việc thường:** nhánh từ `dev` mới nhất → đẩy nhánh, mở pull request vào `dev` (mô tả: đã đổi gì, cần dựng lại scene nào, đã kiểm tra gì) → người dùng kiểm tra trong Unity → merge kiểu squash, xoá nhánh → về `dev`, `git pull`.
+- **Phát hành** (khi người dùng yêu cầu):
+  1. Tạo `release/<x.y.z>` từ `dev` mới nhất; commit đầu tăng phiên bản: `bundleVersion` = `x.y.z` và `AndroidBundleVersionCode` +1 (`WhackyZoo/ProjectSettings/ProjectSettings.asset`), commit `chore(release): x.y.z`.
+  2. Trên nhánh này chỉ sửa lỗi, không thêm tính năng. Tính năng mới vẫn vào `dev` như thường.
+  3. Pull request `release/<x.y.z>` → `main`, merge kiểu merge commit. Đánh tag có chú thích `vx.y.z` trên commit merge ở `main` rồi đẩy tag.
+  4. Pull request `release/<x.y.z>` → `dev` (merge commit) để đưa các sửa lỗi về `dev`. Sau đó xoá nhánh release.
+- **Hotfix** (lỗi nặng trên bản đã phát hành): tạo `hotfix/<x.y.z>` từ `main` (tăng số cuối, vd. 1.0.0 → 1.0.1, và `AndroidBundleVersionCode` +1), sửa, rồi làm như bước 3–4 của phát hành. Nếu đang có nhánh `release/` mở thì gộp hotfix vào nhánh release đó thay vì `dev`.
+- Phiên bản theo SemVer `x.y.z`: `x` thay đổi lớn, `y` thêm tính năng, `z` sửa lỗi. Trước khi lên Google Play dùng `0.y.z`.
+- Chỉ commit / đẩy / merge / đánh tag khi người dùng đồng ý; không `push --force` lên `main` hay `dev`; không xoá hay sửa tag đã đẩy.
 - Không đưa vào repo: `Library/`, `Temp/`, `Logs/`, `UserSettings/`, `Assets/_Recovery/`, file `.csproj`/`.sln`.
 
 ## Thứ tự làm việc

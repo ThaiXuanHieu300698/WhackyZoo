@@ -21,11 +21,12 @@ Game đập thú (whack-a-mole) 2.5D cho Android, màn hình dọc. Unity 6 (600
 3. Mở thư mục `WhackyZoo/` bằng Unity Hub (Unity 6000.6.9f1).
 4. Scene được dựng bằng code: menu **WhackyZoo › Dựng lại scene Home** / **Dựng lại scene chơi**.
 
-## Quy trình git
+## Quy trình git (Git Flow)
 
-- `main`: bản phát hành, luôn chạy được. `dev`: nhánh phát triển, gộp các việc đã xong.
-- Không commit thẳng lên `main` hay `dev`.
-- Mỗi thay đổi một nhánh tạo từ `dev`: `feat/…`, `fix/…`, `chore/…`, `docs/…`.
+- `main`: bản phát hành, mỗi bản có tag `vx.y.z`. `dev`: nhánh phát triển.
+- Không commit thẳng lên `main` hay `dev`; mọi thay đổi đi qua pull request.
+- Việc thường: nhánh `feat/…`, `fix/…`, `chore/…`, `docs/…` tạo từ `dev`, pull request vào `dev`, merge kiểu squash, xoá nhánh.
+- Phát hành: nhánh `release/x.y.z` từ `dev` (tăng phiên bản, chỉ sửa lỗi) → merge vào `main`, đánh tag `vx.y.z` → merge lại vào `dev`.
+- Sửa gấp bản đã phát hành: nhánh `hotfix/x.y.z` từ `main` → merge vào `main`, đánh tag → merge lại vào `dev`.
 - Commit theo [Conventional Commits](https://www.conventionalcommits.org): `feat(shop): thêm Gậy Bóng Chày`.
-- Mở pull request vào `dev`, kiểm tra trong Unity rồi merge (squash), xoá nhánh.
-- Phát hành: pull request `dev` → `main`, merge kiểu merge commit (không squash).
+- Chi tiết: mục "Quy trình git" trong `CLAUDE.md`.
