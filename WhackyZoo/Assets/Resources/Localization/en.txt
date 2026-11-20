@@ -2,7 +2,6 @@
 # Câu tiếng Việt phải đúng từng ký tự với chữ trong game. Câu không có ở đây giữ nguyên tiếng Việt.
 # ── Chung ──
 Trang chủ	Home
-Về trang chủ	Back to Home
 Tiếp tục	Continue
 Chơi lại	Play Again
 Chơi	Play

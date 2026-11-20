@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 namespace WhackyZoo
 {
-    /// <summary>Popup Tạm dừng: Tiếp tục, Chơi lại, Về trang chủ.</summary>
+    /// <summary>Popup Tạm dừng: Tiếp tục, Chơi lại, Trang chủ.</summary>
     public class PausePopup : PopupView
     {
         [SerializeField] Button resumeButton;
