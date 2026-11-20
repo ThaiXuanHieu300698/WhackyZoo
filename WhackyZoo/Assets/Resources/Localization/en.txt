@@ -201,6 +201,7 @@ Nhân đôi	Double
 Mọi điểm nhận được tăng gấp đôi trong 10 giây.	All points are doubled for 10 seconds.
 Khiên Bom	Bomb Shield
 Khiên	Shield
+Đã chặn!	Blocked!
 Đỡ 1 lần đập nhầm	Blocks 1 wrong hit
 Đỡ một lần đập nhầm vật cản: không bị trừ điểm, giữ combo.	Blocks one hit on a bomb: no penalty, combo kept.
 Đóng Băng Giờ	Time Freeze
