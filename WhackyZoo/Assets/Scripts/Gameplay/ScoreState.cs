@@ -43,7 +43,7 @@ namespace WhackyZoo
             if (critter.kind == CritterKind.Obstacle)
             {
                 ObstacleHit++;
-                if (shielded) return points;
+                if (shielded) return 0; // Khiên đỡ: không trừ điểm, không mất combo
                 Combo = comboFloor;
             }
             else
