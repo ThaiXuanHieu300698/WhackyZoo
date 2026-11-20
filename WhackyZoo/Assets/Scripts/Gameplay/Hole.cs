@@ -34,6 +34,8 @@ namespace WhackyZoo
         [SerializeField] float upY = 54f;
         [SerializeField] Color positiveColor = Color.white;
         [SerializeField] Color negativeColor = new Color(1f, 0.3f, 0.3f);
+        [Tooltip("Màu chữ \"Đã chặn!\" khi Khiên Bom đỡ cú đập bom.")]
+        [SerializeField] Color shieldColor = new Color(0.56f, 0.83f, 1f);
 
         // ── Ló lên: 0,42 s, cubic-bezier(.2,.9,.3,1.25), pivot đáy giữa ──
         static readonly Bezier RiseEase = new Bezier(0.2f, 0.9f, 0.3f, 1.25f);
@@ -235,7 +237,7 @@ namespace WhackyZoo
             // Đập nhầm bom (không có Khiên): bom nổ tung — hiệu ứng nổ, bom biến mất ngay, không có sao choáng
             bool boom = current != null && current.kind == CritterKind.Obstacle && !pendingShielded;
             owner.OnImpact(current, pendingShielded);
-            PlayHitFx(pendingPoints);
+            PlayHitFx(pendingPoints, pendingShielded);
             if (boom)
             {
                 if (blast == null) blast = BombBlast.Attach(hitBurst.rectTransform);
@@ -264,13 +266,14 @@ namespace WhackyZoo
             rt.sizeDelta = Vector2.Scale(data.sparkSize, CritterSize);
         }
 
-        void PlayHitFx(int points)
+        /// <summary>Số điểm bay lên; Khiên đỡ bom thì không trừ điểm nên hiện "Đã chặn!" thay cho số âm.</summary>
+        void PlayHitFx(int points, bool shielded)
         {
             // Bỏ hiệu ứng BỐP theo yêu cầu: chỉ còn sao choáng và số điểm bay. hitBurst vẫn giữ làm điểm neo hiệu ứng (FxPoint).
             floatT = 0f;
             floatText.gameObject.SetActive(true);
-            floatText.text = UiUtil.Signed(points);
-            floatText.color = points >= 0 ? positiveColor : negativeColor;
+            floatText.text = shielded ? Loc.T("Đã chặn!") : UiUtil.Signed(points);
+            floatText.color = shielded ? shieldColor : points >= 0 ? positiveColor : negativeColor;
             UpdateFx(0f);
         }
 
