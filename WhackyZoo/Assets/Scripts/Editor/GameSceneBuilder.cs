@@ -842,7 +842,7 @@ namespace WhackyZoo.EditorTools
 
         // ───────────── Popup (cùng khung: rộng 342, viền 4, bo 28, #FFFBEF → #F7E9C6, bóng 0 8px #A8977A + 0 20px 30px) ─────────────
 
-        /// <summary>Popup Tạm dừng: tiêu đề 40 trắng trong khung; Tiếp tục (xanh, 64), Chơi lại và Về trang chủ (trắng, 56); hiện ngay.</summary>
+        /// <summary>Popup Tạm dừng: tiêu đề 40 trắng trong khung; Tiếp tục (xanh, 64), Chơi lại và Trang chủ (trắng, 62); hiện ngay.</summary>
         internal static PausePopup BuildPausePopup(Transform root)
         {
             // đệm 24/20, cách 14: tiêu đề 64 → 70 → 62 → 62 ⇒ khung cao 356
@@ -853,7 +853,7 @@ namespace WhackyZoo.EditorTools
             const float W = 342 - 8 - 40;
             var resume = GBtn("ResumeButton", panel, Spr("UI/button_green"), Center, Y(4 + 24 + 64 + 14 + 35), W, 70, "Tiếp tục", 22, Dark, Spr("UI/icon_play"), 24);
             var restart = GBtn("RestartButton", panel, Spr("UI/button_white"), Center, Y(4 + 24 + 64 + 14 + 70 + 14 + 31), W, 62, "Chơi lại", 18, Dark, Spr("UI/icon_restart"), 22);
-            var home = GBtn("HomeButton", panel, Spr("UI/button_white"), Center, Y(4 + 24 + 64 + 14 + 70 + 14 + 62 + 14 + 31), W, 62, "Về trang chủ", 18, Dark, Spr("UI/icon_home"), 22);
+            var home = GBtn("HomeButton", panel, Spr("UI/button_white"), Center, Y(4 + 24 + 64 + 14 + 70 + 14 + 62 + 14 + 31), W, 62, "Trang chủ", 18, Dark, Spr("UI/icon_home"), 22);
 
             var popup = popupGo.AddComponent<PausePopup>();
             Set(popup, "panel", panel);

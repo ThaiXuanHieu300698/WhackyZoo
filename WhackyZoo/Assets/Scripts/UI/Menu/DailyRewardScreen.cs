@@ -7,7 +7,7 @@ namespace WhackyZoo
     /// <summary>
     /// Màn Điểm danh tháng (Docs/DesignSource/DailyReward25D.dc.html, images/screens/09b_qua_hang_ngay.png):
     /// thẻ quà ngày 30 + thanh tiến độ 4 mốc (7 · 14 · 21 · 30), lịch 6 × 5 ô (đã nhận / hôm nay / bỏ lỡ / tương lai),
-    /// nút NHẬN + xem quảng cáo x2; nhận xong hiện "Đã nhận …!" + giờ tới ô kế tiếp và nút Về trang chủ.
+    /// nút NHẬN + xem quảng cáo x2; nhận xong hiện "Đã nhận …!" + giờ tới ô kế tiếp và nút Trang chủ.
     /// Rương bí ẩn (ngày 7, 21, 29) mở popup liệt kê quà. Quảng cáo (x2, điểm danh bù) thuộc bước 6: nút hiện nhưng tắt.
     /// </summary>
     public class DailyRewardScreen : MonoBehaviour
