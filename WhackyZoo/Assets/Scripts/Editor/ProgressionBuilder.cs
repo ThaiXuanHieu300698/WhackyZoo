@@ -732,7 +732,7 @@ namespace WhackyZoo.EditorTools
             Img("Icon", ad.transform, LoadSprite($"{ArtDir}/daily_ad.png"), Center, Center, new Vector2(-98, 2.5f), new Vector2(24, 24));
             Label(ad.transform, "Xem quảng cáo nhận x2", 16, Dark, 5, 16);
 
-            // Đã nhận: khung gạch trắng (bo 20, nền trắng 18%) "Đã nhận …!" 19 + "Điểm danh tiếp sau HH:MM:SS" 14 + nút Về trang chủ (cao 52)
+            // Đã nhận: khung gạch trắng (bo 20, nền trắng 18%) "Đã nhận …!" 19 + "Điểm danh tiếp sau HH:MM:SS" 14 + nút Trang chủ (trắng, icon nhà, cao 52)
             var claimedGroup = Rect("ClaimedGroup", c, Center, Center, Vector2.zero, Vector2.zero);
             Stretch(claimedGroup, 0);
             Img("Status", claimedGroup, DashedBox("gen_dm_status", 358, 72, 20, 3, 9, 6, Color.white, new Color(1, 1, 1, 0.18f)), Center, Center, P(195, 726), new Vector2(358, 72));
@@ -740,8 +740,8 @@ namespace WhackyZoo.EditorTools
             TextShadow(got, 2, 0.35f);
             var next = Txt("Next", claimedGroup, "Điểm danh tiếp sau 00:00:00", fontHeavy, 14, Color.white, TextAnchor.MiddleCenter, Center, P(195, 741), new Vector2(340, 22));
             TextShadow(next, 2, 0.35f);
-            var (home, _) = GameBtn("Home", claimedGroup, "dm_btn_home", 358, 52, 20, "FFE68A", "FFC93C", "F0A400", "B87800", P(195, 798), 5, true);
-            Label(home.transform, "Về trang chủ", 19, Dark, 5);
+            // Nút Trang chủ thống nhất với popup Hết giờ: nền trắng, icon nhà 22, chữ 18
+            var home = GBtn("Home", claimedGroup, Spr("UI/button_white"), Center, P(195, 798), 358, 52, "Trang chủ", 18, Dark, Spr("UI/icon_home"), 22);
             claimedGroup.gameObject.SetActive(false);
 
             var popup = BuildChestPopup(screen, c, view);
